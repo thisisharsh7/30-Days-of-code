@@ -20,8 +20,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [on process](https://your-solution-url.com)
-- Live Site URL: [on process](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/qrcode-using-css-cards-AWbawtuCTP)
+- Live Site URL: [Live](https://superlative-souffle-881f9e.netlify.app/)
 
 ## My process
 
