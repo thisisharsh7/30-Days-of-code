@@ -113,5 +113,5 @@ img {
 ## Author
 
 - Website - [Harsh Kumar](https://github.com/thisisharsh7)
-- Frontend Mentor - [@y](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@thisisharsh7](https://www.frontendmentor.io/profile/thisisharsh7)
 - Twitter - [@thisisharsh7](https://www.twitter.com/thisisharsh7)
