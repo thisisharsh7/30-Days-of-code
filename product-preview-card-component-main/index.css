@@ -90,3 +90,22 @@ footer{
     background-color: rgba(19, 79, 21, 0.905);
     cursor: pointer;
 }
+
+@media only screen and (max-width: 570px){
+    #card-full{
+        flex-direction: column;
+    }
+    .img-p{
+        content: url("images/image-product-mobile.jpg");
+        max-width: 21.4rem;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 0.8rem;
+    }
+    #card-txt{
+        max-width: 19rem;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0.8rem;
+        border-bottom-left-radius: 0.8rem;
+        height: 20rem;
+    }
+}
