@@ -1,6 +1,6 @@
 # Frontend Mentor - Product preview card component solution
 
-This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -11,12 +11,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -31,18 +26,10 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://your-solution-url.com)
+- Live Site URL: [Live site](https://your-live-site-url.com)
 
 ## My process
 
@@ -51,61 +38,174 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+I learned to how to work with flex and create responsive layout and I also work with max-width property so that I can create mobile friendly layout as well.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<main>
+  <div id="card">
+    <div id="card-full">
+      <div id="card-img">
+        <img
+          src="./images/image-product-desktop.jpg"
+          alt="product"
+          class="img-p"
+        />
+      </div>
+      <div id="card-txt">
+        <p id="card-title">P E R F U M E</p>
+        <p id="card-preview">Gabrielle Essence Eau De Parfum</p>
+        <p id="card-define">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <p id="price-info">
+          <span id="price">$149.99</span>
+          <span id="price-cut"> $169.99</span>
+        </p>
+        <button id="btn">
+          <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z"
+              fill="#FFF"
+            />
+          </svg>
+          <pre> Add to Cart</pre>
+        </button>
+      </div>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      >Frontend Mentor</a
+    >. Coded by
+    <a href="https://www.frontendmentor.io/profile/thisisharsh7">Harsh Kumar</a
+    >.
+  </div>
+</footer>
 ```
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+* {
+  margin: 0;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#card-full {
+  display: flex;
+}
+.img-p {
+  display: flex;
+  border-top-left-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+  max-width: 15rem;
+}
+#card-txt {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  max-width: 15rem;
+  padding: 1.2em;
+  justify-content: space-between;
+  border-top-right-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+}
+#card-title {
+  color: hsl(228, 12%, 48%);
+  font-size: 0.8em;
+}
+#card-preview {
+  color: hsl(212, 21%, 14%);
+  font-size: 1.8em;
+  font-weight: bold;
+}
+#card-define {
+  color: hsl(228, 12%, 48%);
+  font-size: 0.8em;
+  line-height: 1.2em;
+}
+#price-info {
+  display: flex;
+}
+#price {
+  color: rgba(11, 71, 11, 0.754);
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+#price-cut {
+  color: hsl(0, 1%, 65%);
+  align-self: center;
+  padding-left: 1em;
+  font-size: 0.8em;
+  text-decoration: line-through;
+}
+#btn {
+  background-color: rgba(11, 71, 11, 0.754);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5em;
+  flex-grow: 0.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+#btn:hover {
+  background-color: rgba(19, 79, 21, 0.905);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 570px) {
+  #card-full {
+    flex-direction: column;
+  }
+  .img-p {
+    content: url("images/image-product-mobile.jpg");
+    max-width: 21.4rem;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0.8rem;
+  }
+  #card-txt {
+    max-width: 19rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+    height: 20rem;
+  }
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [Harsh Kumar](https://github.com/thisisharsh7)
+- Frontend Mentor - [@thisisharsh7](https://www.frontendmentor.io/profile/thisisharsh7)
+- Twitter - [@thisisharsh7](https://www.twitter.com/thisisharsh7)
