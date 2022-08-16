@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live site](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/productpreviewcard-iVVGXXLFqz)
+- Live Site URL: [Live site](https://sunny-crisp-7a9a2e.netlify.app/)
 
 ## My process
 
