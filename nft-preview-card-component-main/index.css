@@ -97,8 +97,7 @@ svg {
   content: url("images/icon-view.svg");
   cursor: pointer;
 }
-footer {
+footer{
   align-self: center;
-  position: absolute;
-  bottom: 0;
+  
 }
