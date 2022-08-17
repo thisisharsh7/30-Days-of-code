@@ -27,8 +27,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Solution url](https://your-solution-url.com)
-- Live Site URL: [Live site](https://your-live-site-url.com)
+- Solution URL: [Solution url](https://www.frontendmentor.io/solutions/profilecardpreview-4EleRHJf3Y)
+- Live Site URL: [Live site](https://lucky-monstera-e9cc20.netlify.app/)
 
 ## My process
 
@@ -42,16 +42,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### What I learned
 
-
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+While building this project I learned how to work with CSS alignment and position property and I also learned giving custom background to the page using css.
 
 
 ## Author
