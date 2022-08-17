@@ -43,10 +43,8 @@ main {
   color: rgba(225, 225, 225, 0.738);
 }
 #img-u {
-  display: flex;
   width: 15em;
   border-radius: 0.5em;
-  background-color: rgb(38, 222, 216);
 }
 #card-info {
   display: flex;
@@ -93,9 +91,23 @@ svg {
   color: rgb(38, 222, 216);
   cursor: pointer;
 }
-#img-u:hover {
-  content: url("images/icon-view.svg");
+#card-img {
   cursor: pointer;
+  position: relative;
+}
+#card-img:hover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-color: rgba(0, 255, 255, 0.5);
+  background-image: url("./images/icon-view.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background: no-repeat rgba(0, 255, 255, 0.5) url("/images/icon-view.svg") center; */
 }
 footer{
   align-self: center;
