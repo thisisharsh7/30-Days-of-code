@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution Here](https://your-solution-url.com)
+- Solution URL: [Solution Here](https://www.frontendmentor.io/solutions/3columnpreviewcard-Fwtr1UDcu2)
 - Live Site URL: [Live Site](https://courageous-lollipop-03872f.netlify.app/)
 
 ## My process
