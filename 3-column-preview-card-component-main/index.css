@@ -1,4 +1,6 @@
 body{
+    margin:0;
+    padding:0;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -61,10 +63,12 @@ img{
     border-radius: 1.5rem;
     border: 1px solid white;
 }
-@media only screen and (max-width: 600px){
+@media (max-width: 570px){
+    body{
+        justify-content: flex-start; 
+    }
     .cards{
         flex-direction: column;
-        align-items: center;
     }
     .ocard{
         border-bottom-left-radius: 0;
