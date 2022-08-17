@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution here](https://www.frontendmentor.io/solutions/nftpreviewcardcomponent-D2YfPmdvzf)
-- Live Site URL: [Live Site here](https://luminous-crumble-9cf9aa.netlify.app/)
+- Live Site URL: [Live Site here](https://stellular-jalebi-3b1ecc.netlify.app/)
 
 ## My process
 
