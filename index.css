@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    text-align: center;
 }
 body{
     display: flex;
@@ -22,15 +23,20 @@ h1{
 
 
 #div-body{
-    background-color: greenyellow;
+    background: rgba(208,228,245,0.96) url("https://cdn.pixabay.com/photo/2018/02/12/09/39/background-3147808_960_720.jpg") repeat fixed 50% 50%;
     padding: 1rem;
-    height: 80vh;
+    min-height: 80vh;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.project{
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 1rem;
+    box-shadow: 5px 5px 15px -4px #000000;
+}
 img{
-    width: 30vw;
+    max-width: 30vw;
 }
 footer{
     height: 10vh;
@@ -39,4 +45,9 @@ footer{
 a{
     font-weight: bold;
     font-size: 1.5rem;
+}
+@media only screen and (max-width:642px){
+    img{
+        max-width: 90vw;
+    }
 }
