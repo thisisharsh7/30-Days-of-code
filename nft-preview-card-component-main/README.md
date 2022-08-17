@@ -11,12 +11,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -31,18 +26,10 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution here](https://your-solution-url.com)
+- Live Site URL: [Live Site here](https://your-live-site-url.com)
 
 ## My process
 
@@ -51,61 +38,181 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+I learned how to aligned the div in the center perfectly using flex box and foooter at the bottom using position property. I also learned box-shadow property which brings some awesome user experience in this project. I also learned how to change the image on hovering.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<header></header>
+
+    <main>
+      <div id="card-body">
+        <div id="card">
+          <div id="card-img">
+            <img src="images/image-equilibrium.jpg" alt="etherium" id="img-u" />
+          </div>
+          <div id="card-txt">
+            <div id="card-title">Equilibrium #3429</div>
+            <div id="card-description">
+              Our Equilibrium collection promotes balance and calm.
+            </div>
+            <div id="card-info">
+              <div id="price">
+                <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+                    fill="#00FFF8"
+                  /></svg
+                ><span>0.041 ETH</span>
+              </div>
+              <div id="time">
+                <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+                    fill="#8BACD9"
+                  /></svg
+                >3 days left
+              </div>
+            </div>
+            <hr />
+            <div id="card-end">
+              <div id="img-avatar">
+                <img src="images/image-avatar.png" alt="avatar" id="img-av" />
+              </div>
+              <div id="avatar-txt">
+                Creation of <span id="avatar-span"> Jules Wyvern</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/thisisharsh7"
+          >Harsh Kumar</a
+        >.
+      </div>
+    </footer>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+body {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsl(217, 54%, 11%);
+  color: white;
+  font-family: "Outfit", sans-serif;
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+main {
+  display: flex;
+  justify-content: center;
 }
+#card-body {
+  width: 17em;
+  border-radius: 0.5em;
+  box-shadow: 1rem 1rem hsla(214, 64%, 13%, 0.776);
+  border: 10px solid hsl(217, 54%, 11%);
+}
+#card {
+  border-radius: 0.5em;
+  background-color: hsl(216, 50%, 16%);
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  align-content: space-between;
+}
+#card-txt {
+  padding-top: 0.5em;
+}
+#card-title {
+  font-size: 1.3em;
+  font-weight: bold;
+  padding-bottom: 0.5em;
+}
+#card-description {
+  font-size: 1em;
+  padding-bottom: 0.7em;
+  color: rgba(225, 225, 225, 0.738);
+}
+#img-u {
+  display: flex;
+  width: 15em;
+  border-radius: 0.5em;
+  background-color: rgb(38, 222, 216);
+}
+#card-info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5em;
+}
+#time {
+  display: flex;
+  align-items: center;
+  color: rgba(225, 225, 225, 0.738);
+}
+#price {
+  display: flex;
+  color: rgb(38, 222, 216);
+  font-weight: bold;
+}
+
+#card-end {
+  display: flex;
+  align-items: center;
+  margin-top: 0.7em;
+}
+#img-av {
+  width: 2em;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+#avatar-txt {
+  margin-left: 1em;
+  font-size: 0.95em;
+  color: rgba(225, 225, 225, 0.738);
+}
+svg {
+  margin-right: 0.5em;
+}
+#avatar-span {
+  color: white;
+}
+#avatar-span:hover {
+  color: rgb(38, 222, 216);
+  cursor: pointer;
+}
+#card-title:hover {
+  color: rgb(38, 222, 216);
+  cursor: pointer;
+}
+#img-u:hover {
+  content: url("images/icon-view.svg");
+  cursor: pointer;
+}
+footer {
+  align-self: center;
+  position: absolute;
+  bottom: 0;
+}
+
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [Harsh Kumar](https://github.com/thisisharsh7)
+- Frontend Mentor - [@thisisharsh7](https://www.frontendmentor.io/profile/thisisharsh7)
+- Twitter - [@thisisharsh7](https://www.twitter.com/thisisharsh7)
