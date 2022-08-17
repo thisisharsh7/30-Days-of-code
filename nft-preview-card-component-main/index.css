@@ -1,0 +1,102 @@
+body{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsl(217, 54%, 11%);
+    color: white;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+#card-body{
+    background-color: hsl(216, 50%, 16%);
+    width: 17em;
+    border-radius: 0.5em;
+}
+#card{
+    display: flex;
+    flex-direction: column;
+    padding:1em;
+    align-content: space-between;
+}
+#card-txt{
+    padding-top:0.5em;
+}
+#card-title{
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+#card-description{
+    font-size: 1em;
+    padding-bottom: 0.7em;
+    color: rgba(225, 225, 225, 0.738);
+}
+#img-u{ 
+    display: flex;
+    width:15em;
+    border-radius: 0.5em;
+    background-color:rgb(38, 222, 216);
+}
+#card-info{
+    display: flex;
+    justify-content: space-between ;
+    padding-bottom: 0.5em;
+}
+#time{
+    display: flex;
+    align-items: center ;
+    color: rgba(225, 225, 225, 0.738);
+}
+#price{
+    display: flex;
+    color:rgb(38, 222, 216);
+    font-weight: bold;
+}
+
+#card-end{
+    display: flex;
+    align-items: center;
+    margin-top: 0.7em;
+}
+#img-av{
+
+    width: 2em;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+#avatar-txt{
+    margin-left: 1em;
+    font-size: 0.95em;
+    color: rgba(225, 225, 225, 0.738);
+}
+svg{
+    margin-right: 0.5em;
+}
+#avatar-span{
+    color: white;
+}
+#avatar-span:hover{
+    color:rgb(38, 222, 216);
+    cursor: pointer;
+}
+#card-title:hover{
+    color:rgb(38, 222, 216);
+    cursor: pointer;
+}
+#img-u:hover{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    content: url("images/icon-view.svg");
+  cursor: pointer;
+}
+footer{
+    align-self: center  ;
+}
