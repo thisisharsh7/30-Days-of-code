@@ -1,52 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" type="text/css" href="index.css">
-  
-  <title>Frontend Mentor | Order summary card</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
 
-</head>
-<body>
-  <header></header>
+    <title>Frontend Mentor | Order summary card</title>
+  </head>
+  <body>
+    <header></header>
 
-  <main>
-    <div id ="card-body">
-      <img src="./images/illustration-hero.svg" alt="music-bg" id="hero-img" />
-      <div id="card-txt">
-        <p id="heading">Order Summary</p>
-        <p id="info">You can now listen to millions of songs, audiobooks, and podcasts on any 
-          device anywhere you like!</p>
-        <div id="card-plan">
-          <p id="detail">
-            <img src="./images/icon-music.svg" alt="music-icon" />
-            <p id="plan-money">
-              <p id="plan">Annual Plan</p>
-              <p id="money">$59.99/year</p>
-            </p>
+    <main>
+      <div id="card-body">
+        <img
+          src="./images/illustration-hero.svg"
+          alt="music-bg"
+          id="hero-img"
+        />
+        <div id="card-txt">
+          <p id="heading">Order Summary</p>
+          <p id="info">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
           </p>
-          <p id="link">Change</p>
+          <div id="card-plan">
+            <div id="detail">
+              <img
+                src="./images/icon-music.svg"
+                alt="music-icon"
+                id="music-icon"
+              />
+              <div id="plan-money">
+                <p id="plan">Annual Plan</p>
+                <p id="money">$59.99/year</p>
+              </div>
+            </div>
+            <a href="#" id="change">Change</a>
+          </div>
+          <div id="btn-c">
+            <button id="proceed-btn" class="btn">Proceed to Payment</button>
+            <button id="cancel-btn" class="btn">Cancel Order</button>
+          </div>
         </div>
-        <button id="proceed-btn">Proceed to Payment</button>
-        <button id="cancel-btn">Cancel Order</button>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <footer>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by
-      <a href="https://www.frontendmentor.io/profile/thisisharsh7"
-        >Harsh Kumar</a
-      >.
-    </div>
-  </footer>
-
-</body>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/thisisharsh7"
+          >Harsh Kumar</a
+        >.
+      </div>
+    </footer>
+  </body>
 </html>
