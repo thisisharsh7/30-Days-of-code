@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+body{
+    font-size: 16px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
+#card-body{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+#hero-img{
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+#card-txt{
+    padding: 2rem;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.2rem;
+}
+#card-plan{
+    display: flex;
+}
+#detail{
+    display: flex;
+    flex-direction: column;
+}

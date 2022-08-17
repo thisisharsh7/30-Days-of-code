@@ -5,25 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="index.css">
   
   <title>Frontend Mentor | Order summary card</title>
 
 </head>
 <body>
+  <header></header>
 
-  Order Summary
+  <main>
+    <div id ="card-body">
+      <img src="./images/illustration-hero.svg" alt="music-bg" id="hero-img" />
+      <div id="card-txt">
+        <p id="heading">Order Summary</p>
+        <p id="info">You can now listen to millions of songs, audiobooks, and podcasts on any 
+          device anywhere you like!</p>
+        <div id="card-plan">
+          <p id="detail">
+            <img src="./images/icon-music.svg" alt="music-icon" />
+            <p id="plan-money">
+              <p id="plan">Annual Plan</p>
+              <p id="money">$59.99/year</p>
+            </p>
+          </p>
+          <p id="link">Change</p>
+        </div>
+        <button id="proceed-btn">Proceed to Payment</button>
+        <button id="cancel-btn">Cancel Order</button>
+      </div>
+    </div>
+  </main>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
   <footer>
     <div class="attribution">
       Challenge by
@@ -35,5 +47,6 @@
       >.
     </div>
   </footer>
+
 </body>
 </html>
