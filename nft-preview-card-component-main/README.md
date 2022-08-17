@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution here](https://your-solution-url.com)
-- Live Site URL: [Live Site here](https://your-live-site-url.com)
+- Solution URL: [Solution here](https://www.frontendmentor.io/solutions/nftpreviewcardcomponent-D2YfPmdvzf)
+- Live Site URL: [Live Site here](https://luminous-crumble-9cf9aa.netlify.app/)
 
 ## My process
 
