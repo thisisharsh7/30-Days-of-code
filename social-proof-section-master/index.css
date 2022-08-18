@@ -5,6 +5,13 @@
 body{
     font-size: 15px;
     font-family: 'League Spartan', sans-serif;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
 }
 #bold-text{
     font-size: 2.1rem;
@@ -24,4 +31,66 @@ body{
 }
 #gray-text{
     color: hsl(303, 10%, 53%);
+}
+main{
+    background-color: black;
+    margin:0.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 30vw);
+    grid-gap:2.5rem;
+}
+#bottom-div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-between;
+}
+
+#left-div{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    background-color: red;
+    grid-row-gap: 1rem;
+}
+#right-div{
+    background-color: blue;
+    display: grid;
+    grid-template-areas: 
+    'text1'
+    'text2'
+    'text3'
+    ;
+    
+    align-items: center;
+}
+.buck{
+    background-color: hsla(300, 5%, 55%, 0.676);
+    padding:6px;
+    display: flex;
+    gap:1rem;
+    align-items: center;
+}
+.star-icon{
+    padding:2px;
+}
+#buck1{
+    grid-area: text1;
+    justify-self: flex-start;
+}
+#buck2{
+    justify-self: center;
+    grid-area: text2;
+}
+#buck3{
+    justify-self: flex-end;
+    grid-area: text3;
+}
+
+
+footer{
+    background-color: red;
+}
+#bottom-div{
+    grid-column: span 2;
 }
