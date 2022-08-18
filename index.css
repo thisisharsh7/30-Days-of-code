@@ -62,7 +62,7 @@ a{
 }
 @media only screen and (min-width:450px) and (max-width:920px){
     #div-body{
-        gap:0.8rem;
+        gap:0.5rem;
     }
     .project{
         max-width: 30vw;
