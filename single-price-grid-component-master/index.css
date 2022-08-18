@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+    font-size:16px;
+    background-color: hsla(217, 27%, 85%, 0.403);
+    font-family: 'Karla', sans-serif;
+
+}
+main{
+    padding:2rem;
+    max-width: 600px;
+}
+#card-body{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(20vw));
+    grid-template-rows: minmax(28vh 33vh);
+    box-shadow: -1px 1px 4px 5px rgba(192,192,192,0.35);
+    border-radius: 6px 6px 6px 6px;
+}
+.card{
+    padding:2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+    color:white;
+}
+#white{
+    background-color: white;
+    grid-column: span 2;
+    border-radius: 6px 6px 0 0;
+    
+}
+#dblue{
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0 0 0 6px;
+}
+#sblue{
+    background-color: hsl(179, 43%, 68%);
+    border-radius: 0 0 6px 0;
+} 
+ul{
+    list-style: none;
+}
+.text{
+    font-size: 0.9rem;
+}
+#price-plan-text{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+#price-plan{
+    display: flex;
+    gap:0.5rem;
+    align-items: center;
+}
+#price{
+    font-size:1.8rem;
+    font-weight: bold;
+    
+}
+#plan{
+    color:rgba(230, 230, 230, 0.937);
+}
+.title{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.text{
+    font-size:1rem;
+}
+#btn{
+    color:white;
+    background-color: rgb(179, 237, 93);
+    padding: 0.6rem;
+    font-weight: bold;
+    border:none;
+    box-shadow: -1px 1px 4px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 0.3rem;
+}
+#gray{
+    color:rgb(173, 173, 173);
+    font-weight: 500;
+}
+#color-blue{
+    color:hsl(179, 62%, 43%)
+}
+.color-green{
+    color: rgb(179, 237, 93);
+    font-weight: bold;
+}
+li{
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+}
+@media only screen and (max-width:500px){
+    #card-body{
+        align-items: center;
+        grid-template-columns: 45vw;
+    }
+    .card{
+        grid-column: span 2;
+    }
+    #dblue{
+        border-radius: 0 0 0 0;
+    }
+    #sblue{
+        border-radius: 0 0 6px 6px;
+    }
+}
+footer{
+    padding-bottom: 1rem;
+    font-size:0.8rem;
+    text-align: center;
+}
