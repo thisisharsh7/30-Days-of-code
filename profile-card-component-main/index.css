@@ -12,6 +12,10 @@ body {
   justify-content: center;
   font-family: 'Kumbh Sans', sans-serif;
   background: hsl(185, 75%, 39%) url("./images/bg-pattern-top.svg") no-repeat local -350px -350px;
+
+  /* background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top -487px left -159px, bottom -639px right -123px; */
 }
 .card {
   display: flex;
