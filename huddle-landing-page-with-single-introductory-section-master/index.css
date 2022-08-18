@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  background: no-repeat hsl(257, 40%, 49%) url("images/bg-desktop.svg") 100px 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Open Sans', 'Poppins', sans-serif;
+}
+header {
+  width: 90vw;
+  margin: 35px;
+}
+#logo {
+  width: 10rem;
+}
+main {
+  width: 90vw;
+}
+.card-body {
+  display: flex;
+  width: 100%;
+  gap: 3rem;
+}
+#text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50vw;
+  gap: 1.5rem;
+}
+#illustration {
+  width: 40vw;
+}
+footer {
+  width: 90vw;
+  display: flex;
+  gap: 3rem;
+  justify-content: flex-end;
+  margin: 20px;
+}
+
+#sub-heading {
+  width: 80%;
+  font-weight: bold;
+  font-size: 2.8rem;
+  line-height: 3rem;
+}
+#info {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  line-height: 1.3rem;
+}
+#btn {
+  padding: 0.8rem;
+  width: 10rem;
+  border: none;
+  border-radius: 2rem;
+  font-weight: bold;
+  color:hsl(257, 40%, 49%);
+  box-shadow: 5px 5px 9px 5px rgba(0,0,0,0.06);
+}
+a {
+  text-decoration: none;
+}
+.link-icon {
+  margin: 3px;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 5px;
+}
+@media only screen and (max-width: 660px) {
+  header {
+    width: 80vw;
+    margin-bottom: 0;
+  }
+  body {
+    background: no-repeat hsl(257, 40%, 49%) url("images/bg-mobile.svg") 0;
+    gap: 3rem;
+  }
+  .card-body {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  #illustration {
+    width: 80vw;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+    gap: 1rem;
+  }
+  #sub-heading {
+    width: 100%;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  #text {
+    width: 80vw;
+    align-items: center;
+  }
+}
+.link-icon:hover{
+    color:hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+}
+#btn:hover{
+    color:white;
+    background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
