@@ -27,7 +27,8 @@ h1{
     padding: 1rem;
     min-height: 80vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    
     flex-wrap: wrap;
 }
 .project{
@@ -46,8 +47,25 @@ a{
     font-weight: bold;
     font-size: 1.5rem;
 }
-@media only screen and (max-width:642px){
-    img{
-        max-width: 90vw;
+.project{
+    margin:10px;   
+}
+@media only screen and (max-width:450px){
+    #div-body{
+        width: 100vw;
+        align-items: center;
+    }
+    @media only screen and (max-width:642px){
+        img{
+            max-width: 90vw;
+        }
+    }
+}
+@media only screen and (min-width:450px) and (max-width:799px){
+    #div-body{
+        gap:4px;
+    }
+    .project{
+        max-width: 30vw;
     }
 }
