@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution url](https://your-solution-url.com)
-- Live Site URL: [Live Link](https://your-live-site-url.com)
+- Solution URL: [Solution url](https://www.frontendmentor.io/solutions/huddlelandingpagepreview-v_nukHBTlc)
+- Live Site URL: [Live Link](https://creative-puppy-d58dc9.netlify.app/)
 
 ## My process
 
