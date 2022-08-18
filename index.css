@@ -55,17 +55,20 @@ a{
         width: 100vw;
         align-items: center;
     }
-    @media only screen and (max-width:642px){
-        img{
-            max-width: 90vw;
-        }
+    img{
+        max-width: 90vw;
     }
+    
 }
-@media only screen and (min-width:450px) and (max-width:799px){
+@media only screen and (min-width:450px) and (max-width:920px){
     #div-body{
-        gap:4px;
+        gap:0.8rem;
     }
     .project{
         max-width: 30vw;
+        margin:0;
+    }
+    img{
+        width:100%;
     }
 }
