@@ -1,33 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>
+      Frontend Mentor | Huddle landing page with single introductory section
+    </title>
 
-  Build The Community Your Fans Will Love
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.svg" alt="logo" id="logo" />
+    </header>
 
-  Register
+    <main>
+      <div class="card-body">
+        <img
+          src="images/illustration-mockups.svg"
+          alt="illustration"
+          id="illustration"
+        />
+        <div id="text">
+          <p id="sub-heading">Build The Community Your Fans Will Love</p>
+          <p id="info">
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <button id="btn">Register</button>
+        </div>
+      </div>
+    </main>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/thisisharsh7"
+          >Harsh Kumar</a
+        >.
+      </p>
+      <p class="icons">
+        <a href="#"
+          ><ion-icon name="logo-facebook" class="link-icon"></ion-icon
+        ></a>
+        <a href="#"
+          ><ion-icon name="logo-twitter" class="link-icon"></ion-icon
+        ></a>
+        <a href="#"
+          ><ion-icon name="logo-instagram" class="link-icon"></ion-icon
+        ></a>
+      </p>
+    </footer>
+  </body>
 </html>
