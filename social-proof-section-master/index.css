@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    font-size: 15px;
+    font-family: 'League Spartan', sans-serif;
+}
+#bold-text{
+    font-size: 2.1rem;
+}
+.purple{
+    color:hsl(300, 43%, 22%);
+    font-weight: bold;
+}
+.card{
+    background-color: hsl(300, 43%, 22%);
+}
+.white-text{
+    color:white;
+}
+.job{
+    color:hsl(333, 46%, 67%);
+}
+#gray-text{
+    color: hsl(303, 10%, 53%);
+}
