@@ -9,7 +9,7 @@ body{
     max-height: 100vh;
     flex-direction: column;
     color: white;
-    
+    font-family: 'IBM Plex Sans', sans-serif;
     background-color: black;
 }
 header{
@@ -28,7 +28,6 @@ h1{
     min-height: 80vh;
     display: flex;
     justify-content: center;
-    
     flex-wrap: wrap;
 }
 .project{
@@ -38,6 +37,9 @@ h1{
 }
 img{
     max-width: 30vw;
+}
+.project:hover{
+    transform: scale(1.03);
 }
 footer{
     height: 10vh;
@@ -52,8 +54,7 @@ a{
 }
 @media only screen and (max-width:450px){
     #div-body{
-        width: 100vw;
-        align-items: center;
+        background:red;
     }
     img{
         max-width: 90vw;
@@ -63,6 +64,7 @@ a{
 @media only screen and (min-width:450px) and (max-width:920px){
     #div-body{
         gap:0.5rem;
+        
     }
     .project{
         max-width: 30vw;
@@ -71,4 +73,11 @@ a{
     img{
         width:100%;
     }
+}
+img , .project{
+    border-radius:0.2rem;
+}
+a{
+    text-decoration: none;
+    color:white
 }
