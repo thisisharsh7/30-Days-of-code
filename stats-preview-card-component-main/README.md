@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution Url](https://your-solution-url.com)
-- Live Site URL: [Live site](https://your-live-site-url.com)
+- Solution URL: [Solution Url](https://www.frontendmentor.io/solutions/statspreviewcard-QnP3QjRkN2)
+- Live Site URL: [Live site](https://chipper-kelpie-ffd450.netlify.app/)
 
 ## My process
 
