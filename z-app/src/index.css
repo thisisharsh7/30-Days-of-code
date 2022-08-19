@@ -41,14 +41,12 @@ img , .card{
 }
 @media only screen and (max-width:450px){
     img{
-        max-width: 90vw;
+        max-width: 100%;
     }
-    
 }
 @media only screen and (min-width:450px) and (max-width:920px){
     .card-body{
         gap:0.5rem;
-        
     }
     .card{
         max-width: 30vw;
