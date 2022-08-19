@@ -13,7 +13,7 @@ body{
     grid-template-rows: 0.1fr 8fr 0.1fr;
 }
 .black{
-   background-color: black;
+   background-color: blueviolet;
 }
 img{
     max-width: 30vw;
@@ -26,7 +26,7 @@ img{
 }
 .card{
     box-shadow: 5px 5px 15px -4px #000000;
-    background-color: black;
+    background-color: rgb(49, 67, 229);
     margin:1rem;
 }
 .card:hover{
