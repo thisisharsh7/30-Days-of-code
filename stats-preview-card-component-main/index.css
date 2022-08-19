@@ -3,8 +3,8 @@
   padding: 0;
 }
 body {
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -14,22 +14,26 @@ body {
   font-family: "Inter", sans-serif;
   font-family: "Lexend Deca", sans-serif;
 }
-footer{
+footer {
   text-align: center;
 }
+#mobileimg {
+  display: none;
+}
 main {
-    font-size: 2px;
-  width: 55vw;
+  font-size: 2px;
+  max-width: 60vw;
   background-color: hsl(244, 38%, 16%);
   display: grid;
   grid-template-columns: 0.8fr 0.8fr 0.8fr 4fr;
   padding-left: 12em;
   grid-column-gap: 22em;
-  grid-template-rows:13vh 9vh 9vh 9vh;
+  grid-template-rows: 13vh 9vh 9vh 9vh;
   justify-items: end;
   border-radius: 3em;
-  box-shadow: 1px 1px 6px 2px rgba(0,0,0,0.51);
+  box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, 0.51);
 }
+
 img {
   width: 100%;
   height: 100%;
@@ -42,51 +46,85 @@ img {
   grid-column: 1 /4;
   font-weight: bold;
   justify-self: start;
-  align-self: end;
-  font-size:9em;
+  align-self: center;
+  font-size: 9em;
   word-spacing: 0.2em;
 }
 #description {
   grid-column: 1 /4;
   letter-spacing: 0.13em;
   align-self: end;
-  font-size:5.5em;
+  font-size: 5.5em;
   color: hsla(0, 0%, 100%, 0.75);
 }
 .number {
   align-self: end;
   justify-self: start;
-  font-size:8em;
+  font-size: 8em;
 }
 .text {
   justify-self: start;
   text-transform: uppercase;
-  font-size:6em;
-  color:hsla(0, 0%, 100%, 0.6);
+  font-size: 6em;
+  color: hsla(0, 0%, 100%, 0.6);
 }
-@media only screen and (max-width:1225px) and (min-width:880px){
-    main{
-        min-width: 80vw;
-    }
+@media only screen and (max-width: 1000px) and (min-width: 376px) {
+  main {
+    min-width: 80vw;
+    grid-column-gap: 8em;
+    padding-left: 4em;
+  }
+  #header {
+    font-size: 4em;
+  }
+  #description {
+    font-size: 4em;
+    align-self: center;
+  }
+  .number {
+    font-size: 6em;
+  }
+  .text {
+    font-size: 3.5em;
+  }
 }
-@media only screen and (max-width: 880px) and (min-width:350px){
-    main{
-        min-width: 80vw;
-        grid-column-gap: 8em;
-        padding-left: 4em;
-    }
-    #header{
-        font-size: 4em;
-    }
-    #description{
-        font-size: 3.7em;
-        align-self: end;
-    }
-    .number{
-            font-size:6em;
-    }
-    .text{
-        font-size: 3.5em;
-    }
+@media only screen and (max-width: 376px) {
+  main {
+    padding: 0;
+    margin: 0;
+    margin-top: 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 8em;
+    text-align: center;
+  }
+  img {
+    border-top-left-radius: 1em;
+  }
+  #description {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .number {
+    align-self: center;
+  }
+  .text {
+    height: 5vh;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+  }
+  #num2 {
+    order: 3;
+  }
+  #text2 {
+    order: 3;
+  }
+  #num3 {
+    order: 4;
+  }
+  #text3 {
+    order: 4;
+  }
 }
-
