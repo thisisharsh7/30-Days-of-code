@@ -10,6 +10,7 @@ import img7 from './images/screenshot7.jpg';
 import img8 from './images/screenshot8.jpg';
 import img9 from './images/screenshot9.jpg';
 import img10 from './images/screenshot10.jpg';
+import img11 from './images/screenshot11.jpg';
 
 function Main(){
     return (
@@ -36,6 +37,8 @@ function Main(){
                 <Card display={img9} goto="https://frabjous-sprinkles-a723d0.netlify.app/" title="Single Price Grid Preview" cnt="project9"/>
 
                 <Card display={img10} goto="https://musical-taffy-a1e27f.netlify.app/" title="Social Proof Section Preview" cnt="project10"/>
+
+                <Card display={img11} goto="https://chipper-kelpie-ffd450.netlify.app/" title="Stats Preview Card" cnt="project11"/>
 
 
             </div>
