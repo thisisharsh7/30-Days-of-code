@@ -14,6 +14,9 @@ body {
   font-family: "Inter", sans-serif;
   font-family: "Lexend Deca", sans-serif;
 }
+footer{
+  text-align: center;
+}
 main {
     font-size: 2px;
   width: 55vw;
@@ -25,6 +28,7 @@ main {
   grid-template-rows:13vh 9vh 9vh 9vh;
   justify-items: end;
   border-radius: 3em;
+  box-shadow: 1px 1px 6px 2px rgba(0,0,0,0.51);
 }
 img {
   width: 100%;
@@ -45,7 +49,7 @@ img {
 #description {
   grid-column: 1 /4;
   letter-spacing: 0.13em;
-  align-self: center;
+  align-self: end;
   font-size:5.5em;
   color: hsla(0, 0%, 100%, 0.75);
 }
@@ -60,22 +64,23 @@ img {
   font-size:6em;
   color:hsla(0, 0%, 100%, 0.6);
 }
-@media only screen and (max-width:1180px) and (min-width:880px){
+@media only screen and (max-width:1225px) and (min-width:880px){
     main{
-        min-width: 70vw;
+        min-width: 80vw;
     }
 }
-@media only screen and (max-width: 880px) and (min-width:375px){
+@media only screen and (max-width: 880px) and (min-width:350px){
     main{
-        min-width: 90vw;
+        min-width: 80vw;
         grid-column-gap: 8em;
-        padding-left: 2em;
+        padding-left: 4em;
     }
     #header{
-        font-size: 5em;
+        font-size: 4em;
     }
     #description{
-        font-size: 3.4em;
+        font-size: 3.7em;
+        align-self: end;
     }
     .number{
             font-size:6em;
