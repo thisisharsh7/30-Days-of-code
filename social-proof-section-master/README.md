@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/singlepricegridpreview-edejq63axd)
-- Live Site URL: [Live Site](https://frabjous-sprinkles-a723d0.netlify.app/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/socialproofsectionoverview-GlZmnk3yfH)
+- Live Site URL: [Live Site](https://musical-taffy-a1e27f.netlify.app/)
 
 ## My process
 
