@@ -1,96 +1,177 @@
-*{
-    margin:0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    font-size: 15px;
-    font-family: 'League Spartan', sans-serif;
-    width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+body {
+  font-size: 15px;
+  font-family: "League Spartan", sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  align-content: space-between;
+}
+footer {
+  justify-self: center;
+}
+#bold-text {
+  font-size: 2.3rem;
+}
+.purple {
+  color: hsl(300, 43%, 22%);
+  font-weight: bold;
+}
+
+.white-text {
+  color: white;
+}
+.job {
+  color: hsl(333, 46%, 67%);
+}
+#gray-text {
+  color: hsl(303, 10%, 53%);
+}
+main {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  justify-self: center;
+  width: 90vw;
+  min-height: 90vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 25vw 32vw;
+  grid-row-gap: 3rem;
+  grid-column-gap: 8rem;
+}
+#bottom-div {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: 40vh;
+  justify-content: space-between;
+}
+
+#left-div {
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+#right-div {
+  display: grid;
+  grid-template-areas:
+    "text1"
+    "text2"
+    "text3";
+
+  align-items: center;
+}
+.buck {
+  padding: 2px;
+  padding-left: 19px;
+  padding-right: 19px;
+  border-radius: 0.3rem;
+  background-color: hsla(300, 10%, 70%, 0.191);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.star-icon {
+  padding: 2px;
+}
+#buck1 {
+  grid-area: text1;
+  justify-self: start;
+}
+
+#buck2 {
+  justify-self: center;
+  grid-area: text2;
+}
+#buck3 {
+  justify-self: end;
+  grid-area: text3;
+}
+#bottom-div {
+  grid-column: span 2;
+}
+.card {
+  min-height: 30vh;
+  border-radius: 0.3rem;
+  display: grid;
+  grid-template-areas:
+    "pro name name name name name name"
+    "pro work work work work work work"
+    "inf inf inf inf inf inf inf";
+  background-color: hsl(300, 43%, 22%);
+  align-content: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.first {
+  align-self: start;
+}
+.second {
+  align-self: center;
+}
+.third {
+  align-self: end;
+}
+.profile-icon {
+  grid-area: pro;
+  border-radius: 50%;
+  width: 4rem;
+  justify-self: start;
+}
+.name {
+  grid-area: name;
+  align-self: end;
+  justify-self: start;
+}
+.job {
+  grid-area: work;
+  align-self: start;
+  justify-self: start;
+}
+.info-d {
+  grid-area: inf;
+  margin-top: 1rem;
+}
+@media only screen and (max-width: 400px) {
+  #left-div {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  main {
+    display: block;
+  }
+  #bottom-div {
+    display: block;
+  }
+  .card {
+    margin: 0.8rem 0rem;
+  }
+  #right-div {
     justify-content: center;
-    justify-content: space-around;
-}
-#bold-text{
-    font-size: 2.1rem;
-}
-.purple{
-    color:hsl(300, 43%, 22%);
-    font-weight: bold;
-}
-.card{
-    background-color: hsl(300, 43%, 22%);
-}
-.white-text{
-    color:white;
-}
-.job{
-    color:hsl(333, 46%, 67%);
-}
-#gray-text{
-    color: hsl(303, 10%, 53%);
-}
-main{
-    background-color: black;
-    margin:0.5rem;
-    display: grid;
-    grid-template-columns: repeat(2, 30vw);
-    grid-gap:2.5rem;
-}
-#bottom-div{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 30%);
-    justify-content: space-between;
-}
-
-#left-div{
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    width: 100%;
-    background-color: red;
-    grid-row-gap: 1rem;
-}
-#right-div{
-    background-color: blue;
-    display: grid;
-    grid-template-areas: 
-    'text1'
-    'text2'
-    'text3'
-    ;
-    
-    align-items: center;
-}
-.buck{
-    background-color: hsla(300, 5%, 55%, 0.676);
-    padding:6px;
-    display: flex;
-    gap:1rem;
-    align-items: center;
-}
-.star-icon{
-    padding:2px;
-}
-#buck1{
-    grid-area: text1;
-    justify-self: flex-start;
-}
-#buck2{
+  }
+  .buck {
+    flex-direction: column;
+    gap: 4px;
+    width: 80vw;
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+  #buck1 {
     justify-self: center;
-    grid-area: text2;
-}
-#buck3{
-    justify-self: flex-end;
-    grid-area: text3;
-}
+  }
+  #buck2 {
+    justify-self: center;
+  }
+  #buck3 {
+    justify-self: center;
+  }
 
-
-footer{
-    background-color: red;
-}
-#bottom-div{
-    grid-column: span 2;
+  footer {
+    text-align: center;
+  }
 }
