@@ -1,0 +1,46 @@
+import React from 'react';
+import Card from './Card';
+import img1 from './images/screenshot1.jpg';
+import img2 from './images/screenshot2.jpg';
+import img3 from './images/screenshot3.jpg';
+import img4 from './images/screenshot4.jpg';
+import img5 from './images/screenshot5.jpg';
+import img6 from './images/screenshot6.jpg';
+import img7 from './images/screenshot7.jpg';
+import img8 from './images/screenshot8.jpg';
+import img9 from './images/screenshot9.jpg';
+import img10 from './images/screenshot10.jpg';
+
+function Main(){
+    return (
+        <>
+            <div className='card-body'>
+
+
+                <Card display={img1} goto="https://superlative-souffle-881f9e.netlify.app/" title="QR Code Card" cnt="project1"/>
+
+                <Card display={img2} goto="https://sunny-crisp-7a9a2e.netlify.app/" title="Product Preview Card" cnt="project2"/>
+
+                <Card display={img3} goto="https://stellular-jalebi-3b1ecc.netlify.app/" title="NFT Preview Card" cnt="project3"/>
+
+                <Card display={img4} goto="https://chic-dieffenbachia-e4d655.netlify.app/" title="Order Summary Card" cnt="project4"/>
+
+                <Card display={img5} goto="https://courageous-lollipop-03872f.netlify.app/" title="3 Column Preview Card" cnt="project5"/>
+
+                <Card display={img6} goto="https://lucky-monstera-e9cc20.netlify.app/" title="Profile Card Preview" cnt="project6"/>
+
+                <Card display={img7} goto="https://creative-puppy-d58dc9.netlify.app/" title="Huddle Landing Page" cnt="project7"/>
+
+                <Card display={img8} goto="https://sunny-biscotti-f04d41.netlify.app/" title="Four Card Feature Preview" cnt="project8"/>
+
+                <Card display={img9} goto="https://frabjous-sprinkles-a723d0.netlify.app/" title="Single Price Grid Preview" cnt="project9"/>
+
+                <Card display={img10} goto="https://musical-taffy-a1e27f.netlify.app/" title="Social Proof Section Preview" cnt="project10"/>
+
+
+            </div>
+        </>
+    );
+};
+
+export default Main;

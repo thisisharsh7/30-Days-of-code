@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: white;
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.content{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 0.1fr 8fr 0.1fr;
+}
+.black{
+   background-color: black;
+}
+img{
+    max-width: 30vw;
+}
+.card-body{
+    margin:10px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.card{
+    box-shadow: 5px 5px 15px -4px #000000;
+    background-color: black;
+    margin:1rem;
+}
+.card:hover{
+    transform: scale(1.03);
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+img , .card{
+    border-radius: 0.2rem;
+}
+@media only screen and (max-width:450px){
+    img{
+        max-width: 90vw;
+    }
+    
+}
+@media only screen and (min-width:450px) and (max-width:920px){
+    .card-body{
+        gap:0.5rem;
+        
+    }
+    .card{
+        max-width: 30vw;
+        margin:0;
+    }
+    img{
+        width:100%;
+    }
+}
