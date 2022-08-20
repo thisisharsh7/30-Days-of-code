@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution Url](https://www.frontendmentor.io/solutions/testimonialsgridsectionpreview-ApWMMAHfFY)
-- Live Site URL: [Live site](https://profound-froyo-f6579a.netlify.app/)
+- Live Site URL: [Live site](https://jolly-kitten-112311.netlify.app/)
 
 ## My process
 
