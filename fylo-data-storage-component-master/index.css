@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  background-color: hsl(229, 57%, 11%);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  margin: 1em;
+  display: flex;
+  min-width: 80vw;
+  justify-content: center;
+  gap: 1.3rem;
+  align-items: flex-end;
+}
+.bold {
+  font-weight: bold;
+}
+.card {
+  background-color: hsl(228, 56%, 26%);
+}
+#logo {
+    grid-column: 1/-1;
+  }
+#depict {
+  padding: 0 4em 0 2em;
+  max-width: 70vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 1.3em;
+  grid-column-gap: 1em;
+  padding:2vw;
+  padding-right: 10vw;
+  border-radius: 0.6rem;
+  border-top-right-radius: 6rem;
+  
+}
+button {
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 5px;
+  border: none;
+  width: 3rem;
+  height: 3rem;
+}
+#text{
+    width:30vw;
+border-radius: 0.5rem;
+  padding:1.5vw;
+  display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 1em;
+}
+#para{
+    grid-column: 1/-1;
+}
+.progress{
+    width: 100%;
+    grid-column: 1/-1;
+    height: 2em;
+}
+#active{
+    justify-self: end;
+}
+@media only screen and (max-width: 412px){
+    main{
+        flex-direction: column;
+        background-color: red;
+    }
+}

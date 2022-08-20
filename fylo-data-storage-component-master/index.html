@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a front-end design for Fylo data storage"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Frontend Mentor | Fylo data storage component</title>
+  </head>
+  <body>
+    <main>
+      <div class="card" id="depict">
+        <img src="images/logo.svg" alt="logo" id="logo">
+        <button><img src="images/icon-document.svg" alt="document" id="doc" class="icon"></button>
+        <button><img src="images/icon-folder.svg" alt="folder" class="icon" ></button>
+        <button><img src="images/icon-upload.svg" alt="upload" class="icon"></button>
+      </div>
+      <div class="card" id="text">
+        <label for="file" id="para">You’ve used <span class="bold">815 GB</span> of your storage</label>
+        <progress id="file" class="progress" value="85" max="100">85%</progress>
+        <p id="rest" class="bold">0 GB</p>
+        <p id="active" class="bold">1000 GB</p>
+      </div>
+    </main>
+      
+
+    <footer>
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/thisisharsh7"
+        >Harsh Kumar</a
+      >.
+    </footer>
+  </body>
+</html>
