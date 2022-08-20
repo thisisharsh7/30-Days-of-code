@@ -17,6 +17,7 @@ body{
 }
 img{
     max-width: 30vw;
+    
 }
 .card-body{
     margin:10px;
@@ -30,7 +31,8 @@ img{
     margin:1rem;
 }
 .card:hover{
-    transform: scale(1.03);
+    transform:scale(1.01);
+    transition: transform 0.3s ease 0;
 }
 a{
     text-decoration: none;

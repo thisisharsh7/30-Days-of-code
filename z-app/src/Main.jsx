@@ -44,7 +44,7 @@ function Main(){
 
                 <Card display={img12} goto="https://jolly-kitten-112311.netlify.app/" title="Testimonial Grid Preview" cnt="project12"/>
 
-                <Card display={img13} goto="https://astonishing-capybara-4b9445.netlify.app/" title="Testimonial Grid Preview" cnt="project13"/>
+                <Card display={img13} goto="https://astonishing-capybara-4b9445.netlify.app/" title="Fylo Data Storage Preview" cnt="project13"/>
 
 
             </div>
