@@ -6,21 +6,22 @@ body {
   font-size: 13px;
   font-family: "Barlow Semi Condensed", sans-serif;
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
   gap: 3rem;
   background-color: hsla(0, 0%, 81%, 0.797);
   align-items: center;
 }
 main {
-  max-width: 70vw;
+  max-width: 65vw;
   display: grid;
+  min-height: 80vh;
 }
 #card-body {
-    margin-top: 1.5rem;
-  min-height:80vh;
   grid-template-columns: repeat(4,0.8fr);
   grid-template-rows: 1fr 0.9fr;
   grid-gap: 2em;
+  justify-content: center;
 }
 .card {
     display: grid;
@@ -66,19 +67,16 @@ main {
   grid-column: span 2;
   color: hsl(0, 0%, 99%);
   font-weight: bold;
-  font-size:1.3em;
-  margin-left:0.6em;
-  margin-right: 0.6em;
-  margin-bottom: 0.5em;
-
+  font-size:1.2em;
+  margin: 0 0.6em 1em 0.6em;
 }
 .qualification {
   grid-column: 2/-1;
   color: hsla(0, 0%, 81%, 0.611);
 }
 .long-txt {
-  align-self: center;
-  margin: 0 0.8em 0.6em 0.8em;
+  align-self: start;
+  margin: 0 0.8em 1.5em 0.8em;
   grid-column: span 2;
   color: hsl(0, 0%, 81%);
   line-height: 1.3em;
@@ -90,7 +88,10 @@ main {
 .dgr{
     color:rgba(84, 84, 84, 0.896);
 }
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 450px) {
+  main{
+    min-width:70vw;
+  }
   #card-body {
     display: flex;
     flex-direction: column;
