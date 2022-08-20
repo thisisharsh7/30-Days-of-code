@@ -30,8 +30,8 @@ This is a solution to the [Fylo data storage component challenge on Frontend Men
 
 ### Links
 
-- Solution URL: [Solution url]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution url](https://www.frontendmentor.io/solutions/fylodatastoragecomponentpreview-KrZLaMauHh)
+- Live Site URL: [Live site](https://astonishing-capybara-4b9445.netlify.app/)
 
 ## My process
 
@@ -45,7 +45,7 @@ This is a solution to the [Fylo data storage component challenge on Frontend Men
 
 ### What I learned
 
-While building this project I learned how to work with CSS alignment and position property and I also learned giving custom background to the page using css.
+While building this project I learned grid alignment and position property in CSS.
 
 
 ## Author
