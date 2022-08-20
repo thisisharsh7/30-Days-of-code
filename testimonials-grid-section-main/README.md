@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution Url](https://your-solution-url.com)
-- Live Site URL: [Live site](https://your-live-site-url.com)
+- Solution URL: [Solution Url](https://www.frontendmentor.io/solutions/testimonialsgridsectionpreview-ApWMMAHfFY)
+- Live Site URL: [Live site](https://profound-froyo-f6579a.netlify.app/)
 
 ## My process
 
@@ -43,7 +43,7 @@ Users should be able to:
 
 ### What I learned
 
-
+In this I learned how to work with grid CSS and I also learned to use different css units.
 
 ## Author
 
