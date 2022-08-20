@@ -18,23 +18,22 @@ main {
 #card-body {
     margin-top: 1.5rem;
   min-height:80vh;
-  grid-template-columns: repeat(4,1fr);
-  grid-template-rows:repeat(2, 1fr);
+  grid-template-columns: repeat(4,0.8fr);
+  grid-template-rows: 1fr 0.9fr;
   grid-gap: 2em;
 }
 .card {
     display: grid;
-  padding: 2em;
   border-radius: 0.3rem;
-  grid-template-columns: 4em 3fr;
-  grid-template-rows: 0.2fr 0.2fr 0.4fr 1.5fr;
-  grid-row-gap: 0.4em;
+  grid-template-columns: 6em 2fr;
+  grid-template-rows: 3em 3em 0.2fr 1fr;
 }
 .img-profile{
   grid-row: span 2;
   border-radius: 50%;
   width: 3em;
   align-self: center;
+  justify-self: center;
 }
 #card1 {
   background: no-repeat hsl(263, 55%, 52%) url("images/bg-pattern-quotation.svg") right 70px top 0;
@@ -67,7 +66,11 @@ main {
   grid-column: span 2;
   color: hsl(0, 0%, 99%);
   font-weight: bold;
-  font-size:1.5em;
+  font-size:1.3em;
+  margin-left:0.6em;
+  margin-right: 0.6em;
+  margin-bottom: 0.5em;
+
 }
 .qualification {
   grid-column: 2/-1;
@@ -75,8 +78,11 @@ main {
 }
 .long-txt {
   align-self: center;
+  margin: 0 0.8em 0.6em 0.8em;
   grid-column: span 2;
   color: hsl(0, 0%, 81%);
+  line-height: 1.3em;
+  word-spacing: 0.3em;
 }
 .gr{
     color:rgba(128, 128, 128, 0.711);
@@ -84,12 +90,17 @@ main {
 .dgr{
     color:rgba(84, 84, 84, 0.896);
 }
-footer{
-    background-color: red;
-}
 @media only screen and (max-width: 370px) {
   #card-body {
     display: flex;
     flex-direction: column;
+  }
+  .long-txt{
+    font-size:0.8em;
+  }
+}
+@media only screen and (max-width:3000px) and (min-width:1540px) {
+  .card{
+    font-size: 21px;
   }
 }
