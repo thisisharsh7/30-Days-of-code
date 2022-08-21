@@ -1,60 +1,42 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    color: white;
-    text-align: center;
-    font-family: 'IBM Plex Sans', sans-serif;
+body {
+  color: white;
+  text-align: center;
+  font-family: "IBM Plex Sans", sans-serif;
+  max-width: 100vw;
 }
-.content{
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: 0.1fr 8fr 0.1fr;
+.black {
+  background-color: blueviolet;
 }
-.black{
-   background-color: blueviolet;
+img {
+  width: 100%;
 }
-img{
-    max-width: 30vw;
-    
+.card-body {
+  margin: 2rem;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
 }
-.card-body{
-    margin:10px;
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
+.card {
+  display: block;
+  box-shadow: 5px 5px 15px -4px #000000;
+  background-color: rgb(49, 67, 229);
+  max-width: 80vw;
 }
-.card{
-    box-shadow: 5px 5px 15px -4px #000000;
-    background-color: rgb(49, 67, 229);
-    margin:1rem;
+.card:hover {
+  transform: scale(1.01);
+  transition: transform 0.3s ease 0;
 }
-.card:hover{
-    transform:scale(1.01);
-    transition: transform 0.3s ease 0;
+a {
+  text-decoration: none;
+  color: white;
 }
-a{
-    text-decoration: none;
-    color:white;
-}
-img , .card{
-    border-radius: 0.2rem;
-}
-@media only screen and (max-width:450px){
-    img{
-        max-width: 100%;
-    }
-}
-@media only screen and (min-width:450px) and (max-width:920px){
-    .card-body{
-        gap:0.5rem;
-    }
-    .card{
-        max-width: 30vw;
-        margin:0;
-    }
-    img{
-        width:100%;
-    }
+img,
+.card {
+  border-radius: 0.2rem;
 }
