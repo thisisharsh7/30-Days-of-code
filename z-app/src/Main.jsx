@@ -13,6 +13,7 @@ import img10 from './images/screenshot10.jpg';
 import img11 from './images/screenshot11.jpg';
 import img12 from './images/screenshot12.jpg';
 import img13 from './images/screenshot13.jpg';
+import img14 from './images/screenshot14.jpg';
 
 function Main(){
     return (
@@ -45,6 +46,8 @@ function Main(){
                 <Card display={img12} goto="https://jolly-kitten-112311.netlify.app/" title="Testimonial Grid Preview" cnt="project12"/>
 
                 <Card display={img13} goto="https://astonishing-capybara-4b9445.netlify.app/" title="Fylo Data Storage Preview" cnt="project13"/>
+
+                <Card display={img14} goto="https://musical-eclair-7eca30.netlify.app/" title="Huddle Full Landing Page" cnt="project14"/>
 
 
             </div>
