@@ -44,7 +44,7 @@ Users should be able to:
 
 ### What I learned
 
-While building this project I learned about mobile view in css and how to deal with media queries.
+While building this project I learned about mobile view in css, how to deal with media queries and adding background-image to different section.
 
 
 ## Author
