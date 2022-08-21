@@ -8,6 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: whitesmoke;
 }
 header{
   max-width: 100vw;
@@ -18,6 +19,15 @@ header{
 }
 #top_btn{
   padding:0.5em 1.3em 0.5em 1.3em;
+  border:1px solid rgb(255, 34, 71);
+  color: rgb(255, 34, 71);
+  background-color: white;
+}
+#top_btn:hover{
+  cursor: pointer;
+  background-color: white;
+  color: rgb(216, 134, 148);
+  border-color: rgb(216, 134, 148);
 }
 #logo{
   padding-top:1rem;
@@ -26,13 +36,11 @@ header{
 main{
   
   max-width: 100vw;
-  padding:4vw 4vw 4vw 4vw;
 }
 
 #top , #bottom{
   font-family:"Poppins";
-  padding:2vw;
-  margin: 4vw;
+  padding:2vw 2vw 0vw 2vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,12 +48,16 @@ main{
   text-align: center;
   
 }
+.btn:hover , #subscribe:hover{
+  background-color: rgb(216, 134, 148);
+  cursor: pointer;
+}
 
 #para{
   padding: 0 9vw 0 9vw;
 }
 .btn{
-  background-color: pink;
+  background-color: rgb(220, 64, 90);;
   color:white;
   border:none;
   border-radius: 2rem;
@@ -62,22 +74,13 @@ main{
 }
 
 .def{
-  margin-bottom:2rem;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2,minmax(200px ,1fr));
   grid-template-rows:repeat(2, 0.5fr);
   margin-bottom: 6em;
+  padding: 2vw;
 }
-/* #first{
-  background-color: pink;
-}
-#second{
-  background-color: aquamarine;
-}
-#third{
-  background-color:chartreuse;
-} */
 .section_img{
   grid-column: 2/-1;
   grid-row: 1/-1 ;
@@ -122,16 +125,63 @@ main{
 footer{
   color:white;
   background-color: hsl(192, 100%, 9%);
+  background-image: url("images/bg-section-bottom-desktop-2.svg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position: top;
+  max-width: 100vw;
 }
-
 .footer-text{
-  display: grid;
-  grid-template-areas:
-  "fr="
-  ;
+  padding: 18vw 7vw 0 7vw;
+  display: flex;
+  gap:2rem;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+.foot{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 17rem;
+  gap:1em;
+  margin-bottom: 3rem;
+}
+input, #subscribe{
+  height: 2em;
+  border-radius: 4px;
+}
+#subscribe{
+  height: 2.3em;
+  max-width: 8em;
+  background-color: rgb(220, 64, 90);
+  border: none;
+  color:white;
+  font-weight: bold;
+  padding: 0.5em 1em 0.5em 1em;
+}
+#newsletter{
+  order: 2;
 }
 
-@media only screen and (max-width:450px){
+#logo-footer{
+  width: 8rem;
+}
+.line-text{
+  display: flex;
+}
+.desk{
+  padding-left: 1em;
+}
+
+.attribution{
+  text-align: center;
+}
+.change{
+  display: flex;
+  gap:1rem;
+  max-width: 17rem;
+}
+@media only screen and (max-width:590px){
   .footer-text{
     flex-direction: column;
   }
@@ -159,7 +209,19 @@ footer{
     max-width: 80vw;
     
   }
-}
-.footer-text{
-  display: flex;
+  #designation{
+    order:2;
+  }
+  .footer-text{
+    align-items: center;
+  }
+  .change{
+    width: 100%;
+    flex-direction: column;
+    
+  }
+  #subscribe{
+    align-self: flex-end;
+    margin-left:2rem;
+  }
 }
