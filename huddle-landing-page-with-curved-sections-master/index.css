@@ -4,43 +4,43 @@
 }
 body {
   max-width: 100vw;
-  font-family: "Open Sans", sans-serif;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", "Poppins",sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 header{
-  padding:2rem 3vw 0 3vw;
+  max-width: 100vw;
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: 3.8em;
-  
+  margin: 1vw 2vw 0vw 2vw;
+}
+#top_btn{
+  padding:0.5em 1.3em 0.5em 1.3em;
 }
 #logo{
-  width: 8rem;
-}
-#top_btn{ 
-  font-size: 0.9em;
-  border-radius:2em;
-  max-height: 2em;
-  padding:0 1em 0 1em;
-  margin-bottom: 1em;
+  padding-top:1rem;
+  width: 10rem;
 }
 main{
   
   max-width: 100vw;
   padding:4vw 4vw 4vw 4vw;
 }
+
 #top , #bottom{
+  font-family:"Poppins";
   padding:2vw;
   margin: 4vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap:1.5rem;
+  text-align: center;
   
 }
+
 #para{
   padding: 0 9vw 0 9vw;
 }
@@ -62,20 +62,38 @@ main{
 }
 
 .def{
+  margin-bottom:2rem;
   width: 100%;
-  background-color: red;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows:1fr 1fr;
-  justify-items: center;
-  align-items: center;
+  grid-template-columns: repeat(2,minmax(200px ,1fr));
+  grid-template-rows:repeat(2, 0.5fr);
+  margin-bottom: 6em;
 }
+/* #first{
+  background-color: pink;
+}
+#second{
+  background-color: aquamarine;
+}
+#third{
+  background-color:chartreuse;
+} */
 .section_img{
-  width: 50%;
-  grid-row:1/-1;
+  grid-column: 2/-1;
+  grid-row: 1/-1 ;
+  align-self: center;
+  max-width: 30vw;
+  justify-self: center;
 }
-#section_img1 , #section_img3{
-  grid-column: 2/-1; 
+.heading{
+  font-family:"Poppins";
+  align-self: end;
+  font-weight: bold;
+}
+.describe{
+  align-self: start;
+  color: rgb(6, 4, 14);
+  
 }
 
 
@@ -122,11 +140,24 @@ footer{
   }
   #stats{
     flex-direction: column;
-    align-items: start;
     gap:2rem;
+    align-items: center;
   }
   .def{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap:2em;
+    font-size:1.4em;
+    text-align: center;
+    justify-content: flex-start;
+  }
+  .heading{
+    align-self: center;
+  }
+  .section_img{
+    justify-self: end;
+    max-width: 80vw;
+    
   }
 }
 .footer-text{
