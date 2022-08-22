@@ -71,6 +71,7 @@ main{
 
 .mid{
   margin-top: 4rem;
+  padding: 3vw 3vw 0 3vw;
 }
 
 .def{
@@ -78,8 +79,7 @@ main{
   display: grid;
   grid-template-columns: repeat(2,minmax(200px ,1fr));
   grid-template-rows:repeat(2, 0.5fr);
-  margin-bottom: 6em;
-  padding: 2vw;
+
 }
 .section_img{
   grid-column: 2/-1;
@@ -123,20 +123,20 @@ main{
   font-weight: 100;
 }
 footer{
+  width: 100vw;
   color:white;
   background-color: hsl(192, 100%, 9%);
   background-image: url("images/bg-section-bottom-desktop-2.svg");
   background-repeat: no-repeat;
-  background-size: 100vw;
+  background-size: 100%;
   background-position: top;
-  max-width: 100vw;
 }
 .footer-text{
-  padding: 18vw 7vw 0 7vw;
   display: flex;
   gap:2rem;
   justify-content: space-between;
   font-size: 0.8rem;
+  padding: 10rem 3rem 0rem 3rem;
 }
 .foot{
   display: flex;
@@ -181,6 +181,9 @@ input, #subscribe{
   gap:1rem;
   max-width: 17rem;
 }
+
+
+
 @media only screen and (max-width:590px){
   .footer-text{
     flex-direction: column;
@@ -197,7 +200,7 @@ input, #subscribe{
     display: flex;
     flex-direction: column;
     gap:2em;
-    font-size:1.4em;
+    font-size:1em;
     text-align: center;
     justify-content: flex-start;
   }

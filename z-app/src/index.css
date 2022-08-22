@@ -23,7 +23,6 @@ img {
   justify-items: center;
 }
 .card {
-  display: block;
   box-shadow: 5px 5px 15px -4px #000000;
   background-color: rgb(49, 67, 229);
   max-width: 80vw;
