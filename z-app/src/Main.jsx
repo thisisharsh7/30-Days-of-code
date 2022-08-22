@@ -21,7 +21,7 @@ function Main(){
             <div className='card-body'>
 
 
-                <Card display={img1} goto="https://superlative-souffle-881f9e.netlify.app/" title="QR Code Card" cnt="project1"/>
+                <Card display={img1} goto="https://elegant-babka-9c3709.netlify.app/" title="QR Code Card" cnt="project1"/>
 
                 <Card display={img2} goto="https://sunny-crisp-7a9a2e.netlify.app/" title="Product Preview Card" cnt="project2"/>
 
@@ -35,7 +35,7 @@ function Main(){
 
                 <Card display={img7} goto="https://creative-puppy-d58dc9.netlify.app/" title="Huddle Landing Page" cnt="project7"/>
 
-                <Card display={img8} goto="https://sunny-biscotti-f04d41.netlify.app/" title="Four Card Feature Preview" cnt="project8"/>
+                <Card display={img8} goto="https://joyful-platypus-a2949d.netlify.app/" title="Four Card Feature Preview" cnt="project8"/>
 
                 <Card display={img9} goto="https://frabjous-sprinkles-a723d0.netlify.app/" title="Single Price Grid Preview" cnt="project9"/>
 
