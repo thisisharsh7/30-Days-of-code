@@ -123,13 +123,9 @@ main{
   font-weight: 100;
 }
 footer{
-  width: 100vw;
   color:white;
   background-color: hsl(192, 100%, 9%);
-  background-image: url("images/bg-section-bottom-desktop-2.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: top;
+  
 }
 .footer-text{
   display: flex;
@@ -181,7 +177,6 @@ input, #subscribe{
   gap:1rem;
   max-width: 17rem;
 }
-
 
 
 @media only screen and (max-width:590px){
