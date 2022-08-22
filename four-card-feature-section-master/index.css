@@ -20,6 +20,7 @@ header {
   align-items: center;
 }
 main {
+  margin-top:4rem;
   width: 100vw;
 }
 #card-body {
@@ -35,9 +36,9 @@ main {
   gap: 2rem;
 }
 .card {
-  width: 14rem;
+  width: 23vw;
   padding: 1.5rem;
-  height: 9rem;
+  height:28vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -92,7 +93,7 @@ img {
 @media screen and (max-width: 550px) {
   body {
     justify-content: flex-start;
-    gap: 3rem;
+    gap: 2rem;
   }
   header {
     margin-top: 3rem;
