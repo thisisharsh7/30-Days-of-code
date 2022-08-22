@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution url](https://www.frontendmentor.io/solutions/huddlelandingpagewithcurvedsection-sXgcpGpgyQ)
-- Live Site URL: [Live site](https://elegant-licorice-eb8ada.netlify.app/)
+- Live Site URL: [Live site](https://brilliant-platypus-ccc8fc.netlify.app/)
 
 ## My process
 

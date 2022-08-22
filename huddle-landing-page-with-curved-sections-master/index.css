@@ -208,7 +208,9 @@ input, #subscribe{
   background-repeat: no-repeat; 
   background-size: 100%;
 }
-
+#second{
+  background-color:rgb(243, 243, 243);
+}
 @media only screen and (max-width:590px){
   .footer-text{
     flex-direction: column;
