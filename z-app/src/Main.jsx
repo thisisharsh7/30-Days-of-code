@@ -51,8 +51,6 @@ function Main(){
                 <Card display={img14} goto="https://brilliant-platypus-ccc8fc.netlify.app/" title="Huddle Full Landing Page" cnt="project14"/>
 
                 <Card display={img15} goto="https://bejewelled-starlight-c05f6a.netlify.app/" title="Clipboard Landing Page" cnt="project15"/>
-
-
             </div>
         </>
     );
