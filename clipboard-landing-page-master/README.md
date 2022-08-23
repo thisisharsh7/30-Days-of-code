@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution url](https://www.frontendmentor.io/solutions/clipboardlandingpagecss-gPp8AAVCbe)
-- Live Site URL: [Live Site](https://bejewelled-starlight-c05f6a.netlify.app/)
+- Live Site URL: [Live Site](https://nimble-panda-389dda.netlify.app/)
 
 ## My process
 
