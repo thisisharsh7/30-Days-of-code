@@ -15,6 +15,7 @@ import img12 from './images/screenshot12.jpg';
 import img13 from './images/screenshot13.jpg';
 import img14 from './images/screenshot14.jpg';
 import img15 from './images/screenshot15.jpg';
+import img16 from './images/screenshot16.jpg';
 
 function Main(){
     return (
@@ -51,6 +52,8 @@ function Main(){
                 <Card display={img14} goto="https://brilliant-platypus-ccc8fc.netlify.app/" title="Huddle Full Landing Page" cnt="project14"/>
 
                 <Card display={img15} goto="https://nimble-panda-389dda.netlify.app/" title="Clipboard Landing Page" cnt="project15"/>
+
+                <Card display={img16} goto="https://stately-gelato-bc1b4a.netlify.app/" title="Landing page fylo" cnt="project16"/>
             </div>
         </>
     );
