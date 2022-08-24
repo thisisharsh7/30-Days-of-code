@@ -53,7 +53,7 @@ function Main(){
 
                 <Card display={img15} goto="https://nimble-panda-389dda.netlify.app/" title="Clipboard Landing Page" cnt="project15"/>
 
-                <Card display={img16} goto="https://stately-gelato-bc1b4a.netlify.app/" title="Landing page fylo" cnt="project16"/>
+                <Card display={img16} goto="https://lucent-elf-3bf33f.netlify.app/" title="Landing page fylo" cnt="project16"/>
             </div>
         </>
     );
