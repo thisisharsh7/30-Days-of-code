@@ -5,12 +5,14 @@
 body{
     font-family: 'Open Sans', sans-serif;
     font-family: 'Raleway', sans-serif;
-    background-color: rgb(244, 252, 255);
+    background-color: white;
 }
 header{
     padding:3vw;
     display: grid;
     grid-template-columns: minmax(80px,8fr) repeat(3,minmax(70px,1fr));
+    color:gray;
+    font-weight: bold;
 }
 #logo{
     max-width: 60%;
@@ -23,7 +25,7 @@ header{
     padding:2em;
     padding-bottom: 4em;
     padding-top:4em;
-    font-size:1rem;
+    font-size:1.3rem;
     display: grid;
     grid-template-columns:repeat(2, minmax(200px,1fr));
     align-items: center;
@@ -50,7 +52,7 @@ header{
     grid-column: 1/7;
 }
 .sbtn{
-    width: 60%;
+    width: 100%;
     grid-row: 3/4;
     grid-column: 4/7;
 }
@@ -61,12 +63,14 @@ header{
     padding:0.6rem;
 }
 .s2grid{
+    padding-top: 3rem;
+    padding-bottom:3rem;
     display: grid;
-    grid-template-columns:repeat(2,minmax(80px,1fr)) 1fr 1fr;
-    gap:0.5rem;
+    grid-template-columns:repeat(2,minmax(90px,0.5fr)) minmax(80px,1fr) minmax(10px,1fr) 0.5fr;
+    gap:0.7rem;
 }
 .s2para{
-    grid-column: 1/5;
+    grid-column: 1/7;
 }
 .s2head{
     grid-column: 1/-1;
@@ -76,42 +80,55 @@ header{
     grid-column: 1/5;
 }
 .pagelink{
-    grid-column: 1/-1;
+    font-size: 1rem;
+    grid-column: 1/3;
+    border-bottom: 2px solid rgb(28, 116, 121);
+    text-decoration: none;
+    color:rgb(28, 116, 121);
+    display: grid;
+    grid-template-columns: minmax(40px,1fr) 10px 1rem;
 }
-
+.arrow{
+    grid-column: 3/-1;
+}
+.pagelink:hover{
+    color:rgb(36, 181, 188);
+    cursor:pointer;
+}
 .card{
     grid-row: 6;
-    grid-column: 1/3;
+    grid-column: 1/4;
     min-width:100%;    
     background-color:white;
     display: grid;
-    grid-template-columns: 0.3fr 0.3fr 2fr 2fr;
+    grid-template-columns: 1rem 1.5rem 1.5rem 2fr 2fr 2fr 1rem;
     gap:5px;
-    grid-column-gap:1rem;
     justify-self: end;
     box-shadow: -2px -2px 12px -1px rgba(0,0,0,0.22); 
+    padding-top:1rem;
+    padding-bottom: 1rem;
+}
+.quote{
+    grid-column: 2/3;
 }
 .cardtxt{
-    align-self: start;
-}
-.cardtxt{
-    grid-column: 1/-1;
+    grid-column: 2/7;
     grid-row:2/3;
 }
 .avatarcard{
     width: 3rem;
     border-radius: 50%;
-    grid-column: 1/3;
-    grid-row:3/5;
+    grid-column: 2/4;
+    grid-row:3/7;
 }
 .name{
     grid-column: span 2;
     grid-row:3/4;
 }
 .work{
-    grid-column-start: 2;
+    grid-column-start: 4;
     grid-row-start: 4;
-    grid-column: span 2;
+    grid-column: span 3;
 }
 
 .bgrid{
@@ -155,22 +172,43 @@ ul{
     flex-direction: column;
     gap:0.7rem;
 }
+.now{
+    display: grid;
+    grid-template-columns: 1rem 1fr;
+    gap:1rem;
+}
 .attribution{
     text-align: center;
 }
+.sbtn{
+    background-color:blue;
+    color:white;
+    border: none;
+    font-weight: bold;
+}
+.s2btn{
+    width: 60%;
+}
+.sbtn:hover{
+    cursor: pointer;
+    background-color: rgba(62, 70, 224, 0.351);
+}
 @media screen and (max-width:450px){
+    header{
+        font-size: 0.8rem;
+    }
     .igrid{
         display: block;
     }
     .sbtn,.sinput{
-        grid-column: 1/-1;
+        grid-column: 1/7;
     }
     .sbtn{
-        width: 100%;
+        grid-row-start: 4;
     }
     .first{
         text-align: center;
-        background:no-repeat rgb(235, 251, 255) url("images/bg-curve-mobile.svg") bottom;
+        background:no-repeat rgb(255, 255, 255) url("images/bg-curve-mobile.svg") bottom;
     }
     .card{
         width: 100%;
@@ -178,6 +216,7 @@ ul{
     }
    .s2btn{
     grid-column:2/-2;
+    width: 100%;
    }
    .third{
     text-align: center;
@@ -186,9 +225,30 @@ ul{
     display: flex;
     flex-direction: column;
     gap:2rem;
-    align-items: center;
+    align-items: flex-start;
+   }
+   .second{
+    background-color: rgb(228, 255, 255);
    }
    .card{
+    grid-column: 1/-1;
+   }
+   .sgrid{
+    font-size: 1rem;
+   }
+   .s2grid{
+    font-size: 1rem;
+   }
+   .s2head{
+    grid-column: 1/-1;
+    font-size: 1.2rem;
+    text-align: center;
+   }
+   .igrid{
+    padding-left:1rem;
+    padding-right:1rem;
+   }
+   .s22para{
     grid-column: 1/-1;
    }
    
