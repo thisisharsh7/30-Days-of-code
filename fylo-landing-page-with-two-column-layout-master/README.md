@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution url]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution url](https://www.frontendmentor.io/solutions/fylolandingpagelayout-V1Ke0LnOiZ)
+- Live Site URL: [Live site](https://lucent-elf-3bf33f.netlify.app/)
 
 ## My process
 
