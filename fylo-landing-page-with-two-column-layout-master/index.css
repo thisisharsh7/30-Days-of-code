@@ -32,7 +32,7 @@ header{
     grid-column-gap: 5vw;
 }
 .first{
-    background:no-repeat rgb(244, 252, 255) url("images/bg-curve-desktop.svg") bottom;
+    background:no-repeat rgb(255, 255, 255) url("images/bg-curve-desktop.svg") bottom;
 }
 .sillu{
     width: 100%;
@@ -130,7 +130,9 @@ header{
     grid-row-start: 4;
     grid-column: span 3;
 }
-
+#second{
+    background-color: rgba(239, 236, 236, 0.352);
+}
 .bgrid{
     display: flex;
     flex-direction: column;
@@ -226,9 +228,6 @@ ul{
     flex-direction: column;
     gap:2rem;
     align-items: flex-start;
-   }
-   .second{
-    background-color: rgb(228, 255, 255);
    }
    .card{
     grid-column: 1/-1;
