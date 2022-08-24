@@ -4,14 +4,26 @@
   }
   body {
     max-width: 100vw;
-    font-family: "Open Sans", "Poppins",sans-serif;
+    font-family: "Open Sans", sans-serif;
     background:no-repeat rgba(231, 255, 248, 0.766) url("images/bg-hero-desktop.svg") top;
     background-size:100%;
     font-size: 18px;
-    grid-auto-flow: dense;
+  }
+  .pink{
+    background-color: hsl(322, 100%, 66%);
+    color:white;
+    font-weight: bold;
+    padding:0.8rem;
+    border:none;
+    margin:2rem 0rem 2rem 0rem;
+    border-radius: 2rem;
+  }
+  .pink:hover{
+    cursor: pointer;
+    background-color: pink;
   }
   header{
-    font-family:"Poppins",sans-serif;
+    
     padding:4rem 5vw 4rem 5vw;
     display: grid;
     grid-template-columns: minmax(130px,0.7fr) repeat(3,1fr) minmax(100px,0.5fr) ;
@@ -44,7 +56,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 0px 1fr 1fr;
     align-items: center;
-    grid-column-gap:2rem;
+    grid-column-gap:1rem;
   }
   .mockup{
     width: 100%;
@@ -58,7 +70,9 @@
     grid-row:1/3;
     grid-column: 1/4;
   }
-  
+  h1 , h2{
+    font-family:"Poppins",sans-serif;
+  }
   #tgrid{
     grid-column: 4/-1;
   }
@@ -91,24 +105,23 @@
     background-color: white;
     box-shadow: 0px 0px 11px 1px #8b8b8b5e;
   }
-  .kgrid{
+    .kgrid{
     grid-row:1/3;
     align-self: center;
   }
   .floatt{
     display: grid;
-    grid-template-columns: minmax(0px,0.5fr) minmax(250px,1fr) minmax(0px,0.5fr);
+    grid-template-columns: minmax(0px,1fr) minmax(min-content,max-content) minmax(0px,1fr);
   }
   .gridT{
-    background-color:red;
     display: flex;
     text-align: center;
     flex-direction: column;
     align-items: center;
     grid-column: 2/3;
-    gap:2rem;
   }
   .floatT{
+    padding:2rem 1.5rem 0rem 1.5rem;
     grid-column: 3/6;
   }
   .btnT{
@@ -132,8 +145,8 @@ ul{
 }
 .gridf{
     display: grid;
-    grid-template-columns:minmax(200px,1fr) 1fr 1fr 1fr;
-    gap:1rem;
+    grid-template-columns:minmax(180px,1.5fr) 1fr 1fr 1fr;
+    grid-column-gap:1rem;
 }
 .gridfc{
     display: flex;
@@ -142,6 +155,9 @@ ul{
 }
 .gridfct{
     gap:1.2rem;
+}
+.lorem{
+  max-width: 20rem;
 }
 .now{
     display: grid;
@@ -161,7 +177,15 @@ ul{
 #logo-footer{
     width: 8rem;
   }
+  .itemsfooter:hover, .oicon:hover{
+    cursor: pointer;
+    color: rgb(112, 211, 211);
+  }
   @media screen and (max-width:510px){
+    body{
+      background:no-repeat rgba(231, 255, 248, 0.766) url("images/bg-hero-mobile.svg") top;
+      background-size: 100%;
+    }
     .igrid{
         display: block;
     }
@@ -186,5 +210,8 @@ ul{
     }
     .icons{
         align-self: center;
+    }
+    #mid_btn{
+      max-width: 70%;
     }
   }
