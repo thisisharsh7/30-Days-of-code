@@ -42,11 +42,14 @@
     width: 100%;
   }
   main{
+    position: relative;
     padding:5vw;
+    padding-bottom: 10rem;
     background-color: white;
     display: flex;
     flex-direction: column;
-    gap:5rem;
+    gap:50px;
+    align-items: center;
   }
   .first{
     background-color:rgba(231, 255, 248, 0.766) ;
@@ -109,29 +112,43 @@
     grid-row:1/3;
     align-self: center;
   }
-  .floatt{
-    display: grid;
-    grid-template-columns: minmax(0px,1fr) minmax(min-content,max-content) minmax(0px,1fr);
-  }
-  .gridT{
+  #float {
+    position: absolute;
+    bottom: -5rem;
     display: flex;
-    text-align: center;
     flex-direction: column;
     align-items: center;
-    grid-column: 2/3;
+    margin-left:4vw;
+    margin-right: 4vw;
+    gap:1rem;
+    padding:3vw 2vw 3vw 2vw;
   }
-  .floatT{
-    padding:2rem 1.5rem 0rem 1.5rem;
-    grid-column: 3/6;
+  #float h2 {
+    text-align: center;
   }
-  .btnT{
-    grid-column: 4/5;
+  .top-btn:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.194);
+  }
+  #float button {
+    color: white;
+    background-color: hsl(322, 100%, 66%);
+    width: 60%;
+    font-weight: bold;
+    height: 3em;
+    border-radius: 2em;
+    border: none;
+  }
+  #float button:hover {
+    cursor:pointer;
+    background-color: hsl(322, 89%, 75%);
   }
 
   footer{
+    font-size: 0.9rem;
     color:white;
     padding:2vw;
-    padding-top:8em;
+    padding-top:9em;
     background-color: hsl(192, 100%, 9%);
     display: flex;
     flex-direction: column;
@@ -165,6 +182,7 @@ ul{
     gap:1rem;
 }
 .attribution{
+  font-size: 0.7rem;
     text-align: center;
 }
 .icons{
@@ -172,13 +190,19 @@ ul{
     gap:1rem;
 }
 .companytext{
+    font-size:0.7rem;
     align-self:flex-end;
 }
 #logo-footer{
-    width: 8rem;
+    max-width: 8rem;
   }
-  .itemsfooter:hover, .oicon:hover{
+  .itemsfooter:hover , .oicon:hover{
     cursor: pointer;
+  }
+  .itemsfooter:hover{
+    text-decoration: underline;
+  }
+  .oicon:hover{
     color: rgb(112, 211, 211);
   }
   @media screen and (max-width:510px){
@@ -194,9 +218,6 @@ ul{
     }
     .herotext{
         grid-column: 1/-1;
-    }
-    .lorem{
-        max-width: 20rem;
     }
     .gridf{
         display: flex;
