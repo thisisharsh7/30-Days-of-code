@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution url](https://www.frontendmentor.io/solutions/chatappillustration-6qfYvpLvBO)
-- Live Site URL: [Live site](https://tubular-gumption-2686cd.netlify.app/)
+- Live Site URL: [Live site](https://lucky-salamander-e86340.netlify.app/)
 
 ## My process
 
