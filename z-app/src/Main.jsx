@@ -60,7 +60,7 @@ function Main(){
 
                 <Card display={img17} goto="https://super-yeot-edaf05.netlify.app/" title="Huddle Landing page" cnt="project17"/>
 
-                <Card display={img18} goto="https://tubular-gumption-2686cd.netlify.app/" title="Chat App Illustration" cnt="project18"/>
+                <Card display={img18} goto="https://lucky-salamander-e86340.netlify.app/" title="Chat App Illustration" cnt="project18"/>
             </div>
         </>
     );
