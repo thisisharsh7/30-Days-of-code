@@ -8,8 +8,6 @@
 - Moderate Violet (chat on the left): hsl(276, 55%, 52%)
 - Desaturated Dark Violet (chat on the right): hsl(271, 15%, 43%)
 - Grayish Blue (placeholder text): hsl(206, 6%, 79%)
-- Very Dark Desaturated Violet (main heading): hsl(271, 36%, 24%)
-- Dark Grayish Violet (paragraph): hsl(270, 7%, 64%)
 
 #### Gradients
 
