@@ -24,13 +24,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot17.jpg)
 
 
 ### Links
 
-- Solution URL: [Solution url]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution url](https://www.frontendmentor.io/solutions/huddlelandingpagewithalternatingblocks-AZbMQKxYn9)
+- Live Site URL: [Live site](https://super-yeot-edaf05.netlify.app/)
 
 ## My process
 
