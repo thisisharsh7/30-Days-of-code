@@ -89,11 +89,16 @@ main {
   border-radius: 80%;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  background: linear-gradient(
+    to bottom,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
 }
 .gray-bg {
   grid-column: 6/-1;
   grid-row: 2/7;
-  background-color: hsl(274, 21%, 94%);
+  background-color: hsla(0, 0%, 89%, 0.557);
   border-top-left-radius: 15rem;
 }
 
@@ -232,13 +237,13 @@ input[type="radio"] {
 form {
   display: flex;
   border: 1px solid rgb(232, 232, 232);
-  padding: 5px;
+  padding: 2px;
+  padding-left:12px;
   border-radius: 1rem;
 }
 
 input {
   flex-grow: 2;
-  margin-left: 10px;
   border: none;
 }
 
