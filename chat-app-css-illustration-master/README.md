@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution url]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution url](https://www.frontendmentor.io/solutions/chatappillustration-6qfYvpLvBO)
+- Live Site URL: [Live site](https://tubular-gumption-2686cd.netlify.app/)
 
 ## My process
 
@@ -40,12 +40,13 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Grid
 - Mobile-first workflow
 
 
 ### What I learned
 
-On process...
+I learned input selectors and differenct grid alignments on completing this project.
 
 
 ## Author
