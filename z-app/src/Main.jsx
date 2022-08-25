@@ -57,7 +57,7 @@ function Main(){
 
                 <Card display={img16} goto="https://lucent-elf-3bf33f.netlify.app/" title="Landing page fylo" cnt="project16"/>
 
-                <Card display={img17} goto="https://dazzling-meerkat-fb4cd8.netlify.app/" title="Huddle Landing page" cnt="project17"/>
+                <Card display={img17} goto="https://super-yeot-edaf05.netlify.app/" title="Huddle Landing page" cnt="project17"/>
             </div>
         </>
     );
