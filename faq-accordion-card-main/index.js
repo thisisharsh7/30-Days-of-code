@@ -1,8 +1,11 @@
 console.log("harsh is here");
-let btn=document.querySelectorAll(".arrow");
+const btn=document.querySelectorAll(".arrow");
+const div=document.querySelectorAll(".first");
 console.log(btn);
 btn.forEach(sbtn =>{
     sbtn.addEventListener('click',()=>{
-        console.log("jadu");
+        const x = sbtn.id;
+        const el=document.getElementById(`${div[x-1].lastElementChild.id}`)
+        el.style.display="block";
     })
 })
