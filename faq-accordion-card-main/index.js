@@ -1,24 +1,22 @@
-console.log("harsh is here");
-const btn=document.querySelectorAll(".arrow");
-const div=document.querySelectorAll(".first");
-console.log(btn);
-btn.forEach(sbtn =>{
-    sbtn.addEventListener('click',() =>{
-        div.forEach(myFunction);
-        const x = sbtn.id;
-        // const x = sbtn.id;
-        // const el=document.getElementById(`${div[x-1].lastElementChild.id}`)
-        // el.style.display="block";
-        // element.style.display="block";
-        function myFunction(value){
-            const x = value.children[1].id;
-            const i = sbtn.parentElement.nextElementSibling.id;
-            const el=document.getElementById(`${x}`);
-            if(x==i){
-                el.style.display="block";
-            }else{
-                el.style.display="none";
-            }
-        }
-    })
-})
+const btn = document.querySelectorAll(".arrow");
+const div = document.querySelectorAll(".first");
+const apara = document.querySelectorAll(".para");
+div.forEach(myFunction);
+function myFunction(value) {
+  const k = value.children[0];
+  k.addEventListener("click", () => {
+    const el = k.parentElement.children[1];
+    apara.forEach((value) => {
+      const m = value.nextElementSibling;
+      if (m.id == el.id && el.style.display != "block") {
+        el.style.display = "block";
+        value.style.fontWeight = "bold";
+        value.children[0].style.transform = "rotate(180deg)";
+      } else {
+        value.children[0].style.transform = "none";
+        value.style.fontWeight = "normal";
+        m.style.display = "none";
+      }
+    });
+  });
+}

@@ -81,12 +81,17 @@ p:first-child{
   padding-bottom: 1rem;
   align-items: center;
   font-size: 1em;
+  
 }
 p:last-child{
   display: none;
   font-size: 0.8rem;
   padding-bottom: 0.5rem;
   
+}
+p:first-child:hover{
+  color:hsl(14, 88%, 65%);
+  cursor: pointer;
 }
 .arrow{
   cursor: pointer;
