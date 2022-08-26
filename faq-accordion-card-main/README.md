@@ -26,13 +26,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot19.jpg)
 
 
 ### Links
 
-- Solution URL: [Solution url]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution url](https://www.frontendmentor.io/solutions/faqaccordiancard-5_kAtTFL3e)
+- Live Site URL: [Live site](https://github.com/thisisharsh7/30-Days-of-code/tree/main/faq-accordion-card-main)
 
 ## My process
 
@@ -47,7 +47,7 @@ Users should be able to:
 
 ### What I learned
 
-On-process
+I learned more about grid , css selectors, js selector, array method and event-listener.
 
 
 ## Author
