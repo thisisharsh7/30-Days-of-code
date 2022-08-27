@@ -64,6 +64,7 @@ input{
     padding-left:1em;
     height: 3em;
     border:1px solid hsl(246, 25%, 77%);    
+    font-weight: 600;
 }
 input:focus{
     color:hsl(249, 10%, 26%);
