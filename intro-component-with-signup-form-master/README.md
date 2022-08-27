@@ -28,13 +28,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot20.jpg)
 
 
 ### Links
 
-- Solution URL: [Solution url]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution url](https://www.frontendmentor.io/solutions/signupformmadewithjs-6c3aDEzk1c)
+- Live Site URL: [Live site](https://adorable-pixie-57c6a6.netlify.app/)
 
 ## My process
 
@@ -47,7 +47,7 @@ Users should be able to:
 
 ### What I learned
 
-On process---
+I learned form validation different selector and some Jquery condition.
 
 
 ## Author
