@@ -39,8 +39,9 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
+- Flex
 - Mobile-first workflow
+
 
 
 ### What I learned
