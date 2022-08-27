@@ -1,45 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <meta name="description" content="This is a js-project">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is a js-project" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <title>Frontend Mentor | Intro component with sign up form</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <main>
+      <section id="left">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great but understanding how develpers think is
+          invaluable.
+        </p>
+      </section>
+      <section id="right">
+        <p><b>Try it free 7 days</b> then $20/mo. thereafter</p>
+        <form action="">
+          <div>
+            <input
+              id="First Name"
+              type="text"
+              placeholder="First Name"
+              class="inp"
+              autocomplete
+            />
+          </div>
+          <p></p>
+          <div>
+            <input
+              id="Last Name"
+              type="text"
+              placeholder="Last Name"
+              class="inp"
+              autocomplete
+            />
+          </div>
+          <p></p>
+          <div>
+            <input
+              id="email"
+              type="email"
+              placeholder="Email Address"
+              class="inp"
+            />
+          </div>
+          <p></p>
+          <div>
+            <input
+              id="Password"
+              type="password"
+              placeholder="Password"
+              autocomplete
+              class="inp"
+            />
+          </div>
+          <p></p>
+          <button type="submit" value="submit" id="btn">
+            Claim your free trial
+          </button>
+          <p>
+            By clicking the button, you are agreeing to our
+            <a href="#">Terms and Services</a>
+          </p>
+        </form>
+      </section>
+    </main>
 
-</head>
-<body>
-  <main>
-    <section id="left">
-      <h1>Learn to code by watching others</h1>
-      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great but understanding how develpers think is invaluable.</p>
-    </section>
-    <section id="right">
-      <p><b>Try it free 7 days</b> then $20/mo. thereafter</p>
-      <form>
-        <input id="fname" type="text" placeholder="First Name">
-        <input id="lname" type="text" placeholder="Last Name">
-        <input id="email" type="email" placeholder="Email Address">
-        <input id="password" type="password" placeholder="Password">
-        <button type="submit" id="submit">Claim your free trial</button>
-        <p>By clicking the button, you are agreeing to our <a href="#" id="terms">Terms and Services</a></p>
-      </form>
-
-    </section>
-  </main>
-  
-  <footer>
-    <p class="attribution">
-      Challenge by
+    <footer>
+      <p class="attribution">
+        Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
         >. Coded by
         <a href="https://www.frontendmentor.io/profile/thisisharsh7"
           >Harsh Kumar</a
         >.
-    </p>
-  </footer>
-</body>
+      </p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
 </html>
