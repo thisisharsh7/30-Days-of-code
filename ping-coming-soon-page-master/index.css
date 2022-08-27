@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-size: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+header{
+    margin-top: 3.5rem;
+    margin-bottom: 1rem;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr minmax(440px,2fr) 1fr;
+}
+div{
+    grid-column: 2/3;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 100;
+    color:hsl(0, 0%, 59%);
+    padding-bottom: 0.5rem;
+}
+h1 span{
+    color:hsl(209, 33%, 12%);
+    font-weight: bold;
+}
+div p{
+    font-size: 1rem;
+}
+#hero-img{
+    grid-column: 2/3;
+    width: 100%;
+}
+form{
+    grid-column: 2/3;
+    margin-top:1.8rem;
+    width: 100%;
+    display: flex;
+    gap:1rem;
+    margin-bottom: 2rem;
+}
+input , button {
+    border-radius: 2rem;
+    padding:0.8rem 0.6rem 0.8rem 0.6rem;
+    font-size: 0.9em;
+}
+::placeholder{
+    color:hsl(0, 0%, 59%);
+}
+input{
+    border:2px solid hsl(223, 100%, 88%);
+    flex-grow:2.5;
+    padding-left: 2rem;
+    background-color: white;
+}
+button{
+    letter-spacing: 0.05rem;
+    border:none;
+    color:white;
+    font-weight: 600;
+    flex-grow:1.5;
+    background-color: hsl(223, 87%, 63%);
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    padding-top:2rem;
+    gap:1rem;
+    font-size:0.8rem;
+    color:hsl(0, 0%, 59%);
+}
+footer  div{
+    display: flex;
+    justify-content: center;
+    gap:1.1rem;
+    font-size: 1.7em;
+    color:hsl(223, 87%, 63%);
+}
+ion-icon:hover{
+    cursor: pointer;
+    background-color: hsl(223, 87%, 63%);
+    padding: 0.05em;
+    border-radius:50%;
+    color:white;
+}
+@media screen and (max-width:450px){
+    main{
+        grid-template-columns: 0.5fr minmax(100px,5fr) 0.5fr;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    form{
+         display: flex;
+         flex-direction: column;
+    }
+    input , button {
+        border-radius: 2rem;
+        padding:0.4rem 0.3rem 0.4rem 0.3rem;
+        font-size: 0.9em;
+    }
+
+}
