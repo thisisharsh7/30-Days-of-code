@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution url]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution url](https://github.com/thisisharsh7/30-Days-of-code/tree/main/ping-coming-soon-page-master)
+- Live Site URL: [Live site](https://starlit-churros-5eb4ae.netlify.app/)
 
 ## My process
 
@@ -44,10 +44,11 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+- Grid
 
 ### What I learned
 
-On process---
+In this i learned in Email validator also how to align the items using grid.
 
 
 ## Author
