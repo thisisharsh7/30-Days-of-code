@@ -35,21 +35,16 @@ h1 span{
     font-weight: bold;
 }
 div p{
-    font-size: 1rem;
-}
-#hero-img{
-    grid-column: 2/3;
-    width: 100%;
+    font-size: 0.95rem;
 }
 form{
     grid-column: 2/3;
     margin-top:1.8rem;
-    width: 100%;
     display: flex;
-    gap:1rem;
-    margin-bottom: 2rem;
+    justify-content: space-between;
+    min-height: 3rem;
 }
-input , button {
+input,button {
     border-radius: 2rem;
     padding:0.8rem 0.6rem 0.8rem 0.6rem;
     font-size: 0.9em;
@@ -57,19 +52,34 @@ input , button {
 ::placeholder{
     color:hsl(0, 0%, 59%);
 }
+form div{
+    width:48%;
+    text-align:left;
+}
 input{
     border:2px solid hsl(223, 100%, 88%);
-    flex-grow:2.5;
     padding-left: 2rem;
     background-color: white;
+    width: 100%;
+}
+input:focus{
+    border:2px solid hsl(223, 100%, 88%);
 }
 button{
+    align-self: flex-start;
+    width: 38%;
+    padding:1rem;
     letter-spacing: 0.05rem;
     border:none;
     color:white;
     font-weight: 600;
-    flex-grow:1.5;
     background-color: hsl(223, 87%, 63%);
+}
+
+#hero-img{
+    grid-column: 2/3;
+    max-width: 100%;
+    margin-top:2rem;
 }
 footer{
     display: flex;
@@ -93,6 +103,17 @@ ion-icon:hover{
     border-radius:50%;
     color:white;
 }
+button:hover{
+    background-color: hsl(223, 100%, 83%);
+    cursor: pointer;
+}
+.error{
+    font-size: 0.7rem;
+    font-style: italic;
+    color:hsl(354, 100%, 66%);
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+}
 @media screen and (max-width:450px){
     main{
         grid-template-columns: 0.5fr minmax(100px,5fr) 0.5fr;
@@ -103,11 +124,19 @@ ion-icon:hover{
     form{
          display: flex;
          flex-direction: column;
+         gap:0.7rem;
     }
-    input , button {
-        border-radius: 2rem;
-        padding:0.4rem 0.3rem 0.4rem 0.3rem;
-        font-size: 0.9em;
+    form div{
+        width: 100%;
+    }
+    input{
+        padding:0;
+        padding-left:1rem;
+        width: 93%;
+        height: 2.5em;
+    }
+    button{
+        width: 100%;
     }
 
 }
