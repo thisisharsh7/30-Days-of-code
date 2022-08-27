@@ -24,12 +24,3 @@ The designs were created to the following widths:
 - Grayish Blue: hsl(246, 25%, 77%)
 
 ## Typography
-
-### Body Copy
-
-- Font size: 16px
-
-### Font
-
-- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
-- Weights: 400, 500, 600, 700
