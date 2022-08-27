@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution url](https://www.frontendmentor.io/solutions/signupformmadewithjs-6c3aDEzk1c)
-- Live Site URL: [Live site](https://adorable-pixie-57c6a6.netlify.app/)
+- Live Site URL: [Live site](https://warm-panda-c8abe5.netlify.app/)
 
 ## My process
 
