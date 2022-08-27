@@ -20,6 +20,7 @@ import img17 from './images/screenshot17.jpg';
 import img18 from './images/screenshot18.jpg';
 import img19 from './images/screenshot19.jpg';
 import img20 from './images/screenshot20.jpg';
+import img21 from './images/screenshot21.jpg';
 
 
 function Main(){
@@ -67,6 +68,8 @@ function Main(){
                 <Card display={img19} goto="https://celebrated-clafoutis-5d42d2.netlify.app/" title="FAQ Accordian Card" cnt="project19"/>
 
                 <Card display={img20} goto="https://warm-panda-c8abe5.netlify.app/" title="Form Validation" cnt="project20"/>
+
+                <Card display={img21} goto="https://starlit-churros-5eb4ae.netlify.app/" title="Ping single page" cnt="project21"/>
 
             </div>
         </>
