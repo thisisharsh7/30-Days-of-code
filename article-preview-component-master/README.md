@@ -24,13 +24,13 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
+![](./screenshot22.jpg)
 
 
 ### Links
 
-- Solution URL: [Solution url]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution url](https://www.frontendmentor.io/solutions/articlepreviewcomponentmadewithcssandjs-opZmLI-wBP)
+- Live Site URL: [Live site](https://kaleidoscopic-genie-5b3b1b.netlify.app/)
 
 ## My process
 
@@ -45,7 +45,7 @@ Users should be able to:
 
 ### What I learned
 
-On process--
+I learned above window event listener and also clip object in css.
 
 
 ## Author
