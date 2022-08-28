@@ -97,7 +97,7 @@ button:hover {
 .erroricon::before {
   content: url("images/icon-error.svg");
   position: absolute;
-  left: -50px;
+  left: -30px;
 }
 .error {
   color: rgba(255, 59, 59, 0.854);
@@ -147,5 +147,8 @@ footer {
   form {
     grid-column: 2/3;
     grid-row: 5/6;
+  }
+  button{
+    width: 4em;
   }
 }
