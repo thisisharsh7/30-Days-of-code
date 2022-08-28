@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution url]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution url](https://github.com/thisisharsh7/30-Days-of-code/tree/main/base-apparel-coming-soon-master)
+- Live Site URL: [Live site](https://fascinating-monstera-52135a.netlify.app/)
 
 ## My process
 
