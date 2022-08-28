@@ -22,6 +22,7 @@ import img19 from './images/screenshot19.jpg';
 import img20 from './images/screenshot20.jpg';
 import img21 from './images/screenshot21.jpg';
 import img22 from './images/screenshot22.jpg';
+import img23 from './images/screenshot23.jpg';
 
 
 function Main(){
@@ -71,7 +72,10 @@ function Main(){
                 <Card display={img20} goto="https://warm-panda-c8abe5.netlify.app/" title="Form Validation" cnt="project20"/>
 
                 <Card display={img21} goto="https://starlit-churros-5eb4ae.netlify.app/" title="Ping single page" cnt="project21"/>
+
                 <Card display={img22} goto="https://kaleidoscopic-genie-5b3b1b.netlify.app/" title="Artice preview" cnt="project22"/>
+
+                <Card display={img23} goto="https://fascinating-monstera-52135a.netlify.app/" title="Apparel coming soon page" cnt="project23"/>
 
             </div>
         </>
