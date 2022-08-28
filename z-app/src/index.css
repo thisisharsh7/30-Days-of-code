@@ -21,6 +21,7 @@ img {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
   justify-items: center;
+  align-items: center;
 }
 .card {
   box-shadow: 5px 5px 15px -4px #000000;
