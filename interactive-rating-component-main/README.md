@@ -11,12 +11,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -33,13 +28,13 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
+![](./screenshot24.jpg)
 
 
 ### Links
 
-- Solution URL: [Solution url]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution url](https://www.frontendmentor.io/solutions/interactiveratingpagebuildbyreact-n3DT9fk1p3)
+- Live Site URL: [Live site](https://friendly-cat-327182.netlify.app/)
 
 ## My process
 
@@ -49,11 +44,12 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+- React
 
 ### What I learned
 
-On process--
-
+I learned react working with functional component using states and props..
+still some update needed.....
 
 ## Author
 
