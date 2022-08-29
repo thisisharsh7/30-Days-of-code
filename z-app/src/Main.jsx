@@ -77,6 +77,7 @@ function Main(){
 
                 <Card display={img23} goto="https://fascinating-monstera-52135a.netlify.app/" title="Apparel coming soon page" cnt="project23"/>
 
+
             </div>
         </>
     );
