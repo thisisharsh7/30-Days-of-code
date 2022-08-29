@@ -10,12 +10,106 @@ body{
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
   font-family: 'Overpass', sans-serif;
-}
-p{
-  font-size: 15px;
+  width: 100vw;
+  justify-content: center;
 }
 .card{
+  margin: 1em;
+  padding: 1.5em;
+  border-radius: 1.5em;
   background-color:  hsl(213, 19%, 18%);
+  min-height: 100px;
+  
+}
+.star{
+  padding: 0.8em 0.8em;
+  clip-path: circle(49.6% at 50% 50%);
+  background:hsl(216, 16%, 30%);  
+  margin-bottom: 0.8em;
+}
+h1{
+  font-weight: 400;
+}
+.rating{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+p{
+  justify-self: flex-start;
+  font-size: 15px;
+  max-width: 35ch;
+  line-height: 1.5em;
+  margin-top:0.5em;
+  margin-bottom: 1em;
+  color:hsl(217, 12%, 63%);
+}
+.reviews{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.rate-btn{
+  padding: 0.9rem 1.1rem;
+  clip-path: circle(49.6% at 50% 50%);
+  border:none;
+  font-weight: bold;
+  color:hsl(216, 12%, 54%);
+  background-color: hsl(216, 16%, 30%);
+  font-size: 0.8em;
+  margin:1em 0em;
+  margin-bottom: 2.10em;
+}
+.rate-btn:hover{
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+.submit-btn{
+  width: 100%;
+  padding: 0.8em;
+  font-size: 1em;
+  border-radius: 2em;
+  color:white;
+  background-color: hsl(25, 97%, 53%);
+  border:none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+}
+.submit-btn:hover{
+  background-color: hsl(0, 0%, 100%);
+  color:hsl(25, 97%, 53%)
+}
+button{
+  cursor: pointer;
+}
+.thanks{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:1em;
+  text-align: center;
+}
+.show-rate{
+  color:hsla(25, 97%, 53%, 0.757);
+  border-radius: 2em;
+  font-size: 0.9em;
+  padding: 0.3em 0.6em 0.3em 0.5em;
+  background-color: hsla(217, 11%, 37%, 0.391);
+  margin:1.2em;
+}
+h2{
+  margin:0.9em 0;
+}
+.attribution{
+  text-align: center;
+}
+
+@media only screen and (max-width:375px){
+  body{
+    justify-content: flex-start;
+  }
+  
 }
