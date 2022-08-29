@@ -23,6 +23,7 @@ import img20 from "./images/screenshot20.jpg";
 import img21 from "./images/screenshot21.jpg";
 import img22 from "./images/screenshot22.jpg";
 import img23 from "./images/screenshot23.jpg";
+import img24 from "./images/screenshot24.jpg";
 
 function Main() {
   return (
@@ -187,6 +188,13 @@ function Main() {
           goto="https://fascinating-monstera-52135a.netlify.app/"
           title="Apparel coming soon page"
           cnt="project23"
+        />
+
+        <Card
+          display={img24}
+          goto="https://friendly-cat-327182.netlify.app/"
+          title="Interactive Rating Page"
+          cnt="project24"
         />
       </div>
     </>
