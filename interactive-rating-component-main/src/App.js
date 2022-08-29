@@ -1,11 +1,12 @@
 import React from "react";
-import Rating from "./Component/Rating";
+import Card from "./Component/Card";
 import Footer from "./Component/Footer";
+
 
 const App = () => {
   return (
     <>
-      <Rating />
+      <Card />
       <Footer />
     </>
   );

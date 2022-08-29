@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  background-color: hsl(216, 12%, 8%);
+  color:white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Overpass', sans-serif;
+}
+p{
+  font-size: 15px;
+}
+.card{
+  background-color:  hsl(213, 19%, 18%);
+}
