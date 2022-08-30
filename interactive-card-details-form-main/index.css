@@ -27,3 +27,93 @@ body{
     align-items: center;
     justify-content: center;
 }
+.attribution{
+    position: absolute;;
+    bottom:0;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#front{
+    position:relative;
+}
+#float{
+    position: absolute;
+    top:0;
+}
+form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-start;
+    gap:2em;
+    color:var(--Very-dark-violet); 
+    
+}
+.cardData{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap:0.5em;
+}
+label{
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+}
+.cardSelect{
+    display: flex;
+    gap:1.5em;
+}
+input{
+    padding:0.5em 0em;
+    font-size: 1.5em;
+    padding-left: 1em;
+    border-radius: 0.4em;
+    border: 2.5px solid var(--Light-grayish-violet);
+}
+::placeholder{
+    color:var(--Light-grayish-violet);
+    font-family: 'Space Grotesk', sans-serif;
+}
+.cardDate{
+    display: flex;
+    gap:0.8em;
+}
+.cardDate input{
+    width: 60%;
+}
+.cardThanks{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:1em 2.5em;
+    gap:0.9em;
+}
+h1{
+    margin-top: 0.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+}
+.cardThanks p{
+    color:var(--Dark-grayish-violet);
+    font-size: 1.1em;
+    letter-spacing: 0.05em;
+}
+button{
+    width: 100%;
+    padding:0.5em 1em;
+    font-size: 1.5em;
+    border-radius: 0.4em;
+    background-color: var(--Very-dark-violet);
+    color:var(--White);
+
+}
+#server{
+    display: none;
+}
