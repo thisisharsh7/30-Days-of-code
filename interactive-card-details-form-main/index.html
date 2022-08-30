@@ -32,11 +32,13 @@
       <form id="user">
         <div class="cardData">
           <label for="name">Cardholder Name</label>
-          <input type="text" placeholder="e.g. Jane Appleseed" id="name" />
+          <input name="letters" type="text" placeholder="e.g. Jane Appleseed" id="name" />
+          <p></p>
         </div>
         <div class="cardData">
           <label for="card-num">Card Number</label>
-          <input placeholder="e.g. 1234 5678 9123 0000" id="card-num" />
+          <input name="numbers" placeholder="e.g. 1234 5678 9123 0000" id="card-num" />
+          <p></p>
         </div>
         <div class="cardSelect">
           <div class="cardData">
@@ -45,13 +47,15 @@
               <input type="number" placeholder="MM" min="1" max="12" class="date" />
               <input type="number" placeholder="YY" min="23" max="30" class="date" />
             </div>
+            <p></p>
           </div>
           <div class="cardData">
             <label for="cvc">CVC</label>
             <input type="number" placeholder="e.g. 123" min="100" max="999" id="cvc" />
+            <p></p>
           </div>
         </div>
-        <button type="submit">Confirm</button>
+        <button id="formSubmit">Confirm</button>
       </form>
       <form id="server">
         <div class="cardThanks">
