@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
+![](./screenshot25.jpg)
 
 
 ### Links
@@ -49,7 +49,7 @@ Users should be able to:
 
 ### What I learned
 
-On process--
+While building this project I learned more about grid, flex property then I get to practice different event listener in Javascript and those are new for me.
 
 
 ## Author
