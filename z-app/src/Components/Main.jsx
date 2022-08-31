@@ -200,7 +200,7 @@ function Main() {
 
         <Card
           display={img25}
-          goto="https://gilded-taffy-e94e24.netlify.app/?"
+          goto="https://magenta-clafoutis-fa5a5c.netlify.app/"
           title="Interactive card details"
           cnt="project25"
         />
