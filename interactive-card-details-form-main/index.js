@@ -5,7 +5,7 @@ const parent = document.querySelectorAll(".cardData");
 var letters = /^[A-Za-z\s]+$/;
 var numbers = /^[0-9\s]+$/;
 btn.addEventListener("click", (e) => {
-    
+
   let success = true;
   input.forEach(myFunction);
   function myFunction(element) {
@@ -35,7 +35,7 @@ btn.addEventListener("click", (e) => {
         element.style.borderColor = "hsl(0, 100%, 66%)";
         parent.children[2].innerHTML = "Wrong format, numbers only.";
         success = false;
-      } else if ((k.match(/[0-9]/g) || []).length != 16 || k=="0000 0000 0000 0000") {
+      } else if ((k.match(/[0-9]/g) || []).length != 16 || k == "0000 0000 0000 0000") {
         element.style.borderColor = "hsl(0, 100%, 66%)";
         parent.children[2].innerHTML = "Length must be 16.";
         success = false;
@@ -79,9 +79,9 @@ btn.addEventListener("click", (e) => {
       }
     }
   }
-  if (success){
-    document.getElementById("user").style.display="none";
-    document.getElementById("server").style.display="flex";
+  if (success) {
+    document.getElementById("user").style.display = "none";
+    document.getElementById("server").style.display = "flex";
   }
   e.preventDefault();
 });
@@ -94,7 +94,7 @@ function myFunction(event) {
   if (event.key == " ") {
     event.preventDefault();
   }
-  if (num == 19 || (num==0 && event.key==0)) {
+  if (num == 19 || (num == 0 && event.key == 0)) {
     event.preventDefault();
   }
   if (num == 4 || num == 9 || num == 14) {

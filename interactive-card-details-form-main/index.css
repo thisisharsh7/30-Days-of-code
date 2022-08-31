@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
-:root{
+
+:root {
     --White: hsl(0, 0%, 100%);
     --Light-grayish-violet: hsl(270, 3%, 87%);
     --Dark-grayish-violet: hsl(279, 6%, 55%);
@@ -7,15 +8,16 @@
     --Red-input-errors: hsl(0, 100%, 66%);
     --Font-size: 18px;
     --Weights: 500;
-    --gradient-active-input-border: (hsl(249, 99%, 64%) , hsl(278, 94%, 30%));
+    --gradient-active-input-border: (hsl(249, 99%, 64%), hsl(278, 94%, 30%));
 }
 
 
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
-body{
+
+body {
     min-height: 100vh;
     background-position: left;
     background-repeat: repeat-y;
@@ -25,206 +27,241 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap:2em;
+    gap: 2em;
 }
-.attribution{
+
+.attribution {
     text-align: center;
 }
-main{   
+
+main {
     display: grid;
-    grid-template-columns: 0.2fr 0.1fr minmax(350px,0.3fr) 0.1fr minmax(10px,0.3fr) minmax(380px,0.5fr) 0.2fr;
+    grid-template-columns: 0.2fr 0.1fr minmax(350px, 0.3fr) 0.1fr minmax(10px, 0.3fr) minmax(380px, 0.5fr) 0.2fr;
     align-items: center;
     grid-row-gap: 2em;
 }
-#front{
+
+#front {
     grid-column: 2/4;
     display: grid;
     grid-template-columns: 0.1fr 2fr 1fr 0.1fr;
-    grid-template-rows: minmax(3px,0.1fr) minmax(40px,1.5fr)  minmax(60px,1.3fr) minmax(25px,1fr) minmax(3px,0.1fr) ;
+    grid-template-rows: minmax(3px, 0.1fr) minmax(40px, 1.5fr) minmax(60px, 1.3fr) minmax(25px, 1fr) minmax(3px, 0.1fr);
     align-items: center;
     justify-content: center;
-    color:var(--White);
+    color: var(--White);
     letter-spacing: 0.1em;
 }
 
-#back{
+#back {
     grid-column: 3/5;
     display: grid;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: minmax(3px,0.1fr) minmax(40px,0.8fr)  minmax(60px,1.3fr) minmax(25px,1fr) minmax(3px,0.1fr) ;
+    grid-template-rows: minmax(3px, 0.1fr) minmax(40px, 0.8fr) minmax(60px, 1.3fr) minmax(25px, 1fr) minmax(3px, 0.1fr);
     color: var(--White);
     letter-spacing: 0.1em;
     align-items: center;
 }
-.card-img{
+
+.card-img {
     border-radius: 0.6em;
     grid-column: 1/-1;
     grid-row: 1/-1;
     width: 100%;
-    box-shadow: 2px 5px 21px -2px rgba(0,0,0,0.2);
+    box-shadow: 2px 5px 21px -2px rgba(0, 0, 0, 0.2);
 }
-#card-logo{
-    grid-row:2/3;
+
+#card-logo {
+    grid-row: 2/3;
     grid-column: 2/3;
 }
-#userNumber{
+
+#userNumber {
     grid-column: 2/4;
-    grid-row:3/4;
+    grid-row: 3/4;
     font-size: 1.5em;
     align-self: end;
     justify-self: center;
 }
-#userName{
+
+#userName {
     grid-column: 2/3;
-    grid-row:4/-1;
+    grid-row: 4/-1;
     text-transform: uppercase;
 }
-#card-date{
+
+#card-date {
     grid-column: 3/4;
-    grid-row:4/-1;
+    grid-row: 4/-1;
     justify-self: end;
 }
-#card-expire{
+
+#card-expire {
     grid-column: 2/3;
-    grid-row:3/4;
-    padding-top:0.5rem;
+    grid-row: 3/4;
+    padding-top: 0.5rem;
 }
-form{
+
+form {
     grid-column: 6/7;
-    grid-row:1/3;
-    padding:1em;
+    grid-row: 1/3;
+    padding: 1em;
     display: flex;
     flex-direction: column;
-    gap:1.5em;
-    color:var(--Very-dark-violet); 
+    gap: 1.5em;
+    color: var(--Very-dark-violet);
 }
-.cardData{
+
+.cardData {
     display: flex;
     flex-direction: column;
     max-width: 100%;
     justify-content: flex-start;
 }
-label{
-    padding-bottom:0.5em;
+
+label {
+    padding-bottom: 0.5em;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.15em;
     width: max-content;
 }
-input{
-    padding:0.5em 0em;
+
+input {
+    padding: 0.5em 0em;
     font-size: 1.5em;
     padding-left: 0.5em;
     border-radius: 0.4em;
     border: 2.5px solid var(--Light-grayish-violet);
 }
-::placeholder{
-    color:var(--Light-grayish-violet);
+
+::placeholder {
+    color: var(--Light-grayish-violet);
     font-family: 'Space Grotesk', sans-serif;
 }
 
-.cardDate{
+.cardDate {
     display: flex;
-    gap:1em;  
-    width: 100%;  
-}
-.cardDate input{
-    width:32%;
-}
-.cardSelect{
-    display: flex;
-    gap:0.5em;
-    align-items: flex-start;
-}
-.cardData{
+    gap: 1em;
     width: 100%;
 }
-#cvc{
+
+.cardDate input {
+    width: 32%;
+}
+
+.cardSelect {
+    display: flex;
+    gap: 0.5em;
+    align-items: flex-start;
+}
+
+.cardData {
+    width: 100%;
+}
+
+#cvc {
     width: 90%;
 }
-.cardThanks{
+
+.cardThanks {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding:1.3em 2.5em;
-    gap:0.9em;
+    padding: 1.3em 2.5em;
+    gap: 0.9em;
     text-align: center;
 }
-h1{
+
+h1 {
     margin-top: 0.3em;
     text-transform: uppercase;
     font-weight: 300;
     font-size: 1.8em;
     letter-spacing: 0.1em;
 }
-.cardThanks p{
-    color:var(--Dark-grayish-violet);
+
+.cardThanks p {
+    color: var(--Dark-grayish-violet);
     font-size: 1.05em;
     letter-spacing: 0.05em;
 }
-button{
+
+button {
     width: 100%;
     margin-top: 0.5em;
-    padding:0.5em 1em;
+    padding: 0.5em 1em;
     font-size: 1.5em;
     border-radius: 0.4em;
     background-color: var(--Very-dark-violet);
-    color:var(--White);
-    border:none;
-    box-shadow: inset 2px -5px 31px 9px rgba(70,2,99,0.44);
+    color: var(--White);
+    border: none;
+    box-shadow: inset 2px -5px 31px 9px rgba(70, 2, 99, 0.44);
     cursor: pointer;
 }
 
-#server{
+#server {
     display: none;
 }
-@media only screen and (width<=440px){
-    body{
+
+@media only screen and (width<=440px) {
+    body {
         background-image: url("images/bg-main-mobile.png");
         background-position: top;
         background-repeat: repeat-x;
         background-size: 100%;
-        padding:0em 0.5em;
+        padding: 0em 0.5em;
     }
-    main{
-        grid-template-columns: 0.6fr minmax(300px,2fr) 0.6fr;
-        grid-template-rows: 0.45fr minmax(200px,0.25fr) 0.45fr 1.5fr ;
-        gap:0rem;
+
+    main {
+        grid-template-columns: 0.6fr minmax(300px, 2fr) 0.6fr;
+        grid-template-rows: 0.45fr minmax(200px, 0.25fr) 0.45fr 1.5fr;
+        gap: 0rem;
     }
-    form{
-        padding:1.5em 1em;
+
+    form {
+        padding: 1.5em 1em;
 
     }
-    #front{
+
+    #front {
         grid-column: 1/3;
-        grid-row:2/4;
-        z-index:2;
+        grid-row: 2/4;
+        z-index: 2;
     }
-   #userNumber{
+
+    #userNumber {
         font-size: 1.3em;
     }
-    #back{
+
+    #back {
         grid-column: 2/4;
-        grid-row:1/3;
+        grid-row: 1/3;
     }
-    #card-expire{
-        padding-top:0.5em;
-        padding-right:2em;
+
+    #card-expire {
+        padding-top: 0.5em;
+        padding-right: 2em;
     }
-    #user , #server{
+
+    #user,
+    #server {
         grid-column: 1/-1;
         grid-row: 4/5;
     }
-    label{
+
+    label {
         font-size: 0.9em;
     }
-    input{
+
+    input {
         font-size: 1em;
     }
-    ::placeholder{
+
+    ::placeholder {
         font-size: 1em;
     }
-    .cardThanks{
-        padding:0.5em 0em;
+
+    .cardThanks {
+        padding: 0.5em 0em;
     }
 }
