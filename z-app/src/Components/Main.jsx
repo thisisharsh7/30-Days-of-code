@@ -24,6 +24,7 @@ import img21 from "./images/screenshot21.jpg";
 import img22 from "./images/screenshot22.jpg";
 import img23 from "./images/screenshot23.jpg";
 import img24 from "./images/screenshot24.jpg";
+import img25 from "./images/screenshot25.jpg";
 
 function Main() {
   return (
@@ -195,6 +196,13 @@ function Main() {
           goto="https://friendly-cat-327182.netlify.app/"
           title="Interactive Rating Page"
           cnt="project24"
+        />
+
+        <Card
+          display={img25}
+          goto="https://gilded-taffy-e94e24.netlify.app/?"
+          title="Interactive card details"
+          cnt="project25"
         />
       </div>
     </>
