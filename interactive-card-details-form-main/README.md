@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution url](https://www.frontendmentor.io/solutions/interactivecarddetailsbuildwithcssandjs-AEKP7gzhst)
-- Live Site URL: [Live Link](https://magenta-clafoutis-fa5a5c.netlify.app/)
+- Live Site URL: [Live Link](https://relaxed-gaufre-fc429b.netlify.app/)
 
 ## My process
 
