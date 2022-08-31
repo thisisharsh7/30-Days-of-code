@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/30-Days-of-code/static/css/main.5cb17c9f.css",
-    "main.js": "/30-Days-of-code/static/js/main.48a8b2f9.js",
+    "main.js": "/30-Days-of-code/static/js/main.b314acdf.js",
     "static/media/screenshot12.jpg": "/30-Days-of-code/static/media/screenshot12.a69596be7acef904ad9a.jpg",
     "static/media/screenshot23.jpg": "/30-Days-of-code/static/media/screenshot23.de9af7496f2a48652983.jpg",
     "static/media/screenshot15.jpg": "/30-Days-of-code/static/media/screenshot15.c93ffc6a38b18f035b89.jpg",
@@ -12,6 +12,7 @@
     "static/media/screenshot5.jpg": "/30-Days-of-code/static/media/screenshot5.6583607e02090e78859e.jpg",
     "static/media/screenshot17.jpg": "/30-Days-of-code/static/media/screenshot17.8bf4420730973592929f.jpg",
     "static/media/screenshot8.jpg": "/30-Days-of-code/static/media/screenshot8.8ff195953e288bed9b79.jpg",
+    "static/media/screenshot25.jpg": "/30-Days-of-code/static/media/screenshot25.96b6d77f3ff05472cb89.jpg",
     "static/media/screenshot21.jpg": "/30-Days-of-code/static/media/screenshot21.f5231805b5031c8166fa.jpg",
     "static/media/screenshot22.jpg": "/30-Days-of-code/static/media/screenshot22.a3f737ffcd81b135fe12.jpg",
     "static/media/screenshot18.jpg": "/30-Days-of-code/static/media/screenshot18.bc4e16eaa01e50a280f6.jpg",
@@ -28,10 +29,10 @@
     "static/media/screenshot14.jpg": "/30-Days-of-code/static/media/screenshot14.330ca0578adef90a8897.jpg",
     "index.html": "/30-Days-of-code/index.html",
     "main.5cb17c9f.css.map": "/30-Days-of-code/static/css/main.5cb17c9f.css.map",
-    "main.48a8b2f9.js.map": "/30-Days-of-code/static/js/main.48a8b2f9.js.map"
+    "main.b314acdf.js.map": "/30-Days-of-code/static/js/main.b314acdf.js.map"
   },
   "entrypoints": [
     "static/css/main.5cb17c9f.css",
-    "static/js/main.48a8b2f9.js"
+    "static/js/main.b314acdf.js"
   ]
 }
