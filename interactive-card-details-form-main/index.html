@@ -13,22 +13,17 @@
 
 <body>
   <main>
-    <div class="card-design">
       <div id="front">
-        <img src="images/bg-card-front.png" alt="front" />
-        <div id="float">
+        <img src="images/bg-card-front.png" alt="front" class="card-img" />
           <img src="images/card-logo.svg" alt="logo" id="card-logo" />
-          <p>0000 0000 0000 0000</p>
-          <p>Jane Appleseed</p>
-          <p>00/00</p>
-        </div>
+          <p id="card-number">0000 0000 0000 0000</p>
+          <p id="card-name">Jane Appleseed</p>
+          <p id="card-date">00/00</p>
       </div>
       <div id="back">
-        <img src="images/bg-card-back.png" alt="back" />
-        <p>000</p>
+        <img src="images/bg-card-back.png" alt="back" class="card-img"/>
+        <p id="card-expire">000</p>
       </div>
-    </div>
-    <div>
       <form id="user">
         <div class="cardData">
           <label for="name">Cardholder Name</label>
@@ -47,7 +42,7 @@
               <input type="number" placeholder="MM" min="1" max="12" class="date" />
               <input type="number" placeholder="YY" min="23" max="30" class="date" />
             </div>
-            <p></p>
+            
           </div>
           <div class="cardData">
             <label for="cvc">CVC</label>
@@ -66,7 +61,6 @@
         <button type="submit">Continue</button>
     </div>
     </form>
-    </div>
   </main>
 
   <div class="attribution">
