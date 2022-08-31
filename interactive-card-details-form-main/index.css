@@ -67,14 +67,14 @@ main{
     grid-row:2/3;
     grid-column: 2/3;
 }
-#card-number{
+#userNumber{
     grid-column: 2/4;
     grid-row:3/4;
     font-size: 1.5em;
     align-self: end;
     justify-self: center;
 }
-#card-name{
+#userName{
     grid-column: 2/3;
     grid-row:4/-1;
     text-transform: uppercase;
@@ -102,7 +102,7 @@ form{
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 label{
     padding-bottom:0.5em;
@@ -125,17 +125,22 @@ input{
 
 .cardDate{
     display: flex;
-    gap:0.5em;
+    gap:1em;  
+    width: 100%;  
 }
 .cardDate input{
-    width: 40%;
+    width:32%;
 }
 .cardSelect{
     display: flex;
-    gap:1em;
+    gap:0.5em;
+    align-items: flex-start;
 }
-.cardData {
+.cardData{
     width: 100%;
+}
+#cvc{
+    width: 90%;
 }
 .cardThanks{
     display: flex;
@@ -166,8 +171,8 @@ button{
     background-color: var(--Very-dark-violet);
     color:var(--White);
     border:none;
-    cursor:pointer;
     box-shadow: inset 2px -5px 31px 9px rgba(70,2,99,0.44);
+    cursor: pointer;
 }
 
 #server{
@@ -195,7 +200,7 @@ button{
         grid-row:2/4;
         z-index:2;
     }
-    #card-number{
+   #userNumber{
         font-size: 1.3em;
     }
     #back{

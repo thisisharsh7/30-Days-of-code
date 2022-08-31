@@ -16,9 +16,9 @@
       <div id="front">
         <img src="images/bg-card-front.png" alt="front" class="card-img" />
           <img src="images/card-logo.svg" alt="logo" id="card-logo" />
-          <p id="card-number">0000 0000 0000 0000</p>
-          <p id="card-name">Jane Appleseed</p>
-          <p id="card-date">00/00</p>
+          <p id="userNumber" >0000 0000 0000 0000</p>
+          <p id="userName">Jane Appleseed</p>
+          <p id="card-date"><span id="userMonth">00</span>/<span id="userYear">00</span></p>
       </div>
       <div id="back">
         <img src="images/bg-card-back.png" alt="back" class="card-img"/>
@@ -27,26 +27,26 @@
       <form id="user">
         <div class="cardData">
           <label for="name">Cardholder Name</label>
-          <input name="letters" type="text" placeholder="e.g. Jane Appleseed" id="name" />
+          <input placeholder="e.g. Jane Appleseed" id="name"/>
           <p></p>
         </div>
         <div class="cardData">
           <label for="card-num">Card Number</label>
-          <input name="numbers" placeholder="e.g. 1234 5678 9123 0000" id="card-num" />
+          <input placeholder="e.g. 1234 5678 9123 0000" id="card-num" />
           <p></p>
         </div>
         <div class="cardSelect">
           <div class="cardData">
             <label for="date">Exp. Date (MM/YY)</label>
-            <div class="cardDate">
-              <input type="number" placeholder="MM" min="1" max="12" class="date" />
-              <input type="number" placeholder="YY" min="23" max="30" class="date" />
+            <div class="cardDate" id="box">
+              <input type="number"  placeholder="MM" min="1" max="12" id="cardMonth" />
+              <input type="number" placeholder="YY" min="22" max="30" id="cardYear"/>
             </div>
-            
+            <p></p>
           </div>
           <div class="cardData">
             <label for="cvc">CVC</label>
-            <input type="number" placeholder="e.g. 123" min="100" max="999" id="cvc" />
+            <input type="number" placeholder="e.g. 123" min="100" max="999" id="cvc"/>
             <p></p>
           </div>
         </div>
