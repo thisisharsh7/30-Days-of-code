@@ -57,7 +57,11 @@ ul {
   gap: 1.2em;
   font-size: 0.9em;
 }
-li a {
+a{
+  text-decoration: none;
+  color:white;
+}
+li a:hover{
   text-decoration: none;
   color: var(--desaturated-blue);
   background-color: var(--white);
@@ -67,10 +71,9 @@ li a {
   font-size: 0.9em;
   border-radius: 2em;
 }
-li a:hover {
-  color: var(--white);
+li a:hover{
   cursor: pointer;
-  background-color: rgba(210, 210, 210, 0.525);
+  background-color: white;
 }
 h1 {
   text-transform: uppercase;
@@ -310,8 +313,9 @@ footer {
     padding-top:3em;
     clip-path: polygon(90% 10%, 100% 0, 100% 10%, 100% 100%, 100% 100%, 0 100%, 0 10%);
   }
-  .listHide li a{
+  .listHide li a:hover{
     background-color: var(--yellow-color);
+    color:white;
   }
   header{
     gap:12vw;
@@ -380,5 +384,8 @@ footer {
   .grid-here p{
     font-size: 1em;
     padding-bottom: 10vw;
+  }
+  a{
+    color:black;
   }
 }
