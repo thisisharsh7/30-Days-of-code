@@ -25,6 +25,7 @@ import img22 from "./images/screenshot22.jpg";
 import img23 from "./images/screenshot23.jpg";
 import img24 from "./images/screenshot24.jpg";
 import img25 from "./images/screenshot25.jpg";
+import img26 from "./images/screenshot26.jpg";
 
 function Main() {
   return (
@@ -203,6 +204,13 @@ function Main() {
           goto="https://relaxed-gaufre-fc429b.netlify.app/"
           title="Interactive card details"
           cnt="project25"
+        />
+
+        <Card
+          display={img26}
+          goto="https://glistening-centaur-03fb80.netlify.app/"
+          title="Sunnyside-agency-Landing-Page"
+          cnt="project26"
         />
       </div>
     </>
