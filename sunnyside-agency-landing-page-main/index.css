@@ -308,7 +308,7 @@ footer {
     top:100%;
     margin:0 2em;
     padding-top:3em;
-    clip-path: polygon(90% 10%, 100% 0, 100% 11%, 100% 100%, 100% 100%, 0 100%, 0 10%);
+    clip-path: polygon(90% 10%, 100% 0, 100% 10%, 100% 100%, 100% 100%, 0 100%, 0 10%);
   }
   .listHide li a{
     background-color: var(--yellow-color);
