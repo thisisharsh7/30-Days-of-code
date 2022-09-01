@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL]()
-- Live Site URL: [Live Site]()
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/sunnysideagencylandingpagecssandjs-J7cUz6XREd)
+- Live Site URL: [Live Site](https://glistening-centaur-03fb80.netlify.app/)
 
 ## My process
 
@@ -44,7 +44,7 @@ Users should be able to:
 
 ### What I learned
 
-I learned how to work with grid property and responsive layout in CSS.
+I learned how to work with grid, flex and turn into responsive layout.This is also my first solution in which I code for hamburger.
 
 ## Author
 
