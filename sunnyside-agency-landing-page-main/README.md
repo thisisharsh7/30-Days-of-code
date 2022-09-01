@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/sunnysideagencylandingpagecssandjs-J7cUz6XREd)
-- Live Site URL: [Live Site](https://glistening-centaur-03fb80.netlify.app/)
+- Live Site URL: [Live Site](https://dashing-bublanina-3b9333.netlify.app/)
 
 ## My process
 
