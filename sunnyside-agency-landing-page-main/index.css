@@ -56,7 +56,7 @@ ul {
   list-style: none;
   justify-content: space-between;
   margin-right: 3vw;
-  gap: 0.8em;
+  gap: 1.2em;
   font-size: 0.9em;
 }
 li a {
@@ -68,6 +68,11 @@ li a {
   padding: 1.2vw;
   font-size: 0.9em;
   border-radius: 2em;
+}
+li a:hover{
+    color:var(--white);
+    cursor:pointer;
+    background-color: rgba(210, 210, 210, 0.525);
 }
 h1 {
   text-transform: uppercase;
@@ -124,14 +129,28 @@ section {
 }
 #transform-text h4 {
   width: max-content;
-  border-bottom: 5px solid var(--yellow-color);
+  box-shadow: inset -2px -14px 15px -10px rgba(255,224,6,0.57);
+  border-bottom: 5px inset rgba(255,224,6,0.57);
+border-radius: 0px 0px 2px 2px;
 }
 #stand-out-text {
   padding-right: 6vw;
 }
 #stand-out-text h4 {
   width: max-content;
-  border-bottom: 5px solid var(--soft-red);
+  box-shadow: inset -2px -14px 15px -10px rgba(255, 84, 84, 0.57);
+  border-bottom: 5px inset rgba(255, 84, 84, 0.57);
+border-radius: 0px 0px 2px 2px;
+}
+#stand-out-text h4:hover{
+    border-color:var(--soft-red);
+    box-shadow: none;
+    cursor:pointer
+}
+#transform-text h4:hover{
+    border-color: var(--yellow-color);
+    box-shadow: none;
+    cursor:pointer
 }
 #stand-out-text h2 {
   grid-column: 1/4;
@@ -237,6 +256,11 @@ footer {
 .footer-links {
   display: flex;
   gap: 1.5em;
+}
+.footer-links p:hover , .footer-links img:hover{
+    color:var(--white);
+    cursor: pointer;
+    filter:  brightness(0) invert(1);
 }
 #footer-text {
   font-family: var(--font-family-one);
