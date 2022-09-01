@@ -208,7 +208,7 @@ function Main() {
 
         <Card
           display={img26}
-          goto="https://glistening-centaur-03fb80.netlify.app/"
+          goto="https://dashing-bublanina-3b9333.netlify.app/"
           title="Sunnyside-agency-Landing-Page"
           cnt="project26"
         />
