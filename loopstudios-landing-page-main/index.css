@@ -64,7 +64,7 @@ nav ul{
     font-size: 1.1em;
 }
 #interactive{
-    margin:7em 8vw;
+    margin:7em 5vw;
     text-align: center;
     display: grid;
     grid-template-columns: 3fr 1fr 3fr;
@@ -92,13 +92,69 @@ nav ul{
     font-family: var(--font-family-one);
     text-transform: uppercase;  
     font-size: 3em;
+    color:var(--Black);
+    font-weight: normal;
 }
 #interactive div p{
     font-family: var(--font-family-two);
     max-width: 45ch;
     font-size: 1em;
+    color:var(--Dark-Gray);
 }
-
+#grid-container{
+    position: relative;
+    margin:0 5vw;
+    margin-bottom: 7em;
+    display: flex;
+    flex-direction: column;
+}
+#grid-container h1{
+    text-transform: uppercase;
+    font-family: var(--font-family-one);
+    margin-bottom: 1em;
+    font-weight: normal;
+    font-size: 3.2em;
+}
+#grid-picture{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(min-content, 280px));
+    justify-content: space-between;
+    grid-column-gap: 0.5em;
+    grid-row-gap:2em;
+    margin-bottom: 3em;
+}
+#grid-picture figure picture img{
+   width: 100%;
+   height: 100%;
+}
+figure{
+    position:relative;
+}
+figcaption{
+    color:var(--White);
+    text-transform: uppercase;
+    position:absolute;
+    letter-spacing: 0.1em;
+    bottom:8%;
+    left:15%;
+    font-size: 2em;
+    font-family: var(--font-family-one);
+    max-width: 9ch;
+}
+button{
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background-color: white;
+    font-size: 1em;
+    border:2px solid var(--Very-Dark-Gray);
+    font-family: var(--font-family-two);
+    position: absolute;
+    right:0;
+    align-self: flex-start;
+    padding:0.5em 3em;    
+       
+}
 .attribution{
     text-align: center;
 }
@@ -186,5 +242,30 @@ footer a{
     #interactive div{
         padding:0;
         padding-top:4em;
+    }
+    #grid-container{
+        align-items: center;
+    }
+    #grid-container h1{
+        font-size: 9vw;
+    }
+    #grid-picture{
+        display: flex;
+        flex-direction: column;
+    }
+    #grid-picture figure{
+        width: fit-content;
+    }
+    figcaption{
+    bottom:0.4em;
+    left:0.8em;
+    font-size: 1.8em;
+    }
+    button{
+        border-color: var(--Black);
+        align-self: center;
+        position:relative;
+        padding:0.3em 3.5em;
+        font-size: 1.2em;
     }
 }
