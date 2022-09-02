@@ -207,20 +207,53 @@ button:hover {
 #footer-icons ~ p {
   text-align: center;
 }
+.mob-cross{
+    display: none;
+}
 @media only screen and (max-width: 655px) {
   header {
     background-image: url("images/mobile/image-hero.jpg");
     align-items: center;
   }
   nav ul {
-    position: absolute;
     display: none;
+  }
+  #logo{
+    z-index: 2;
+    padding-left: 1em;
+  }
+  .hamburger-link{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:0em;
+    font-size: 4em;
+    padding-left: 1em;
+    background-color:var(--Black);
+    bottom:0;
+    top:0;
+    left:0;
+    right:0;
+    font-family: var(--font-family-one);
+    font-weight: normal;
+    gap:0.5em;
   }
   #hamburger {
     display: block;
+    display: none;
     padding-right: 2em;
     width: 10%;
+    z-index: 2;
   }
+  .close{
+    display: block;
+    z-index: 2;
+    padding-right: 2em;
+    width: 10%;
+    z-index: 2;
+  }
+  
   #logo {
     width: 43%;
   }
