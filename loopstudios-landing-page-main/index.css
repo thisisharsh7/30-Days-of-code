@@ -20,7 +20,7 @@ a {
 body {
   font-size: 15px;
 }
-#hamburger {
+.hamburger {
   display: none;
 }
 header {
@@ -207,7 +207,7 @@ button:hover {
 #footer-icons ~ p {
   text-align: center;
 }
-.mob-cross{
+#closeNow{
     display: none;
 }
 @media only screen and (max-width: 655px) {
@@ -239,9 +239,8 @@ button:hover {
     font-weight: normal;
     gap:0.5em;
   }
-  #hamburger {
+  .hamburger {
     display: block;
-    display: none;
     padding-right: 2em;
     width: 10%;
     z-index: 2;
@@ -250,7 +249,7 @@ button:hover {
     display: block;
     z-index: 2;
     padding-right: 2em;
-    width: 10%;
+    width: 8%;
     z-index: 2;
   }
   
