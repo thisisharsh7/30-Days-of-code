@@ -207,8 +207,8 @@ button:hover {
 #footer-icons ~ p {
   text-align: center;
 }
-#closeNow{
-    display: none;
+.mob-cross {
+  display: none;
 }
 @media only screen and (max-width: 655px) {
   header {
@@ -218,26 +218,26 @@ button:hover {
   nav ul {
     display: none;
   }
-  #logo{
+  #logo {
     z-index: 2;
     padding-left: 1em;
   }
-  .hamburger-link{
+  .hamburger-link {
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap:0em;
+    gap: 0em;
     font-size: 4em;
     padding-left: 1em;
-    background-color:var(--Black);
-    bottom:0;
-    top:0;
-    left:0;
-    right:0;
+    background-color: var(--Black);
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     font-family: var(--font-family-one);
     font-weight: normal;
-    gap:0.5em;
+    gap: 0.5em;
   }
   .hamburger {
     display: block;
@@ -245,14 +245,14 @@ button:hover {
     width: 10%;
     z-index: 2;
   }
-  .close{
+  .close {
     display: block;
     z-index: 2;
     padding-right: 2em;
-    width: 8%;
+    width: 10%;
     z-index: 2;
   }
-  
+
   #logo {
     width: 43%;
   }
