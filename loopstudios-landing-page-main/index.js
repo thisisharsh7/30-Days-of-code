@@ -3,7 +3,6 @@ const closeNow=document.getElementById("closeNow");
 const box=document.getElementById("header-link");
 
 openNow.addEventListener("click",()=>{
-    console.log("clicked");
     openNow.style.display="none";
     if(openNow.style.display=="none"){
         closeNow.className="close";
@@ -18,7 +17,7 @@ openNow.addEventListener("click",()=>{
     }
 
 })
-window.addEventListener("resize",(e)=>{
+window.addEventListener("resize",()=>{
     box.className="";
     closeNow.style.display="none";
     if(window.innerWidth>=655){
