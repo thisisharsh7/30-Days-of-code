@@ -26,6 +26,7 @@ import img23 from "./images/screenshot23.jpg";
 import img24 from "./images/screenshot24.jpg";
 import img25 from "./images/screenshot25.jpg";
 import img26 from "./images/screenshot26.jpg";
+import img27 from "./images/screenshot27.jpg";
 
 function Main() {
   return (
