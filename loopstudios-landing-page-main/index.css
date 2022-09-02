@@ -1,271 +1,286 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 
-:root{
---White: hsl(0, 0%, 100%);
---Black: hsl(0, 0%, 0%);
---Dark-Gray: hsl(0, 0%, 55%);
---Very-Dark-Gray: hsl(0, 0%, 41%);
---font-family-two: 'Alata', sans-serif;
---font-family-one: 'Josefin Sans', sans-serif;
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark-Gray: hsl(0, 0%, 55%);
+  --Very-Dark-Gray: hsl(0, 0%, 41%);
+  --font-family-two: "Alata", sans-serif;
+  --font-family-one: "Josefin Sans", sans-serif;
 }
 
-*{
-    margin:0;
-    padding:0;
-    list-style-type: none;
-    
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-body{
-    font-size: 15px;
+body {
+  font-size: 15px;
 }
-#hamburger{
-    display: none;
+#hamburger {
+  display: none;
 }
-header{
-    background: no-repeat white url("images/desktop/image-hero.jpg");
-    background-size: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 1.5vw;
+header {
+  background: no-repeat white url("images/desktop/image-hero.jpg");
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.5vw;
 }
-nav{
-    gap:1em;
-    display: flex;
+nav {
+  gap: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header div {
+  padding: 4em 2em;
+  align-self: center;
+  min-width: 75%;
+}
+header p {
+  color: var(--White);
+  font-family: var(--font-family-one);
+  max-width: 12ch;
+  text-transform: uppercase;
+  margin: 8vw 0em;
+  padding: 0.4em;
+  border: 2px solid var(--White);
+  font-size: 3.5vw;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 1.5em;
+}
+#header-link li a {
+  color: var(--White);
+  font-family: var(--font-family-two);
+  font-size: 1.1em;
+}
+#interactive {
+  margin: 7em 5vw;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+  grid-template-rows: auto;
+}
+#interactive picture {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+#interactive picture img {
+  width: 100%;
+  height: 100%;
+}
+#interactive div {
+  background-color: white;
+  grid-column: 2/4;
+  grid-row-start: 2;
+  gap: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4vw;
+}
+#interactive div h1 {
+  font-family: var(--font-family-one);
+  text-transform: uppercase;
+  font-size: 3em;
+  color: var(--Black);
+  font-weight: normal;
+}
+#interactive div p {
+  font-family: var(--font-family-two);
+  max-width: 45ch;
+  font-size: 1em;
+  color: var(--Dark-Gray);
+}
+#grid-container {
+  position: relative;
+  margin: 0 5vw;
+  margin-bottom: 7em;
+  display: flex;
+  flex-direction: column;
+}
+#grid-container h1 {
+  text-transform: uppercase;
+  font-family: var(--font-family-one);
+  margin-bottom: 1em;
+  font-weight: normal;
+  font-size: 3.2em;
+}
+#grid-picture {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min-content, 280px));
+  justify-content: space-between;
+  grid-column-gap: 0.5em;
+  grid-row-gap: 2em;
+  margin-bottom: 3em;
+}
+#grid-picture figure picture img {
+  width: 100%;
+  height: 100%;
+}
+figure {
+  position: relative;
+}
+figcaption {
+  color: var(--White);
+  text-transform: uppercase;
+  position: absolute;
+  letter-spacing: 0.1em;
+  bottom: 8%;
+  left: 15%;
+  font-size: 2em;
+  font-family: var(--font-family-one);
+  max-width: 9ch;
+}
+button {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background-color: white;
+  font-size: 1em;
+  border: 2px solid var(--Very-Dark-Gray);
+  font-family: var(--font-family-two);
+  position: absolute;
+  right: 0;
+  align-self: flex-start;
+  padding: 0.5em 3em;
+}
+.attribution {
+  text-align: center;
+}
+footer {
+  color: white;
+  background-color: var(--Black);
+  display: flex;
+  flex-direction: column;
+}
+footer a {
+  color: white;
+}
+#main-footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-row-gap: 2em;
+  padding: 3em 5vw;
+}
+#footer-link {
+  display: flex;
+  grid-row: 2/3;
+  gap: 1.1em;
+  grid-column: 1/2;
+  font-family: var(--font-family-two);
+  color: var(--Dark-Gray);
+}
+#main-footer p {
+  align-self: end;
+  justify-self: end;
+  color: var(--Dark-Gray);
+}
+#footer-icons {
+  justify-self: end;
+  align-items: start;
+  display: flex;
+  gap: 1.5em;
+}
+a:hover {
+  border-bottom: 1px solid white;
+}
+button:hover {
+  border-color: var(--Black);
+  background-color: var(--Black);
+  color: var(--White);
+  cursor: pointer;
+}
+#footer-icons img:hover {
+  cursor: pointer;
+  border-bottom: 1px solid var(--White);
+}
+#footer-icons ~ p {
+  text-align: center;
+}
+@media only screen and (max-width: 655px) {
+  header {
+    background-image: url("images/mobile/image-hero.jpg");
     align-items: center;
-    justify-content: space-between;
-}
-header div{
-    padding:4em 2em;
-    align-self: center;
-    min-width: 75%;
-}
-header p{
-    color:var(--White);
-    font-family: var(--font-family-one);
-    max-width: 12ch;
-    text-transform: uppercase;
-    margin:8vw 0em;
-    padding:0.4em;
-    border: 2px solid var(--White);
-    font-size: 3.5vw;
-}
-nav ul{
-    display: flex;
-    justify-content: space-around;
-    gap:1.5em;
-}
-#header-link li a{
-    color:var(--White);
-    font-family: var(--font-family-two);
-    font-size: 1.1em;
-}
-#interactive{
-    margin:7em 5vw;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 3fr 1fr 3fr;
-    grid-template-rows: auto;
-}
-#interactive picture{
-    grid-column: 1/3;
-    grid-row: 1/3;
-}
-#interactive picture img{
-    width: 100%;
-    height: 100%;
-}
-#interactive div{
-    background-color: white;
-    grid-column: 2/4;
-    grid-row-start: 2;
-    gap:2em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 4vw;
-}
-#interactive div h1{
-    font-family: var(--font-family-one);
-    text-transform: uppercase;  
-    font-size: 3em;
-    color:var(--Black);
-    font-weight: normal;
-}
-#interactive div p{
-    font-family: var(--font-family-two);
-    max-width: 45ch;
-    font-size: 1em;
-    color:var(--Dark-Gray);
-}
-#grid-container{
-    position: relative;
-    margin:0 5vw;
-    margin-bottom: 7em;
-    display: flex;
-    flex-direction: column;
-}
-#grid-container h1{
-    text-transform: uppercase;
-    font-family: var(--font-family-one);
-    margin-bottom: 1em;
-    font-weight: normal;
-    font-size: 3.2em;
-}
-#grid-picture{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(min-content, 280px));
-    justify-content: space-between;
-    grid-column-gap: 0.5em;
-    grid-row-gap:2em;
-    margin-bottom: 3em;
-}
-#grid-picture figure picture img{
-   width: 100%;
-   height: 100%;
-}
-figure{
-    position:relative;
-}
-figcaption{
-    color:var(--White);
-    text-transform: uppercase;
-    position:absolute;
-    letter-spacing: 0.1em;
-    bottom:8%;
-    left:15%;
-    font-size: 2em;
-    font-family: var(--font-family-one);
-    max-width: 9ch;
-}
-button{
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    background-color: white;
-    font-size: 1em;
-    border:2px solid var(--Very-Dark-Gray);
-    font-family: var(--font-family-two);
+  }
+  nav ul {
     position: absolute;
-    right:0;
-    align-self: flex-start;
-    padding:0.5em 3em;    
-       
-}
-.attribution{
-    text-align: center;
-}
-footer{
-    color:white;
-    background-color: var(--Black);
+    display: none;
+  }
+  #hamburger {
+    display: block;
+    padding-right: 2em;
+    width: 10%;
+  }
+  #logo {
+    width: 43%;
+  }
+  header p {
+    font-size: 8em;
+    margin: 3.5em auto;
+    padding: 0.5em;
+  }
+
+  #interactive {
     display: flex;
     flex-direction: column;
-}
-footer a{
-    color:white;
-}
-#main-footer{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: auto;
-    grid-row-gap: 1.2em;
-    padding: 3em 5vw;
-}
-#footer-link{
-    display: flex;
-    grid-row:2/3;
-    gap:1.1em;
-    grid-column: 1/2;
-    font-family: var(--font-family-two);
-    color:var(--Dark-Gray);
-}
-#main-footer p{
-    align-self: end;
-    justify-self: end;
-    color:var(--Dark-Gray);
-}
-#footer-icons{
-    align-self: end;
-    justify-self: end;
-    display: flex;
-    gap:1.5em;
-}
-@media only screen and (max-width:655px){
-    header{
-        background-image: url("images/mobile/image-hero.jpg");
-        align-items: center;
-    }
-    nav ul{
-        position: absolute;
-        display: none;
-    }
-    #hamburger{
-        display: block;
-        padding-right: 2em;
-        width: 10%;
-    }
-    #logo{
-       width: 43%;
-    }
-    header p{   
-        font-size: 8em;
-        margin:3.5em auto;
-        padding:0.5em;   
-    }
-    
-#interactive{
+  }
+  #main-footer {
     display: flex;
     flex-direction: column;
-}
-    #main-footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap:1em;
-    }
-    #footer-icons , #main-footer p{
-        align-self: center;
-    }
-    #footer-link{
-        padding:1.5em 0;
-        flex-direction: column;
-    }
-    #interactive div h1{
-        font-size:10vw;
-    }
-    #interactive div p{
-        font-size: 4.5vw;
-    }
-    #interactive div{
-        padding:0;
-        padding-top:4em;
-    }
-    #grid-container{
-        align-items: center;
-    }
-    #grid-container h1{
-        font-size: 9vw;
-    }
-    #grid-picture{
-        display: flex;
-        flex-direction: column;
-    }
-    #grid-picture figure{
-        width: fit-content;
-    }
-    figcaption{
-    bottom:0.4em;
-    left:0.8em;
+    align-items: center;
+    gap: 1em;
+  }
+  #footer-icons,
+  #main-footer p {
+    align-self: center;
+  }
+  #footer-link {
+    padding: 1.5em 0;
+    flex-direction: column;
+  }
+  #interactive div h1 {
+    font-size: 10vw;
+  }
+  #interactive div p {
+    font-size: 4.5vw;
+  }
+  #interactive div {
+    padding: 0;
+    padding-top: 4em;
+  }
+  #grid-container {
+    align-items: center;
+  }
+  #grid-container h1 {
+    font-size: 9vw;
+  }
+  #grid-picture {
+    display: flex;
+    flex-direction: column;
+  }
+  #grid-picture figure {
+    width: fit-content;
+  }
+  figcaption {
+    bottom: 0.4em;
+    left: 0.8em;
     font-size: 1.8em;
-    }
-    button{
-        border-color: var(--Black);
-        align-self: center;
-        position:relative;
-        padding:0.3em 3.5em;
-        font-size: 1.2em;
-    }
+  }
+  button {
+    border-color: var(--Black);
+    align-self: center;
+    position: relative;
+    padding: 0.3em 3.5em;
+    font-size: 1.2em;
+  }
 }
