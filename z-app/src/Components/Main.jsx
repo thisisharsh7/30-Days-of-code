@@ -212,6 +212,12 @@ function Main() {
           title="Sunnyside-agency-Landing-Page"
           cnt="project26"
         />
+        <Card
+          display={img27}
+          goto="https://flourishing-concha-46ceef.netlify.app/"
+          title="Loopstudios-Landing-Page"
+          cnt="project27"
+        />
       </div>
     </>
   );
