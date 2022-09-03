@@ -67,19 +67,17 @@ h1{
     
 }
 #weRdifferent{
-    padding:0em 5vw;
+    padding:0em 5vw 4em 5vw;
     display: flex;
     flex-direction: column;
     gap:2.5em;
 }
 h2{
     color:var(--Very-Dark-Violet);
-    font-family: var(--font-family-one);
     font-size: 3em;
 }
 h3{
     color:var(--Dark-Violet);
-    font-family: var(--font-family-one);
     font-size: 1.6em;
 }
 h3 ~ p{
@@ -90,6 +88,7 @@ h3 ~ p{
 }
 #weRdifferent div{
     display: flex;
+    gap:0.8em;
 }
 #weRdifferent div div{
     display: flex;
@@ -98,11 +97,32 @@ h3 ~ p{
     gap:1.2em;
 }
 #findOut{
-    background-color: black;
+    padding:3em  5vw;
+    margin-bottom: 2em;
+}
+#findOut div{
     display: flex;
+    padding:1.5em 5vw;
+    background-color: var(--Dark-Violet);
+    justify-content: space-between;
+    gap:1em;
     align-items: center;
-    justify-items:flex-end;
-    
+    background-repeat:no-repeat;
+    background-position:top right;
+    background-image: url("images/bg-pattern-how-we-work-desktop.svg");
+}
+#findOut div h2{
+    max-width: max(17ch,35%);
+    color: var(--Very-Light-Gray);
+}
+#findOut div button{
+    padding:1em 2em;
+    color:var(--Very-Light-Gray);
+    background-color: transparent;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    border:2px solid var(--Very-Light-Gray);
+    text-transform: uppercase;
 }
 footer{
     background-color: var(--Very-Light-Gray);
@@ -160,10 +180,6 @@ footer{
 .firstClick{
     display: none;
 }
-#findOut{
-    background-color: red;
-    margin-top:6em;
-}
 
 @media only screen and (max-width: 633px){
     nav{
@@ -190,6 +206,15 @@ footer{
     #weRdifferent div div{
         align-items: center;
         text-align: center;
+        padding:0em 0.5em;
+    }
+    #findOut div{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap:2.5em;
+        background-position: top right;
+        background-image: url("images/bg-pattern-how-we-work-mobile.svg");
     }
     .logoAndIcons{
         flex-direction: column;
