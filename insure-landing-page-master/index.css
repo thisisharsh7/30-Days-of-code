@@ -1,10 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+
 *{
     margin:0;
     padding:0;
+}
+:root{
+    --font-family-one: 'DM Serif Display', serif;
+    --font-family-two: 'Karla', sans-serif;
+    --Very-Dark-Violet: hsl(270, 9%, 17%);
+    --Dark-Grayish-Violet: hsl(273, 4%, 51%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --Dark-Violet: hsl(256, 26%, 20%);
+    --Grayish-Blue: hsl(216, 30%, 68%);
 }
 li{
     list-style: none;
 }
 a{
     text-decoration: none;
+}
+body{
+    font-size: 16px;
+}
+header{
+    padding:1.5em 5vw;
+    background-color: var(--Very-Light-Gray);
+}
+
+nav{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap:1.5em;
+}
+nav ul li a{
+    color: var(--Dark-Grayish-Violet);
+    font-family: var(--font-family-two);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+nav ul li:last-child a{
+    border: 2px solid var(--Very-Dark-Violet);
+    color:var(--Dark-Violet);
+    padding:0.5em 1.5em;    
+}
+
+footer{
+    background-color: var(--Very-Light-Gray);
+    padding:3em 5vw;
+}
+.logoAndIcons{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom:1.5em;
+}
+.icons{
+    display: flex;
+    align-items: flex-end;
+    gap:1.5em;
+}
+.logoAndIcons:after{
+    content: "";
+    background-color:hsla(276, 4%, 51%, 0.381);
+    height: 1.5px;
+    width: 100%;
+    position: absolute;
+    left:0;
+    bottom:0;
+}
+.textFooter{
+    display: flex;
+}
+.head-text{
+    width: 100%;
+    text-transform: uppercase;
+    font-family: var(--font-family-two);
+    font-weight: bold;
+    color:hsl(273, 4%, 51%);
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap:1.5em;
+}
+.head-text ul{
+    display: flex;
+    flex-direction: column;
+    gap:0.5em;
+    color:var(--Dark-Violet);
+}
+.attribution{
+    text-align: center;
+    padding-top:2em;
 }
