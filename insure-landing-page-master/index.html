@@ -1,68 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Insure-Landing-Page-design">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <title>Frontend Mentor | Insure landing page</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Insure-Landing-Page-design" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Frontend Mentor | Insure landing page</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="images/logo.svg" alt="logo" class="logo" />
+        <ul>
+          <li><a href="#howWeWork">How we work</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#account">Account</a></li>
+          <li><a href="#viewPlans">View plans</a></li>
+        </ul>
+        <img
+          src="images/icon-hamburger.svg"
+          alt="hamburger"
+          class="firstClick"
+          id="hamburger"
+        />
+      </nav>
+    </header>
 
-</head>
-<body>
-  <header>
-    <nav>
-      <img src="images/logo.svg" alt="logo">
-      <ul>
-        <li><a href="#howWeWork">How we work</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#account">Account</a></li>
-        <li><a href="#viewPlans">View plans</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main>
+      <section id="grid-intro">
+        <picture>
+          <source
+            media="(max-width:377px)"
+            srcset="images/image-intro-mobile.jpg"
+          />
+          <img
+            src="images/image-intro-desktop.jpg"
+            alt="intro"
+            id="intro-image"
+          />
+        </picture>
+        <div id="intro-div">
+          <h1>Humanizing your insurance.</h1>
+          <p>
+            Get your life insurance coverage easier and faster. We blend our
+            expertise and technology to help you find the plan that’s right for
+            you. Ensure you and your loved ones are protected.
+          </p>
+          <button>View plans</button>
+        </div>
+      </section>
+      <section id="weRdifferent">
+        <h2>We’re different</h2>
+        <div>
+        <div>
+          <img src="images/icon-snappy-process.svg" alt="snappy-process">
+          <h3>Snappy Process</h3>
+          <p>
+            Our application process can be completed in minutes, not hours.
+            Don’t get stuck filling in tedious forms.
+          </p>
+        </div>
+        <div>
+          <img src="images/icon-affordable-prices.svg" alt="affordable-prices">
+          <h3>Affordable Prices</h3>
+          <p>
+            We don’t want you worrying about high monthly costs. Our prices may
+            be low, but we still offer the best coverage possible.
+          </p>
+        </div>
+        <div>
+          <img src="images/icon-people-first.svg" alt="people-first">
+          <h3>People First</h3>
+          <p>
+            Our plans aren’t full of conditions and clauses to prevent payouts.
+            We make sure you’re covered when you need it.
+          </p>
+        </div>
+        </div>
+      </section>
+      <section id="findOut">
+        <h2>Find out more about how we work</h2>
+        <button>How we work</button>
+      </section>
+    </main>
 
-  <main>
-  Humanizing your insurance.
-
-  Get your life insurance coverage easier and faster. We blend our expertise 
-  and technology to help you find the plan that’s right for you. Ensure you 
-  and your loved ones are protected.
-
-  View plans
-
-  We’re different
-
-  Snappy Process
-
-  Our application process can be completed in minutes, not hours. Don’t get 
-  stuck filling in tedious forms.
-
-  Affordable Prices
-
-  We don’t want you worrying about high monthly costs. Our prices may be low, 
-  but we still offer the best coverage possible.
-
-  People First
-
-  Our plans aren’t full of conditions and clauses to prevent payouts. We make 
-  sure you’re covered when you need it.
-
-  Find out more about how we work
-
-  How we work
-</main>
-
-  <footer>
-    <div class="logoAndIcons">
-      <img src="images/logo.svg" alt="logo">
-      <div class="icons">
-        <img src="images/icon-facebook.svg" alt="fb">
-        <img src="images/icon-twitter.svg" alt="twitter">
-        <img src="images/icon-pinterest.svg" alt="pinterest">
-        <img src="images/icon-instagram.svg" alt="insta">
+    <footer>
+      <div class="logoAndIcons">
+        <img src="images/logo.svg" alt="logo" class="logo" />
+        <div class="icons">
+          <img src="images/icon-facebook.svg" alt="fb" />
+          <img src="images/icon-twitter.svg" alt="twitter" />
+          <img src="images/icon-pinterest.svg" alt="pinterest" />
+          <img src="images/icon-instagram.svg" alt="insta" />
+        </div>
       </div>
-    </div>
       <div class="textFooter">
         <div class="head-text">
           Our company
@@ -108,6 +145,6 @@
           >Harsh Kumar</a
         >.
       </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>

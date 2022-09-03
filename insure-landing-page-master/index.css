@@ -23,7 +23,7 @@ body{
     font-size: 16px;
 }
 header{
-    padding:1.5em 5vw;
+    padding:1.7em 5vw;
     background-color: var(--Very-Light-Gray);
 }
 
@@ -31,6 +31,7 @@ nav{
     display: flex;
     align-items:center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 nav ul{
     display: flex;
@@ -48,7 +49,61 @@ nav ul li:last-child a{
     color:var(--Dark-Violet);
     padding:0.5em 1.5em;    
 }
-
+picture img{
+    width:30%;
+}
+h1,h2,h3{
+    font-family: var(--font-family-one);
+    font-weight: normal;
+}
+h1{
+    font-size: 5em;
+}
+#intro-div{
+    color: var(--Very-Light-Gray);
+    background-repeat: no-repeat , no-repeat;
+    background-color: var(--Dark-Violet);
+    background-position: left , right;
+    
+}
+#weRdifferent{
+    padding:0em 5vw;
+    display: flex;
+    flex-direction: column;
+    gap:2.5em;
+}
+h2{
+    color:var(--Very-Dark-Violet);
+    font-family: var(--font-family-one);
+    font-size: 3em;
+}
+h3{
+    color:var(--Dark-Violet);
+    font-family: var(--font-family-one);
+    font-size: 1.6em;
+}
+h3 ~ p{
+    color : var(--Dark-Grayish-Violet);
+    font-family: var(--font-family-two);
+    max-width: 40ch;
+    font-size: 1.1em;
+}
+#weRdifferent div{
+    display: flex;
+}
+#weRdifferent div div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:1.2em;
+}
+#findOut{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-items:flex-end;
+    
+}
 footer{
     background-color: var(--Very-Light-Gray);
     padding:3em 5vw;
@@ -59,11 +114,15 @@ footer{
     justify-content: space-between;
     align-items: flex-end;
     padding-bottom:1.5em;
+    flex-wrap: wrap;
+    gap:1em;
 }
 .icons{
     display: flex;
     align-items: flex-end;
     gap:1.5em;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .logoAndIcons:after{
     content: "";
@@ -97,4 +156,51 @@ footer{
 .attribution{
     text-align: center;
     padding-top:2em;
+}
+.firstClick{
+    display: none;
+}
+#findOut{
+    background-color: red;
+    margin-top:6em;
+}
+
+@media only screen and (max-width: 633px){
+    nav{
+        gap:1em;
+    }
+    nav ul{
+        display: none;
+    }
+    .firstClick{
+        display: block;
+    }
+    .logo{
+        max-width: 6em;
+    }
+    #weRdifferent{
+        text-align: center;
+    }
+    #weRdifferent div{
+       flex-direction: column;
+       gap:2em;
+       align-items: center;
+       gap:3em;
+    }
+    #weRdifferent div div{
+        align-items: center;
+        text-align: center;
+    }
+    .logoAndIcons{
+        flex-direction: column;
+        align-items: center;
+        gap:1.5em;
+    }
+    .textFooter{
+        flex-direction: column;
+    }
+    .head-text{
+        text-align: center;
+        align-items: center;
+    }
 }
