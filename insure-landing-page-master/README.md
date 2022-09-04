@@ -24,13 +24,13 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
+![](./screenshot28.jpg)
 
 
 ### Links
 
-- Solution URL: [Solution url]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution url](https://www.frontendmentor.io/solutions/responsiveinsurelandingpagebuildwithcss-f7YFZHpXhP)
+- Live Site URL: [Live site](https://heroic-druid-42014b.netlify.app/)
 
 ## My process
 
@@ -40,11 +40,12 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+- Grid
 
 
 ### What I learned
 
-On process--
+In this I learned working with complicated background-image and I also learned about different pseudo selector. I use more flex in this solution.
 
 
 ## Author
