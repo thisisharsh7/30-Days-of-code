@@ -32,7 +32,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 nav ul {
   display: flex;
@@ -46,7 +45,7 @@ nav ul li a {
   text-transform: uppercase;
 }
 nav ul li:last-child a {
-  padding: 0.5em 1em;
+  padding: 0.3em 1em;
   border: 2px solid var(--Very-Dark-Violet);
   color: var(--Dark-Violet);
 }
@@ -178,7 +177,15 @@ p {
   max-width: max(14ch, 33%);
   color: var(--Very-Light-Gray);
 }
+a:hover{
+    color:var(--Dark-Violet);
+}
+li:last-child a:hover{
+    background-color: var(--Dark-Violet);
+    color:var(--Very-Light-Gray);
+}
 button {
+    z-index: 1;
   padding: 0.8em 3em;
   color: var(--Very-Light-Gray);
   background-color: transparent;
@@ -186,6 +193,11 @@ button {
   letter-spacing: 0.1em;
   border: 2px solid var(--Very-Light-Gray);
   text-transform: uppercase;
+}
+button:hover{
+    background-color: var(--Very-Light-Gray);
+    color:var(--Dark-Violet);
+    cursor: pointer;
 }
 footer {
   background-color: var(--Very-Light-Gray);
@@ -215,6 +227,14 @@ footer {
   position: absolute;
   left: 0;
   bottom: 0;
+}
+.icons img:hover{
+    cursor:pointer;
+    filter: invert(13%) sepia(24%) saturate(1090%) hue-rotate(215deg) brightness(95%) contrast(90%);
+}
+.head-text ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 .textFooter {
   display: flex;
@@ -246,9 +266,7 @@ footer {
 }
 
 @media only screen and (max-width: 633px) {
-  header {
-    position: relative;
-  }
+  
   nav {
     gap: 1em;
   }
@@ -261,22 +279,32 @@ footer {
   .logo {
     max-width: 6em;
   }
-
-  #grid-intro {
-    padding: 0;
-    flex-direction: column;
+  nav ul li a{
+    color:var(--Very-Light-Gray);
+    font-size: 1.1em;
   }
-  .showOnClick {
+  nav ul li a:last-child{
+    color:var(--Very-Light-Gray);
+    border-color: var(--Very-Light-Gray);
+    padding:0.5em 5vw;
+  }
+  nav ul {
+    gap:2.5em;
     position: absolute;
-    display: flex;
+    z-index: 1;
     flex-direction: column;
-    top: 100%;
+    top:5em;
     left: 0;
     right: 0;
-    background-color: red;
+    bottom:0;
+    background-color: var(--Very-Dark-Violet);
+    justify-content: flex-start;
+    padding-top:2em;
+    text-align: center;
   }
-  #intro-div {
-    order: 2;
+  .showOnClick {
+
+    display: flex;
   }
   #intro-div div {
     text-align: center;
@@ -380,7 +408,7 @@ footer {
     top: -4px;
   }
 }
-@media only screen and (max-width: 274px) {
+@media only screen and (max-width: 310px) {
   * {
     word-break: break-all;
   }

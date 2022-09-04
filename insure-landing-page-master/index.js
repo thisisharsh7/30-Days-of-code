@@ -13,10 +13,19 @@ sbtn.addEventListener("click",()=>{
 })
 
 window.addEventListener("resize",()=>{
-    if(window.innerWidth>632 || sbtn.style.display=="block"){
-        sbtn.style.display="none";
-        btn.style.display="none";
-        nav.classList.remove("showOnClick");
+    if(sbtn.style.display=="block" || window.innerWidth>632){
+
+        if(window.innerWidth>632){
+            nav.classList.remove("showOnClick");
+            sbtn.style.display="none";
+            btn.style.display="none";
+            
+        }else{
+            nav.classList.remove("showOnClick");
+            sbtn.style.display="none";
+            btn.style.display="block";
+        }
+       
     }else{
         btn.style.display="block";
     }
