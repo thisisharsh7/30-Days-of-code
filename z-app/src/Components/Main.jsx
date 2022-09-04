@@ -27,6 +27,7 @@ import img24 from "./images/screenshot24.jpg";
 import img25 from "./images/screenshot25.jpg";
 import img26 from "./images/screenshot26.jpg";
 import img27 from "./images/screenshot27.jpg";
+import img28 from "./images/screenshot28.jpg";
 
 function Main() {
   return (
@@ -218,6 +219,13 @@ function Main() {
           goto="https://flourishing-concha-46ceef.netlify.app/"
           title="Loopstudios-Landing-Page"
           cnt="project27"
+        />
+
+        <Card
+          display={img28}
+          goto="https://heroic-druid-42014b.netlify.app/"
+          title="Insure-Landing-Page"
+          cnt="project28"
         />
       </div>
     </>
