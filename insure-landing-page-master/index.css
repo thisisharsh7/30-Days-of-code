@@ -21,6 +21,7 @@ a{
 }
 body{
     font-size: 16px;
+    min-height: 100vh;
 }
 header{
     padding:1.7em 5vw;
@@ -49,22 +50,43 @@ nav ul li:last-child a{
     color:var(--Dark-Violet);
     padding:0.5em 1.5em;    
 }
+picture {
+    order:2;
+}
 picture img{
-    width:30%;
+    width: 100%;
+
 }
 h1,h2,h3{
     font-family: var(--font-family-one);
     font-weight: normal;
 }
 h1{
-    font-size: 5em;
+    font-size: 3em;
+}
+#grid-intro{
+    display: flex;
+    background-color: var(--Dark-Violet);
+    margin-bottom: 8em;
+
 }
 #intro-div{
-    color: var(--Very-Light-Gray);
-    background-repeat: no-repeat , no-repeat;
+    padding:4em;
+    display: flex;
+    align-items: center;
     background-color: var(--Dark-Violet);
-    background-position: left , right;
-    
+    color: var(--Very-Light-Gray);
+}
+#intro-div div{
+    display: flex;
+    flex-direction: column;
+    gap:0.5em;
+    align-items: flex-start;
+}
+#intro-div div p{
+    margin-bottom: 1em;
+    font-size: 1em;
+    color:var(--Very-Light-Gray);
 }
 #weRdifferent{
     padding:0em 5vw 4em 5vw;
@@ -74,13 +96,13 @@ h1{
 }
 h2{
     color:var(--Very-Dark-Violet);
-    font-size: 3em;
+    font-size: 2.8em;
 }
 h3{
     color:var(--Dark-Violet);
     font-size: 1.6em;
-}
-h3 ~ p{
+} 
+p{
     color : var(--Dark-Grayish-Violet);
     font-family: var(--font-family-two);
     max-width: 40ch;
@@ -112,11 +134,11 @@ h3 ~ p{
     background-image: url("images/bg-pattern-how-we-work-desktop.svg");
 }
 #findOut div h2{
-    max-width: max(17ch,35%);
+    max-width: max(14ch,33%);
     color: var(--Very-Light-Gray);
 }
-#findOut div button{
-    padding:1em 2em;
+button{
+    padding:0.8em 2em;
     color:var(--Very-Light-Gray);
     background-color: transparent;
     font-weight: 700;
@@ -194,7 +216,49 @@ footer{
     .logo{
         max-width: 6em;
     }
+    
+    #grid-intro{
+        padding:0;
+        flex-direction: column;
+    }
+    picture img{
+        width:100%;
+        
+    }
+    #intro-div{
+        background-color: var(--Very-Light-Gray);
+        padding:0em;
+        order:2;
+        padding-bottom: 5.5em;
+        background-repeat: no-repeat;
+        background-position:  bottom right;
+        background-image:url("images/bg-pattern-intro-right-mobile.svg");
+    }
+    #intro-div div{
+    background-color: var(--Dark-Violet);
+    background-repeat: no-repeat , no-repeat;
+    background-position: top left, bottom -90px right;
+    background-image: url("images/bg-pattern-intro-left-mobile.svg"), url("images/bg-pattern-intro-right-mobile.svg");
+        position: relative;
+        bottom:4px;
+        padding: 3em 4vw;
+        text-align: center;
+        align-items: center;
+    }
+    #intro-div div h1{
+        font-size: 2.9em;
+    }
+    #weRdifferent::before{
+        content: " ";
+        height: 0.1em;
+        min-width:20%;
+        background-color: var(--Dark-Grayish-Violet);
+        position: absolute;
+        left:40%;
+        top:-35px;
+    }
     #weRdifferent{
+        position: relative;
         text-align: center;
     }
     #weRdifferent div{
@@ -227,5 +291,10 @@ footer{
     .head-text{
         text-align: center;
         align-items: center;
+    }
+}
+@media only screen and (max-width:274px){
+    *{
+        word-break: break-all;
     }
 }
