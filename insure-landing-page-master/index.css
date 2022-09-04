@@ -1,312 +1,387 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
 
-*{
-    margin:0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
-:root{
-    --font-family-one: 'DM Serif Display', serif;
-    --font-family-two: 'Karla', sans-serif;
-    --Very-Dark-Violet: hsl(270, 9%, 17%);
-    --Dark-Grayish-Violet: hsl(273, 4%, 51%);
-    --Very-Light-Gray: hsl(0, 0%, 98%);
-    --Dark-Violet: hsl(256, 26%, 20%);
-    --Grayish-Blue: hsl(216, 30%, 68%);
+:root {
+  --font-family-one: "DM Serif Display", serif;
+  --font-family-two: "Karla", sans-serif;
+  --Very-Dark-Violet: hsl(270, 9%, 17%);
+  --Dark-Grayish-Violet: hsl(273, 4%, 51%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --Dark-Violet: hsl(256, 26%, 20%);
+  --Grayish-Blue: hsl(216, 30%, 68%);
 }
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-body{
-    font-size: 16px;
-    min-height: 100vh;
+body {
+  font-size: 16px;
+  min-height: 100vh;
 }
-header{
-    padding:1.7em 5vw;
-    background-color: var(--Very-Light-Gray);
+header {
+  padding: 1.7em 5vw;
+  background-color: var(--Very-Light-Gray);
 }
 
-nav{
-    display: flex;
-    align-items:center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-nav ul{
-    display: flex;
-    justify-content: space-between;
-    gap:1.5em;
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5em;
 }
-nav ul li a{
-    color: var(--Dark-Grayish-Violet);
-    font-family: var(--font-family-two);
-    font-weight: bold;
-    text-transform: uppercase;
+nav ul li a {
+  color: var(--Dark-Grayish-Violet);
+  font-family: var(--font-family-two);
+  font-weight: bold;
+  text-transform: uppercase;
 }
-nav ul li:last-child a{
-    border: 2px solid var(--Very-Dark-Violet);
-    color:var(--Dark-Violet);
-    padding:0.5em 1.5em;    
+nav ul li:last-child a {
+  padding: 0.5em 1em;
+  border: 2px solid var(--Very-Dark-Violet);
+  color: var(--Dark-Violet);
+}
+h1,
+h2,
+h3 {
+  font-family: var(--font-family-one);
+  font-weight: normal;
+}
+#intro-div div::before {
+  content: " ";
+  height: 2px;
+  width: 8em;
+  background-color: var(--Very-Light-Gray);
+}
+h1 {
+  font-size: 4.6vw;
+  letter-spacing: 0.07em;
+  line-height: 1em;
+}
+/* picture {
+    order:2;
+}*/
+picture img {
+  width: 46vw;
 }
 picture {
-    order:2;
+  position: absolute;
+  right: 5vw;
+  top: calc(2em+ 5vw);
 }
-picture img{
-    width: 100%;
+#intro-div::before {
+  content: " ";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url("images/bg-pattern-intro-left-desktop.svg");
+  width: 30%;
+  height: 100%;
+  left: 0;
+  bottom: calc(-8rem - 18vw);
+}
+#intro-div::after {
+  content: " ";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url("images/bg-pattern-intro-right-desktop.svg");
+  min-width: 16%;
+  height: 100%;
+  right: 0;
+  overflow: hidden;
+  top: 0;
+}
+#intro-div {
+  position: relative;
+  color: var(--Very-Light-Gray);
+  display: flex;
+  padding: 5em 5vw;
+  align-items: flex-start;
+  background-color: var(--Dark-Violet);
+}
+#intro-div div {
+  padding-bottom: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2em;
+  width: 44%;
+}
+#intro-div div p {
+  margin-bottom: 1em;
+  font-size: 1.2em;
+  color: var(--Very-Light-Gray);
+}
+#weRdifferent::before {
+  content: " ";
+  height: 2px;
+  width: 8em;
+  background-color: var(--Grayish-Blue);
+}
+#weRdifferent {
+  padding: 20vw 5vw 4em 5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}
+h2 {
+  color: var(--Very-Dark-Violet);
+  font-size: 2.8em;
+}
+h3 {
+  color: var(--Dark-Violet);
+  font-size: 1.6em;
+}
+p {
+  color: var(--Dark-Grayish-Violet);
+  font-family: var(--font-family-two);
+  max-width: 40ch;
+  font-size: 1.1em;
+}
+#intro-div div p {
+  min-width: 100%;
+}
+#weRdifferent div {
+  display: flex;
+  gap: 0.8em;
+}
+#weRdifferent div div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2em;
+}
+#findOut {
+  padding: 3em 5vw;
+  margin-bottom: 2em;
+}
+#findOut div {
+  display: flex;
+  padding: 1.5em 5vw;
+  background-color: var(--Dark-Violet);
+  justify-content: space-between;
+  gap: 1em;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-image: url("images/bg-pattern-how-we-work-desktop.svg");
+}
+#findOut div h2 {
+  max-width: max(14ch, 33%);
+  color: var(--Very-Light-Gray);
+}
+button {
+  padding: 0.8em 3em;
+  color: var(--Very-Light-Gray);
+  background-color: transparent;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  border: 2px solid var(--Very-Light-Gray);
+  text-transform: uppercase;
+}
+footer {
+  background-color: var(--Very-Light-Gray);
+  padding: 3em 5vw;
+}
+.logoAndIcons {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 1.5em;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.icons {
+  display: flex;
+  align-items: flex-end;
+  gap: 1.5em;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.logoAndIcons:after {
+  content: "";
+  background-color: hsla(276, 4%, 51%, 0.381);
+  height: 1.5px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.textFooter {
+  display: flex;
+}
+.head-text {
+  width: 100%;
+  text-transform: uppercase;
+  font-family: var(--font-family-two);
+  font-weight: bold;
+  color: hsl(273, 4%, 51%);
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.head-text ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  color: var(--Dark-Violet);
+}
+.attribution {
+  text-align: center;
+  padding-top: 2em;
+}
+.firstClick,
+.secondClick {
+  display: none;
+}
 
-}
-h1,h2,h3{
-    font-family: var(--font-family-one);
-    font-weight: normal;
-}
-h1{
-    font-size: 3em;
-}
-#grid-intro{
-    display: flex;
-    background-color: var(--Dark-Violet);
-    margin-bottom: 8em;
-
-}
-#intro-div{
-    padding:4em;
-    display: flex;
-    align-items: center;
-    background-color: var(--Dark-Violet);
-    color: var(--Very-Light-Gray);
-}
-#intro-div div{
-    display: flex;
-    flex-direction: column;
-    gap:0.5em;
-    align-items: flex-start;
-}
-#intro-div div p{
-    margin-bottom: 1em;
-    font-size: 1em;
-    color:var(--Very-Light-Gray);
-}
-#weRdifferent{
-    padding:0em 5vw 4em 5vw;
-    display: flex;
-    flex-direction: column;
-    gap:2.5em;
-}
-h2{
-    color:var(--Very-Dark-Violet);
-    font-size: 2.8em;
-}
-h3{
-    color:var(--Dark-Violet);
-    font-size: 1.6em;
-} 
-p{
-    color : var(--Dark-Grayish-Violet);
-    font-family: var(--font-family-two);
-    max-width: 40ch;
-    font-size: 1.1em;
-}
-#weRdifferent div{
-    display: flex;
-    gap:0.8em;
-}
-#weRdifferent div div{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap:1.2em;
-}
-#findOut{
-    padding:3em  5vw;
-    margin-bottom: 2em;
-}
-#findOut div{
-    display: flex;
-    padding:1.5em 5vw;
-    background-color: var(--Dark-Violet);
-    justify-content: space-between;
-    gap:1em;
-    align-items: center;
-    background-repeat:no-repeat;
-    background-position:top right;
-    background-image: url("images/bg-pattern-how-we-work-desktop.svg");
-}
-#findOut div h2{
-    max-width: max(14ch,33%);
-    color: var(--Very-Light-Gray);
-}
-button{
-    padding:0.8em 2em;
-    color:var(--Very-Light-Gray);
-    background-color: transparent;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    border:2px solid var(--Very-Light-Gray);
-    text-transform: uppercase;
-}
-footer{
-    background-color: var(--Very-Light-Gray);
-    padding:3em 5vw;
-}
-.logoAndIcons{
+@media only screen and (max-width: 633px) {
+  header {
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding-bottom:1.5em;
-    flex-wrap: wrap;
-    gap:1em;
-}
-.icons{
-    display: flex;
-    align-items: flex-end;
-    gap:1.5em;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.logoAndIcons:after{
-    content: "";
-    background-color:hsla(276, 4%, 51%, 0.381);
-    height: 1.5px;
-    width: 100%;
-    position: absolute;
-    left:0;
-    bottom:0;
-}
-.textFooter{
-    display: flex;
-}
-.head-text{
-    width: 100%;
-    text-transform: uppercase;
-    font-family: var(--font-family-two);
-    font-weight: bold;
-    color:hsl(273, 4%, 51%);
-    padding-top: 2em;
-    display: flex;
-    flex-direction: column;
-    gap:1.5em;
-}
-.head-text ul{
-    display: flex;
-    flex-direction: column;
-    gap:0.5em;
-    color:var(--Dark-Violet);
-}
-.attribution{
-    text-align: center;
-    padding-top:2em;
-}
-.firstClick , .secondClick{
+  }
+  nav {
+    gap: 1em;
+  }
+  nav ul {
     display: none;
-}
+  }
+  .firstClick {
+    display: block;
+  }
+  .logo {
+    max-width: 6em;
+  }
 
-@media only screen and (max-width: 633px){
-    header{
-        position:relative;
-    }
-    nav{
-        gap:1em;
-    }
-    nav ul{
-        display: none;
-    }
-    .firstClick{
-        display: block;
-    }
-    .logo{
-        max-width: 6em;
-    }
-    
-    #grid-intro{
-        padding:0;
-        flex-direction: column;
-    }
-    picture img{
-        width:100%;
-        
-    }
-    .showOnClick{
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        top:100%;
-        left:0;
-        right:0;
-        background-color: red;
-    }
-    #intro-div{
-        background-color: var(--Very-Light-Gray);
-        padding:0em;
-        order:2;
-        padding-bottom: 5.5em;
-        background-repeat: no-repeat;
-        background-position:  bottom right;
-        background-image:url("images/bg-pattern-intro-right-mobile.svg");
-    }
-    #intro-div div{
+  #grid-intro {
+    padding: 0;
+    flex-direction: column;
+  }
+  .showOnClick {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: red;
+  }
+  #intro-div {
+    order: 2;
+  }
+  #intro-div div {
+    text-align: center;
+    align-items: center;
+  }
+  #intro-div div h1 {
+    font-size: 2.9em;
+  }
+  #intro-div div p {
+    font-size: 1em;
+  }
+
+  #weRdifferent {
+    position: relative;
+    text-align: center;
+  }
+  #weRdifferent div {
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+  }
+  #weRdifferent div div {
+    align-items: center;
+    text-align: center;
+    padding: 0em 0.5em;
+  }
+  #findOut div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2.5em;
+    background-position: top right;
+    background-image: url("images/bg-pattern-how-we-work-mobile.svg");
+  }
+  .logoAndIcons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+  }
+  .textFooter {
+    flex-direction: column;
+  }
+  .head-text {
+    text-align: center;
+    align-items: center;
+  }
+  picture img {
+    width: 100vw;
+    margin: 0;
+  }
+  picture {
+    right: 0;
+    position: relative;
+  }
+  #intro-div {
     background-color: var(--Dark-Violet);
-    background-repeat: no-repeat , no-repeat;
-    background-position: top left, bottom -90px right;
-    background-image: url("images/bg-pattern-intro-left-mobile.svg"), url("images/bg-pattern-intro-right-mobile.svg");
-        position: relative;
-        bottom:4px;
-        padding: 3em 4vw;
-        text-align: center;
-        align-items: center;
-    }
-    #intro-div div h1{
-        font-size: 2.9em;
-    }
-    #weRdifferent::before{
-        content: " ";
-        height: 0.1em;
-        min-width:20%;
-        background-color: var(--Dark-Grayish-Violet);
-        position: absolute;
-        left:40%;
-        top:-35px;
-    }
-    #weRdifferent{
-        position: relative;
-        text-align: center;
-    }
-    #weRdifferent div{
-       flex-direction: column;
-       gap:2em;
-       align-items: center;
-       gap:3em;
-    }
-    #weRdifferent div div{
-        align-items: center;
-        text-align: center;
-        padding:0em 0.5em;
-    }
-    #findOut div{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap:2.5em;
-        background-position: top right;
-        background-image: url("images/bg-pattern-how-we-work-mobile.svg");
-    }
-    .logoAndIcons{
-        flex-direction: column;
-        align-items: center;
-        gap:1.5em;
-    }
-    .textFooter{
-        flex-direction: column;
-    }
-    .head-text{
-        text-align: center;
-        align-items: center;
-    }
+    padding: 0;
+    flex-direction: column;
+    margin: 0;
+  }
+  #intro-div div::before {
+    display: none;
+  }
+  #intro-div div h1 {
+    padding: 0.3em;
+  }
+  #intro-div div {
+    background-color: transparent;
+    width: 100%;
+  }
+  #intro-div div {
+    max-width: 100%;
+  }
+  #weRdifferent h2 {
+    padding-top: 0.5em;
+  }
+  #weRdifferent::before {
+    width: 30%;
+    position: absolute;
+    left: 35%;
+  }
+  #intro-div::before,
+  #intro-div::after {
+    display: none;
+  }
+  #intro-div div {
+    position: relative;
+  }
+  #intro-div div {
+    background-repeat: no-repeat;
+    background-position: bottom -40px right;
+    background-image: url("images/bg-pattern-intro-right-mobile.svg");
+  }
+  #intro-div div::after {
+    content: " ";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url("images/bg-pattern-intro-left-mobile.svg");
+    width: 100%;
+    height: 100%;
+    top: -4px;
+  }
 }
-@media only screen and (max-width:274px){
-    *{
-        word-break: break-all;
-    }
+@media only screen and (max-width: 274px) {
+  * {
+    word-break: break-all;
+  }
 }
