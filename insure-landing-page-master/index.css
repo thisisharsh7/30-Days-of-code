@@ -199,11 +199,14 @@ footer{
     text-align: center;
     padding-top:2em;
 }
-.firstClick{
+.firstClick , .secondClick{
     display: none;
 }
 
 @media only screen and (max-width: 633px){
+    header{
+        position:relative;
+    }
     nav{
         gap:1em;
     }
@@ -224,6 +227,15 @@ footer{
     picture img{
         width:100%;
         
+    }
+    .showOnClick{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top:100%;
+        left:0;
+        right:0;
+        background-color: red;
     }
     #intro-div{
         background-color: var(--Very-Light-Gray);
