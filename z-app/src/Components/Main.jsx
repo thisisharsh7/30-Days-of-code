@@ -28,6 +28,7 @@ import img25 from "./images/screenshot25.jpg";
 import img26 from "./images/screenshot26.jpg";
 import img27 from "./images/screenshot27.jpg";
 import img28 from "./images/screenshot28.jpg";
+import img29 from "./images/screenshot29.jpg";
 
 function Main() {
   return (
@@ -226,6 +227,12 @@ function Main() {
           goto="https://heroic-druid-42014b.netlify.app/"
           title="Insure-Landing-Page"
           cnt="project28"
+        />
+        <Card
+          display={img29}
+          goto="https://neon-zuccutto-cc63a7.netlify.app/?"
+          title="Fylo-Dark-Theme-Landing-Page"
+          cnt="project29"
         />
       </div>
     </>
