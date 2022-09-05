@@ -4,6 +4,7 @@ import Allfunction from "./Component/Allfunction";
 import illustration from "./images/illustration-intro.png";
 import AllCards from "./Component/AllCards";
 import Productive from "./Component/Productive";
+import UserFill from "./Component/UserFill";
 
 const Main = () => {
   return (
@@ -13,6 +14,7 @@ const Main = () => {
         <Allfunction />
         <Productive />
         <AllCards />
+        <UserFill />
       </div>
     </>
   );
