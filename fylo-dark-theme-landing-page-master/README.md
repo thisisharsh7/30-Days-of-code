@@ -24,13 +24,13 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
+![](./screenshot29.jpg)
 
 
 ### Links
 
-- Solution URL: [Solution url]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution url](https://www.frontendmentor.io/solutions/fylodarkthemelandingpagebuildwithreact-Q60pS7qiWI)
+- Live Site URL: [Live site](https://neon-zuccutto-cc63a7.netlify.app/?)
 
 ## My process
 
@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-On process--
+In this I learned how to use props and useState in react.
 
 
 ## Author
