@@ -1,9 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
 *{
   margin:0;
   padding:0;
+  list-style: none;
+}
+:root{
+  --Dark-Blue-intro-and-email-sign-up-background: hsl(217, 28%, 15%);
+  --Dark-Blue-main-background: hsl(218, 28%, 13%);
+  --Dark-Blue-footer-background: hsl(216, 53%, 9%);  
+  --Dark-Blue-testimonials-background: hsl(219, 30%, 18%);
+  --Cyan-inside-call-to-action-gradient: hsl(176, 68%, 64%);
+  --Blue-inside-call-to-action-gradient: hsl(198, 60%, 50%);
+  --Light-Red-error: hsl(0, 100%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --font-family-body: 'Open Sans', sans-serif;
+  --font-family-heading-headerNav-c2action: 'Raleway', sans-serif;
 }
 
 body{
   background-color: black;
   color:white;
+  font-size: 14px;
+}
+#header nav{
+  display: flex;
+  background-color: red;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+#header nav ul{
+  display: flex;
 }

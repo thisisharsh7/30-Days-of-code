@@ -1,8 +1,14 @@
 import React from 'react';
 import Header from './Header';
+import Footer from './Footer';
 
 const App = () => {
-  return(<Header />);
+  return(
+    <>
+    <Header  />
+    <Footer />
+    </>
+  );
 };
 
 export default App;
