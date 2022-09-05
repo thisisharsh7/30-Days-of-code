@@ -19,81 +19,108 @@
 }
 
 body{
-  background-color: black;
   color:white;
   font-size: 14px;
   font-family: var(--font-family-body);
+  min-height: 100vh;
+  
 }
 #header{
+  background-color: var(--Dark-Blue-intro-and-email-sign-up-background);
   padding: 2em 2.5vw 0em 5vw;
+  font-family: var(--font-family-heading-headerNav-c2action);
 }
 #header nav{
   display: grid;
-  background-color: red;
-  grid-template-columns: minmax(max-content,2em) 1fr;
-  align-items: center;
+  grid-template-columns: minmax(80px,max-content) 1fr;
+  overflow: hidden;
 }
-#logo-header{
-  background-color: aqua;
+#header nav img{
+  width: 80%;
 }
 #header nav ul{
   justify-self: flex-end;
   display: flex;
+  justify-content: space-between;
   padding:0.3em;
-  background-color: blue;
-  font-size: 1.3em;
-  gap:2em;
+  font-size: 1. 1em;
+  gap: 4.5vw;
+}
+#header nav ul li:hover{
+  cursor: pointer;
+  text-decoration: underline;
 }
 #main{
+  background-size: 100%;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  background-color: var(--Dark-Blue-main-background);
+}
+#bg-hero{
+  width: 100%;
+  display: grid;
+  place-content: center;
+  padding-bottom: 8em;
+  background-color: var(--Dark-Blue-intro-and-email-sign-up-background);
+  background-image: url("images/bg-curvy-desktop.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 #hero{
-  padding: 0.5em;
-  background-color: red;
+  padding: 0.2em;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: min-content;
+  max-width: max-content;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 #hero img{
-  background-color: blue;
   width: 100%;
 }
 #hero h1{
   padding:1em 0em;
   font-size: 2.2em;
-  width: 31ch;
-  background-color: black;
+  max-width: 31ch;
 }
 #hero p{
+  max-width: 60ch;
   padding-bottom: 1em;
   font-size: 1.1em;
 }
 #hero button{
+  padding:0.8em 5em;
+}
+button{
   color: var(--White);
-  font-weight: bold;
-  padding: 1em 4em;
-  border:none;
   background-color: var(--Blue-inside-call-to-action-gradient);
   cursor: pointer;
+  padding:0.5em 2em;  
+  font-family: var(--font-family-heading-headerNav-c2action);
+  font-weight: bold;
+  border:none;
   border-radius: 2em;
+}
+button:hover{
+  background-color: var(--Cyan-inside-call-to-action-gradient);
 }
 #allFunction{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap:1em;
   width: 100%;
-  padding:5em 0;
-  background-color: blue;
+  padding: 5em 0;
   justify-content: space-between;
+  grid-row-gap: 3em;
 }
 .function{
   justify-self: center;
-  max-width: min-content;
-  background-color: red;
+  max-width: max-content;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -101,23 +128,68 @@ body{
   gap:0.5em;
 }
 .function p{
-  width: 35ch;
+  max-width: 46ch;
+}
+#productive{
+  width:80%;
+  padding:2em 5vw;
+  display: grid;
+  grid-template-columns: minmax(300px,1fr) 1fr;
+  align-items: center;
+  margin-bottom: 7em;
+  
+}
+#productive div{
+  gap:1.2em;
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+}
+
+#seefyloWorks{
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: max-content;
+  gap:0.8em;
+  color:var(--Cyan-inside-call-to-action-gradient);
+}
+#seefyloWorks::after{
+  content: "";
+  height:1px;
+  width: 100%;
+  position: absolute;
+  bottom:-10px;
+  background-color:var(--Cyan-inside-call-to-action-gradient);
+}
+
+#productive div h1{
+  font-size: 2.5em;
+  max-width: 17ch;
+}
+#productive div p{
+  font-size: 1.1em;
+}
+#left-image{
+  width: 90%;
 }
 #allCards{
   width: 100%;
-  background-color: red;
   display: flex;
   justify-content: space-evenly;
   gap:1em;
+  margin-bottom: 12em;
 }
+
 .card{
   padding: 2em 1em 1em 1em;
-  background-color:orange;
+  background-color:var(--Dark-Blue-testimonials-background);
   display: grid;
   grid-template-rows: repeat(3,auto);
   grid-template-columns: minmax(30px,50px) auto;
   align-items: center;
   grid-column-gap: 0.5em;
+  box-shadow: 5px 5px 0px 0px hsl(217, 28%, 15%), 10px 10px 0px 0px hsl(217, 28%, 15%), 14px 14px 0px -17px rgba(2,88,6,0);
   max-width: max-content;
 }
 .userDesc{
@@ -133,12 +205,50 @@ body{
   grid-row: 2/4;
 }
 .userName{
+  font-weight: bold;
   grid-column: 2/-1;
   grid-row:2/3;
 }
 .userWork{
+  font-size: 0.8em;
   grid-row: 3/4;
   grid-column:2/-1;
+}
+
+#userFill{
+  position: absolute;
+  bottom:-10em;
+  margin:2em;
+  padding:1.5em 2.5em;
+  background-color: var(--Dark-Blue-intro-and-email-sign-up-background);
+  min-width: min-content;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 6px 9px 1px rgba(0,0,0,0.36);
+  border-radius: 0.3em;
+}
+#userFill h2{
+  font-size: 2.2em;
+}
+#userFill p{
+  padding:0.5em 0em 1.3em 0em;
+  max-width: 80ch;
+}
+form{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  gap:1.5em;
+}
+form input{
+  height: 3em;
+  padding-left: 1.5em;
+  border-radius: 2em;
+  border:none;
+  flex: 2;
 }
 #footer{
   background-color: var(--Dark-Blue-footer-background);
@@ -146,7 +256,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding:4em 2.5vw 3em 5vw;
+  padding:12em 2.5vw 3em 5vw;
   gap:2em;
 }
 #footer-bucket{
@@ -162,6 +272,10 @@ body{
   align-items: flex-start;
   gap:1.5em;
 }
+.footer-item li:hover{
+  font-weight: bold;
+  cursor: pointer;
+}
 ul li{
   width: max-content;
 }
@@ -172,4 +286,93 @@ ul li{
   align-items: flex-start;
   display: flex;
   gap:1em;
+}
+@media only screen and (max-width:751px){
+  #main{
+    padding: 0em;
+  }
+  #allCards{
+    align-items: center;
+    flex-direction: column;
+    gap:4em;
+    margin-bottom: 23em;
+    margin-top: 3em;
+  }
+  .card{
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  #allFunction{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    gap:4em;
+    flex-direction: column;
+  }
+  .function{
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  #header ul{
+    flex:2;
+  }
+  #productive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:4em;
+    font-size: 0.9em;
+    margin:3em 0em;
+  }
+  #left-image{
+    width: 100%;
+  }
+  #footer-bucket{
+    gap:4em;
+    flex-direction: column;
+  }
+  #productive div h1{
+    max-width: max-content;
+    font-size: 1.5em;
+  }
+  #hero img{
+    width: 100%;
+  }
+  button{
+    width: 100%;
+  }
+  form button{
+    padding-top:1em;
+    padding-bottom: 1em;
+  }
+  #userFill{
+    padding:0.8em 1.5em 1.5em 1.5em;
+  }
+  #bg-hero{
+    width: 100%;
+    display: grid;
+    place-content: center;
+    padding-bottom: 8em;
+    background-color: var(--Dark-Blue-intro-and-email-sign-up-background);
+    background-image: url("images/bg-curvy-mobile.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+}
+.card{
+  position: relative;
+}
+#allCards{
+  position: relative;
+}
+.card:first-child:before{
+  content:"";
+  width: 4em;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: url("images/bg-quotes.png");
+  position: absolute;
+  left:-1em;
+  top:-33px;
 }

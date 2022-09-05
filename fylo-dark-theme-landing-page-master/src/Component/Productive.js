@@ -6,7 +6,7 @@ const Productive = () => {
     return(
         <>
             <div id='productive'>
-                <img src={illustration2} alt="productive-illustration" />
+                <img id="left-image" src={illustration2} alt="productive-illustration" />
                 <div>
                     <h1>Stay productive, wherever you are</h1>
                     <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file 

@@ -10,7 +10,9 @@ const Main = () => {
   return (
     <>
       <div id="main">
+      <div id="bg-hero">
         <Hero setSrc={illustration} />
+        </div>
         <Allfunction />
         <Productive />
         <AllCards />
