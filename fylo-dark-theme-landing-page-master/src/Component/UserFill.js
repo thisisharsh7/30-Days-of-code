@@ -1,6 +1,21 @@
-import React from "react";
-
+import React, { useState } from "react";
+const validRegex =
+  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 const UserFill = () => {
+  const [keepInput , setInput] = useState("");
+  
+  function keepEmail(event){
+    setInput(event.target.value);
+  }
+
+  function checkInput(event){
+    console.log(keepInput);
+    if(keepInput.match(validRegex)) return ;
+
+    setInput("Please enter a valid email")
+    event.preventDefault();
+
+  }
   return (
     <>
       <div id="userFill">
@@ -10,9 +25,9 @@ const UserFill = () => {
           extremely generous. If you have any questions, our support team would
           be happy to help you.
         </p>
-        <form>
-          <input type="email" placeholder="email@example.com" />
-          <button>Get Started For Free</button>
+        <form onSubmit={checkInput}>
+          <input type="text" placeholder="email@example.com" onChange={keepEmail} value={keepInput}/>
+          <button type="submit">Get Started For Free</button>
         </form>
       </div>
     </>
