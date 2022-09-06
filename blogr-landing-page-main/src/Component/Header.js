@@ -5,7 +5,7 @@ import Hero from './Hero';
 function Header(){
     return(
         <>
-            <header style={{backgroundColor:"blue"}}>
+            <header>
                 <Navbar />
                 <Hero />
             </header>

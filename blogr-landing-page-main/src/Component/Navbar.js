@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <>
       <nav>
-        <div>
+        <div id="subNav">
           <img src={logo} alt="Blogr_logo" />
           <div>
             <button>
