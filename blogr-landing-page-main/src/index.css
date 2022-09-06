@@ -35,11 +35,14 @@ header{
     flex-direction: column;
     gap:1em;
 }
+#hamburger , #close{
+    display: none; 
+}
 nav{
     background-color: blue;
     display: flex;
     align-items: flex-start;
-    gap:1.5em;
+    gap:1.3em;
     padding-bottom: 8em;
     padding-top:1em;
 }
@@ -51,7 +54,7 @@ nav{
 }
 #subNav{
     display: flex;
-    gap:1.5em;
+    gap:1.3em;
     justify-items: flex-end;
 }
 
@@ -92,17 +95,31 @@ button{
 #start, #sign{
     color:var(--Light-red-CTA-text);
 }
+#start:hover , #sign:hover{
+    background-color: var(--Very-light-red-CTA-hover-background);
+    color:white;
+}
 #learn{
     background-color: var(--Light-red-CTA-text);
     border:1px solid white;
     color:white;
 }
+#learn:hover{
+    cursor: pointer;
+    background-color: white;
+    color:var(--Light-red-CTA-text);
+}
 #subNav div button{
     padding:0;
     width:max-content;
+    font-size: 1em;
     background-color: transparent;
+    font-weight: bold;
     border-radius: 0em;
     border:none;
+}
+#subNav div button:hover{
+    text-decoration: underline;
 }
 #nav-button{
     display: flex;
@@ -114,13 +131,25 @@ button{
     color:var(--White-text)
 }
 #product,#company,.connect{
+    font-family: var(--font-family-one);
     width: 100%;
     position: absolute;
-    top:1.5em;
+    color:black;
+    top:2em;
+    right: 0;
     display: flex;
     flex-direction: column;
     gap:0.5em;
-    align-items: flex-end;
+    background-color: white;
+    align-items: center;
+    width: 10em;
+    border-radius: 0.5em;
+    padding: 2em 0em;;
+    
+}
+#product li:hover ,#company li:hover , .connect li:hover{
+    cursor: pointer;    
+    font-weight: bold;
 }
 .merge{
     position: relative;
@@ -138,7 +167,7 @@ button{
     background-repeat: no-repeat;
     background-size:150%;
     background-position: left;
-    padding:2em 3vw 6em 8vw;
+    padding:2em 3vw 6em 7vw;
 }
 #main{
     padding:5em 0em;
@@ -197,7 +226,6 @@ button{
 }
 #mobile-bg{
     position: relative;
-    background-color: var(--);
     margin-top: 2em;
     padding-left:5vw;
     padding-right: 5vw;
@@ -296,7 +324,46 @@ footer{
     gap:0.8em;
     font-family: var(--font-family-one);
 }
+.footer-list ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 @media only screen and (max-width: 748px){
+    nav{
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #mobile-bg img{
+        width: 90vw;
+        position: absolute;
+        left:5%;
+        top:-63vw;
+    }
+    #mobile-bg{
+        align-items: center;
+        flex-direction: column;
+    }
+    #mobile-text{
+        text-align: center;
+        gap:1em;
+        width: 100%;
+        padding:0;
+        margin:0;
+        padding-bottom: 5em;
+        padding-top:25vw;
+    }
+    #mobile-text p{
+        font-size: 1em;
+    }
+    #mobile-text h2{
+        font-size: 2em;
+    }
+
+
+    #hamburger{
+        display: block; 
+     }
     #main-end{
         flex-direction: column;
         align-items: center;
@@ -335,6 +402,7 @@ footer{
         align-items: center;
         padding-left: 0em;
         text-align: center;
+        padding-bottom: 50vw;
     }
     #top-main picture img{
         align-self: center;
@@ -355,5 +423,21 @@ footer{
     }
     #nav-static{
         display: none;
+    }
+    #mobile-bg{
+        background-size:  100%;
+        background-repeat: no-repeat;
+        background-position:top -40vw right;
+    }
+    #circle-bg{
+        border-top-right-radius: 4em;
+        border-bottom-left-radius: 4em;
+    }
+    #bg-shape{
+        background-image: url("./Component/images/bg-pattern-intro-mobile.svg");
+        background-repeat: no-repeat;
+        background-size:250%;
+        background-position: bottom -200px right -330px;
+        
     }
 }

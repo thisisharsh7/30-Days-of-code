@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import logo from "./images/logo.svg";
 import Arrow from "./images/icon-arrow-light.svg";
-
+import CloseIcon from "./images/icon-close.svg";
+import HamburgerIcon from "./images/icon-hamburger.svg";
 
 function Navbar() {
   const [showClick, scanClick] = useState("none");
@@ -16,6 +17,8 @@ function Navbar() {
     <>
       <nav>
         <img src={logo} alt="Blogr_logo" />
+        <img id="close" src={CloseIcon} alt="close" />
+          <img id="hamburger" src={HamburgerIcon} alt="hamburger" />
         <div id="nav-static">
           <div id="subNav">
             <div className="merge">
