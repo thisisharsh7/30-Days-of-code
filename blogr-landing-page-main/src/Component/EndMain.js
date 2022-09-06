@@ -5,13 +5,13 @@ import LargeLappy from "./images/illustration-laptop-desktop.svg";
 function EndMain() {
   return (
     <>
-      <section style={{backgroundColor:"green"}}>
+      <section id="main-end">
         <picture>
-          <source media="(max-width: 400px)" srcSet={SmallLappy} />
+          <source media="(max-width: 450px)" srcSet={SmallLappy} />
           <img src={LargeLappy} alt="laptop" />
         </picture>
-        <div>
-          <div>
+        <div id="main-end-div">
+          <div className="text-para end-main-para" >
             <h3>Free, open, simple</h3>
             <p>
               Blogr is a free and open source application backed by a large
@@ -22,7 +22,7 @@ function EndMain() {
               learn.
             </p>
           </div>
-          <div>
+          <div className="text-para end-main-para">
             <h3> Powerful tooling</h3>
             <p>
               Batteries included. We built a simple and straightforward CLI tool

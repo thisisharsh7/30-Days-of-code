@@ -6,9 +6,11 @@ import EndMain from "./EndMain";
 function Main() {
   return (
     <>
+    <div id="main">
       <TopMain />
       <MidMain />
       <EndMain />
+      </div>
     </>
   );
 }

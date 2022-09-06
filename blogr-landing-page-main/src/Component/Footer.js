@@ -4,10 +4,10 @@ import logo from "./images/logo.svg";
 const Footer = () => {
   return (
     <>
-      <footer style={{ backgroundColor: "red" }}>
-        <div>
+      <footer>
+        <div id="footer-item">
           <img src={logo} alt="Blogr-logo" />
-          <div>
+          <div className="footer-list">
             <h4>Product</h4>
             <ul>
               <li>Overview</li>
@@ -17,7 +17,7 @@ const Footer = () => {
               <li>Integrations</li>
             </ul>
           </div>
-          <div>
+          <div className="footer-list">
             <h4>Company</h4>
             <ul>
               <li>About</li>
@@ -26,7 +26,7 @@ const Footer = () => {
               <li>Careers</li>
             </ul>
           </div>
-          <div>
+          <div className="footer-list">
             <h4>Connect</h4>
             <ul>
               <li>Contact</li>

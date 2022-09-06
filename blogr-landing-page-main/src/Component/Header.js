@@ -6,8 +6,10 @@ function Header(){
     return(
         <>
             <header>
+                <div id="bg-shape">
                 <Navbar />
                 <Hero />
+                </div>
             </header>
         </>
     )
