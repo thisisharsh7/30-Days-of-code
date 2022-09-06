@@ -1,9 +1,14 @@
 import React from 'react';
+import Navbar from './Navbar';
+import Hero from './Hero';
 
 function Header(){
     return(
         <>
-            <h1>This is header.</h1>
+            <header style={{backgroundColor:"blue"}}>
+                <Navbar />
+                <Hero />
+            </header>
         </>
     )
 }

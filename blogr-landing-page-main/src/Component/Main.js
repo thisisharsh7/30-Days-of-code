@@ -1,11 +1,16 @@
-import React from 'react';
+import React from "react";
+import TopMain from "./TopMain";
+import MidMain from "./MidMain";
+import EndMain from "./EndMain";
 
-function Main(){
-    return(
-        <>
-            <h1>This is main</h1>
-        </>
-    );
-};
+function Main() {
+  return (
+    <>
+      <TopMain />
+      <MidMain />
+      <EndMain />
+    </>
+  );
+}
 
 export default Main;
