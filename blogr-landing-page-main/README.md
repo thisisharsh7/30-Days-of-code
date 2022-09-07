@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution url]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution url](https://www.frontendmentor.io/solutions/blogrlandingpagebuildwithreact-JKCz1tL4ch)
+- Live Site URL: [Live site](https://subtle-zabaione-49b6c3.netlify.app/)
 
 ## My process
 
@@ -45,7 +45,7 @@ Users should be able to:
 
 ### What I learned
 
-On process--
+In this project I learned how to work with multiple states and I also get to know about another function i.e useLayoutEffect.
 
 
 ## Author
