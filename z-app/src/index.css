@@ -1,5 +1,5 @@
-:root{
-  --text-color:white;
+:root {
+  --text-color: white;
 }
 * {
   margin: 0;
@@ -9,19 +9,45 @@ body {
   color: var(--text-color);
   text-align: center;
   font-family: "IBM Plex Sans", sans-serif;
-  max-width: 100vw;
 }
-.black{
+header{
   background-color: black;
+  
+}
+.black {
+  margin: 0 auto;
+  max-width: 1600px;
+}
+nav{
+  display: flex;
+  padding: 1em;
+  justify-content: space-between;
+  align-items: center;
 }
 img {
   width: 100%;
 }
+.nav-icon{
+  display: flex;
+  gap:3vw;
+}
+.hamburgerIcon{
+  display: none;
+  width: 5%;
+}
+.crossIcon{
+  display: none;
+  width: 4%;
+}
+nav h1{
+  font-size: 2em;
+}
 .card-body {
-  margin: 2rem;
-  max-width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 1.5rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px , 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 2rem;
   justify-items: center;
   align-items: center;
@@ -29,29 +55,41 @@ img {
 .card {
   box-shadow: 5px 5px 15px -4px #000000;
   background-color: black;
-  transition: transform 0.3s ease 0;
-  
+  transition: transform;
 }
 .card:hover {
   transform: scale(1.01);
 }
 a {
   text-decoration: none;
-  color:var(--text-color);
+  color: var(--text-color);
 }
 
-img,
-.card {
-  border-radius: 0.2rem;
+img {
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
 }
-@media only screen and (width<=700px){
-  .card-body{
-    grid-template-columns: repeat(auto-fill, minmax(200px , 1fr));
+.card {
+  border-radius: 0.3em;
+}
+@media only screen and (width<=1160px) {
+  .card-body {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 }
-@media only screen and (width<=300px){
-  .card-body{
+@media only screen and (width<=900px) {
+  .card-body {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+@media only screen and (width<=425px) {
+  .card-body {
     display: flex;
     flex-direction: column;
+  }
+}
+@media only screen and (width<=590px){
+  .nav-icon{
+    display: none;
   }
 }
