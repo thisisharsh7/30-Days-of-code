@@ -29,6 +29,7 @@ import img26 from "./images/screenshot26.jpg";
 import img27 from "./images/screenshot27.jpg";
 import img28 from "./images/screenshot28.jpg";
 import img29 from "./images/screenshot29.jpg";
+import img30 from "./images/screenshot30.jpg";
 
 function Main() {
   return (
@@ -233,6 +234,12 @@ function Main() {
           goto="https://neon-zuccutto-cc63a7.netlify.app/?"
           title="Fylo-Dark-Theme-Landing-Page"
           cnt="project29"
+        />
+         <Card
+          display={img30}
+          goto="https://subtle-zabaione-49b6c3.netlify.app/"
+          title="Blogr-Landing-Page"
+          cnt="project30"
         />
       </div>
     </>
