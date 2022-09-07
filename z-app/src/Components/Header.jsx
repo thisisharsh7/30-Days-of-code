@@ -4,32 +4,16 @@ import Icon2 from "./icon-close.svg";
 import { useState } from "react";
 
 function Header() {
-  const [showIcon, getIcon] = useState({
-    open: "block",
-    close: "none",
-  });
-  function showBox(event) {
-    getIcon(() => {
-      if (event.target.id === "1") {
-        return {
-          open: "none",
-          close: "block",
-        };
-      } else {
-        return {
-          open: "block",
-          close: "none",
-        };
-      }
-    });
-  }
-
+const [showdialogue , getdialogue] = useState(false);
+function showBox(){
+  getdialogue(!showdialogue);
+}
   return (
     <header>
       <div className="black">
         <nav>
           <h1>Project</h1>
-          <div className="nav-icon">
+          <div className={showdialogue ? "nav-icon menu-full" : "nav-icon"}>
             <iframe
               src={"https://ghbtns.com/github-btn.html?user=thisisharsh7&type=follow&count=true&size=large"}
               frameBorder={0}
@@ -49,18 +33,16 @@ function Header() {
           </div>
           <img
             onClick={showBox}
-            className="hamburgerIcon"
+            className={showdialogue ? "hamburgerIcon shapeShow" : "hamburgerIcon"}
             src={Icon1}
             alt="hamburger"
-            style={{ display: showIcon.open }}
             id={1}
           />
           <img
             onClick={showBox}
-            className="crossIcon"
+            className={showdialogue ? "crossIcon shapeChange" : "crossIcon"}
             src={Icon2}
             alt="cross"
-            style={{ display: showIcon.close }}
             id={2}
           />
         </nav>
