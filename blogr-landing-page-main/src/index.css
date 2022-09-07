@@ -431,9 +431,6 @@ footer {
     gap: 0.5em;
     flex-wrap: wrap;
   }
-  #nav-static {
-    display: none;
-  }
   #mobile-bg {
     background-size: 100%;
     background-repeat: no-repeat;
@@ -453,7 +450,10 @@ footer {
   #close {
     cursor: pointer;
   }
-  #nav-static {
+  #nav-static{
+    display: none;
+  }
+  .nav-change{
     border-radius: 1.3em;
     padding-top: 3em;
     padding-bottom: 3em;
@@ -472,6 +472,7 @@ footer {
   }
   #subNav {
     flex-direction: column;
+    font-size: 1.3em;
     gap: 2em;
   }
   #nav-button {
@@ -481,11 +482,12 @@ footer {
   .merge {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   .merge button,
   #login {
     color: var(--Very-dark-blue-headings);
+    font-size: 1.3em;
+    gap:0em;
   }
 
   #product,
@@ -493,6 +495,11 @@ footer {
   .connect {
     top: 0.8em;
     position: relative;
-    background-color: var(--Grayish-blue-footer-text);
+    background-color: rgba(204, 232, 243, 0.403);
+  }
+  #sign{
+    background-color: var(--Very-light-red-CTA-hover-background);
+    color:white;
+    font-size: 1.3em;
   }
 }
