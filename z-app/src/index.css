@@ -10,7 +10,7 @@ body {
   text-align: center;
   font-family: "IBM Plex Sans", sans-serif;
 }
-header{
+header , footer{
   background-color: black;
   
 }
@@ -33,11 +33,7 @@ img {
 }
 .hamburgerIcon{
   display: none;
-  width: 8%;
-}
-.crossIcon{
-  display: none;
-  width: 6%;
+  width: 1.8em;
 }
 nav h1{
   font-size: 2em;
@@ -104,25 +100,11 @@ img {
     flex-direction: column;
     align-items: flex-start;
     top:5em;
-    right:1vw;
+    right:2vw;
     padding:2em 1vw 5em 3vw;
-    border-top:3px dotted rgb(12, 12, 12);
+    border:3px dotted rgb(12, 12, 12);
 
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
     background-color:rgba(0, 0, 0, 0.517);
-  }
-  .shapeShow{
- 
-    display: none;
-  }
-  @keyframes rotate {
-    to{
-      transform: rotate(360deg);
-    }
-  }
-  .shapeChange{
-    display: block;
-    animation-name:rotate;
-    animation-duration: 1s;
   }
 }

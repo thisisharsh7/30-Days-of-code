@@ -4,10 +4,16 @@ import Icon2 from "./icon-close.svg";
 import { useState } from "react";
 
 function Header() {
-const [showdialogue , getdialogue] = useState(false);
-function showBox(){
-  getdialogue(!showdialogue);
-}
+  const [showdialogue, getdialogue] = useState(false);
+  const [setSrc, getSrc] = useState(Icon1);
+  function showBox() {
+    getdialogue(!showdialogue);
+    if (setSrc === Icon1) {
+      getSrc(Icon2);
+    } else {
+      getSrc(Icon1);
+    }
+  }
   return (
     <header>
       <div className="black">
@@ -15,7 +21,9 @@ function showBox(){
           <h1>Project</h1>
           <div className={showdialogue ? "nav-icon menu-full" : "nav-icon"}>
             <iframe
-              src={"https://ghbtns.com/github-btn.html?user=thisisharsh7&type=follow&count=true&size=large"}
+              src={
+                "https://ghbtns.com/github-btn.html?user=thisisharsh7&type=follow&count=true&size=large"
+              }
               frameBorder={0}
               scrolling={0}
               width={250}
@@ -23,7 +31,9 @@ function showBox(){
               title={"GitHub"}
             ></iframe>
             <iframe
-              src={"https://ghbtns.com/github-btn.html?user=thisisharsh7&repo=30-Days-Of-Code&type=star&count=true&size=large"}
+              src={
+                "https://ghbtns.com/github-btn.html?user=thisisharsh7&repo=30-Days-Of-Code&type=star&count=true&size=large"
+              }
               frameBorder={0}
               scrolling={0}
               width={110}
@@ -33,17 +43,9 @@ function showBox(){
           </div>
           <img
             onClick={showBox}
-            className={showdialogue ? "hamburgerIcon shapeShow" : "hamburgerIcon"}
-            src={Icon1}
+            className="hamburgerIcon"
+            src={setSrc}
             alt="hamburger"
-            id={1}
-          />
-          <img
-            onClick={showBox}
-            className={showdialogue ? "crossIcon shapeChange" : "crossIcon"}
-            src={Icon2}
-            alt="cross"
-            id={2}
           />
         </nav>
       </div>
