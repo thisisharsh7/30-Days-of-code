@@ -30,13 +30,18 @@ body{
     padding:0vw 1vw;
     
 }
-.userIcon{
+.grpBtn{
     max-width: 100%;
     height: 100%;
     align-self: center;
     grid-column: 2/4;
     border-radius: 0.2em;
     grid-row-start: 1;
+    position: relative;
+}
+.userIcon{
+    max-width: 100%;
+    height: 100%;
 }
 .userText{
     align-self: center;
@@ -73,4 +78,55 @@ body{
 .bio-work{
     font-weight: 400;
     color: var(--Grayish-Blue);
+}
+.btnChange{
+    background-color: white;
+    display: flex;
+    gap:1.5em;
+    width: max-content;
+    padding: 0.1em 0.6em;
+    border-radius: 2em;
+    position: absolute;
+    bottom:-0.5em;
+    left:2vw;
+}
+.btnChange span{
+    cursor: pointer;
+}
+@media only screen and (max-width:730px){
+    .userDescription{
+        display: flex;
+        flex-direction: column-reverse;
+        gap:1.5em;
+        background-color: red;
+    }
+    .userCard{
+        background-color: blue;
+    }
+    .grpBtn{
+        background-color: orange;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .userIcon{
+        max-width: 90%;
+        border-radius: 0.3em;
+    }
+    .userText{
+        background-color: aqua;
+        text-align: center;
+    }
+    .short-bio{
+        flex-direction: column;
+        align-items: center;
+    }
+    .btnChange{
+        padding: 0.1em 0.6em;
+        border-radius: 2em;
+        position: absolute;
+        bottom:-0.5em;
+        left:21vw;
+    }
 }

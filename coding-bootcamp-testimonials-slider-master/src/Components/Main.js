@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Testimonial from "./Testimonial";
 import Profile1 from "./images/image-tanya.jpg";
 import Profile2 from "./images/image-john.jpg";
@@ -8,13 +8,29 @@ let detail = [
 ];
 let user = ["Tanya Sinclair", "John Tarkpor"];
 let job = ["UX Engineer", "Junior Front-end Developer"];
+let allProfile = [Profile1 , Profile2];
 
 const Main = () => {
+  const [cnt , setCnt] = useState(0)
+const CardPrev = () => {
+  if(cnt!==0){
+    setCnt(cnt-1);
+  }else{
+    alert("Previous do not exist.")
+  }
+}
+const CardNext = () => {
+  if(cnt!==1){
+    setCnt(cnt+1);
+  }else{
+    alert("Next do not exist.")
+  }
+}
   return (
     <>
-      <div>
-        <Testimonial para={detail[0]} name={user[0]} work={job[0]} profile={Profile1}/>
-      </div>
+      <main>
+        <Testimonial para={detail[cnt]} name={user[cnt]} work={job[cnt]} profile={allProfile[cnt]} prevShow={CardPrev} nextShow={CardNext} />
+      </main>
     </>
   );
 };
