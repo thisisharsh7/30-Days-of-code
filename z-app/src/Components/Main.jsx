@@ -237,7 +237,7 @@ function Main() {
           title="Fylo-Dark-Theme-Landing-Page"
           cnt="project29"
         />
-         <Card
+        <Card
           display={img30}
           goto="https://subtle-zabaione-49b6c3.netlify.app/"
           title="Blogr-Landing-Page"
@@ -249,13 +249,13 @@ function Main() {
           title="Bootcamp-Testimonial-slider"
           cnt="project31"
         />
-      </div>
-      <Card
+        <Card
           display={img32}
           goto="https://fluffy-paletas-994604.netlify.app/"
           title="Pricing-Component-Toggle"
           cnt="project32"
         />
+      </div>
     </>
   );
 }
