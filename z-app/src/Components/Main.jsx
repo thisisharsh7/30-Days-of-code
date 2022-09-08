@@ -30,6 +30,7 @@ import img27 from "./images/screenshot27.jpg";
 import img28 from "./images/screenshot28.jpg";
 import img29 from "./images/screenshot29.jpg";
 import img30 from "./images/screenshot30.jpg";
+import img31 from "./images/screenshot31.jpg";
 
 function Main() {
   return (
@@ -240,6 +241,12 @@ function Main() {
           goto="https://subtle-zabaione-49b6c3.netlify.app/"
           title="Blogr-Landing-Page"
           cnt="project30"
+        />
+        <Card
+          display={img31}
+          goto="https://roaring-tanuki-ce29cd.netlify.app/"
+          title="Bootcamp-Testimonial-slider"
+          cnt="project31"
         />
       </div>
     </>
