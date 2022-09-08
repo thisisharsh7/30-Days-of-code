@@ -30,6 +30,26 @@ body {
   margin: 2vw;
   margin-top: 0.8vw;
 }
+.prevUserCard{
+  animation-name: rotatePrev;
+  animation-duration: 230ms;
+  animation-delay: 1ms;
+}
+.nextUserCard{
+  animation-name: rotateNext;
+  animation-duration: 230ms;
+  animation-delay: 1ms;
+}
+@keyframes rotateNext{
+  from{
+    transform: translateX(100%);
+  }
+}
+@keyframes rotatePrev{
+  from{
+    transform: translateX(-100%);
+  }
+}
 .userCard {
   padding: 0vw 1vw;
 }
