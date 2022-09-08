@@ -31,6 +31,7 @@ import img28 from "./images/screenshot28.jpg";
 import img29 from "./images/screenshot29.jpg";
 import img30 from "./images/screenshot30.jpg";
 import img31 from "./images/screenshot31.jpg";
+import img32 from "./images/screenshot32.jpg";
 
 function Main() {
   return (
@@ -249,6 +250,12 @@ function Main() {
           cnt="project31"
         />
       </div>
+      <Card
+          display={img32}
+          goto="https://fluffy-paletas-994604.netlify.app/"
+          title="Pricing-Component-Toggle"
+          cnt="project32"
+        />
     </>
   );
 }
