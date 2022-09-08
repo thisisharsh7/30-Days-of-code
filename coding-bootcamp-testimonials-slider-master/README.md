@@ -24,13 +24,13 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
+![](./screenshot31.jpg)
 
 
 ### Links
 
-- Solution URL: [Solution url]()
-- Live Site URL: [Live site](https://creative-empanada-2321e5.netlify.app/)
+- Solution URL: [Solution url](https://www.frontendmentor.io/solutions/codingbootcamptestimonialssliderbuildwithreact-n4tC8IF1U4)
+- Live Site URL: [Live site](https://roaring-tanuki-ce29cd.netlify.app/)
 
 ## My process
 
