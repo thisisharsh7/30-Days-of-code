@@ -1,19 +1,21 @@
 import React from "react";
 
-const Toggle = () => {
+const Toggle = (props) => {
   return (
     <>
-      <section>
-        <div id="toggle-body">
-          <h3>Annualy</h3>
-          <div>
-            <div id="toogle-outer">
-              <div id="toggle-inner"></div>
+      <article>
+        <section>
+          <div className="toggle-body">
+            <span>Annualy</span>
+            <div className="toggle-bg">
+              <div className="toggle-outer">
+                <div onClick={props.moveHorizon} className="toggle-inner"></div>
+              </div>
             </div>
+            <span>Monthly</span>
           </div>
-          <h3>Monthly</h3>
-        </div>
-      </section>
+        </section>
+      </article>
     </>
   );
 };

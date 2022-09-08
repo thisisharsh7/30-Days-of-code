@@ -1,9 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 *{
   margin:0;
   padding:0;
 }
+:root{
+    --Linear-Gradient: hsl(236, 72%, 79%) , hsl(237, 63%, 64%);
+    --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+    --Light-Grayish-Blue: hsl(234, 14%, 74%);
+    --Grayish-Blue: hsl(233, 13%, 49%);
+    --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+}
 body{
-  display: grid;
   min-height: 100vh;
-  place-content: center;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--Very-Light-Grayish-Blue);
+  background-image: url("images/bg-top.svg") , url("images/bg-bottom.svg");
+  background-position: top right, bottom left;
+  background-repeat: no-repeat , no-repeat;
+  text-align: center;
+}
+header{
+  padding-top: 5em;
+  padding-bottom: 1em;
+}
+header h1{
+  font-size: 2.5em;
+  color:var(--Dark-Grayish-Blue);
+  font-weight: bold;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  gap:5em;
+}
+article{
+  display: flex;
+  justify-content: center;
+  padding:0 1vw;
+}
+.toggle-body{
+  display: flex;
+  gap:2em;
+  align-items: center;
+  padding-top: 1.5em;
+}
+.toggle-body span{
+  color: var(--Light-Grayish-Blue);
+  font-size: 1.5em;
+  font-weight: normal;
+}
+.toggle-outer{
+  width: 4.3em;
+  height: 2em;
+  border-radius: 9em;
+  position: relative;
+  
+}
+.toggle-inner{
+  cursor: pointer;
+  width: 2em;
+  height: 100%;
+  border-radius: 9em;
+  position: absolute;
+  right: 0;
+  top:0;
+  background-color: white;
+  
+}
+.toggle-bg{
+  padding: 0.4em;
+  border-radius: 9em;
+  background: linear-gradient(var(--Linear-Gradient));
+}
+.toggleLeft{
+  animation-name: moveLeft;
+  animation-duration: 300ms;
+  animation-delay: 0ms;
+  left:0;
+}
+.toggleRight{
+  animation-name: moveRight;
+  animation-duration: 300ms;
+  animation-delay: 0ms;
+  right:0;
+}
+@keyframes moveRight{
+  from{
+    transform: translateX(-100%);
+  }
+}
+@keyframes moveLeft{
+  from{
+    transform: translateX(100%);
+  }
+}
+
+.card-body{
+  width: 25em;
+  box-shadow: -7px 0px 34px 5px rgba(0,0,0,0.11);
+}
+.card-skeleton{
+  padding:2vw;
+  display: flex;
+  flex-direction: column;
+  gap:2em;
+  align-items: center;
+}
+li{
+  list-style:none;
+  position: relative;
+  padding-bottom: 1rem;
+}
+li:after{
+  content: " ";
+  height: 1px;
+  width:100%;
+  background-color: var(--Very-Light-Grayish-Blue);
+  position: absolute;
+  bottom:-2px;
+  left:0;
+}
+ul{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  text-align: center;
+}
+ul li:first-child{
+  font-size:3em;
+  min-width: max-content;
+  padding-bottom: 0.7em;
+  font-weight: bold;
+}
+.side1, .side2{
+  background-color: white;
+  margin:1.5em 0em;
+}
+.side1{
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+.side2{
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+.side1 div ul li:after , .side2 div ul li:after{
+  background-color: var(--Grayish-Blue);
+}
+.side1 div ul li:first-child , .side2 div ul li:first-child{
+  color:rgba(0, 0, 0, 0.855);
+}
+.middle div ul li:first-child{
+  color:white;
+}
+button{
+  width: 100%;
+  height:3.4em;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 0.5em;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.05em;
+  border:0px;
+  cursor: pointer;
+}
+.middle{
+  background:linear-gradient(var(--Linear-Gradient));
+  border-radius: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  color:var(--Very-Light-Grayish-Blue);
+}
+.middle div button{
+  background-color: white;
+  color:hsl(237, 63%, 64%);
+}
+.side1 , .side2{
+  color:var(--Dark-Grayish-Blue);
+  
+}
+.side1 div button , .side2  div button{
+  background:linear-gradient(var(--Linear-Gradient));
+  color:white;
+}
+
+
+.card-skeleton ul li:first-child{
+  display: flex;
+  gap:0.1em;
+  justify-content: center;
+  align-items: center;
+}
+.dollar{
+  font-size:0.7em;
+}
+footer{
+  padding-top: 1em;
+}
+.side1 div button:hover , .side2 div button:hover{
+  background:white;
+  border: 1px solid hsl(237, 63%, 64%);
+  color:hsl(237, 63%, 64%);
+}
+.middle div button:hover {
+  background-color:linear-gradient(var(--Linear-Gradient));
+  color:white;
+  border:1px solid white;
+}
+
+@media only screen and (max-width:680px){
+  article{
+    flex-direction: column;
+    align-items: center;
+    padding-left:1.2em;
+    padding-right: 1.2em;
+  }
+  header h1{
+    font-size: 10vw;
+  }
+  .card-body{
+    max-width: 100%;
+    border-radius: 0.5em;
+  }
+  .toggle-body{
+    gap:3vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 4vw;
+  }
+  .card-skeleton{
+    padding:1.8em;
+  }
+  .middle{
+    padding: 0em;
+  }
+}
+*{
+  word-break: break-all;
 }

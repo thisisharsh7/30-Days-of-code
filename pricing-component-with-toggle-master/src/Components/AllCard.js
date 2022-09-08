@@ -14,6 +14,7 @@ const AllCard = (props) => {
           bytes="GB"
           user={2}
           send={3}
+          newClass="side1"
         />
         <Card
           title="Professional"
@@ -22,6 +23,7 @@ const AllCard = (props) => {
           bytes="TB"
           user={5}
           send={10}
+          newClass="middle"
         />
         <Card
           title="Master"
@@ -30,6 +32,7 @@ const AllCard = (props) => {
           bytes="TB"
           user={10}
           send={20}
+          newClass="side2"
         />
       </article>
     </>
