@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/30-Days-of-code/static/css/main.454b14f7.css",
-    "main.js": "/30-Days-of-code/static/js/main.e96c0b64.js",
+    "main.js": "/30-Days-of-code/static/js/main.6a4495b7.js",
     "static/media/screenshot12.jpg": "/30-Days-of-code/static/media/screenshot12.a69596be7acef904ad9a.jpg",
     "static/media/screenshot27.jpg": "/30-Days-of-code/static/media/screenshot27.e5cbe579e907ef95c62d.jpg",
     "static/media/screenshot28.jpg": "/30-Days-of-code/static/media/screenshot28.9aa2c223514e40dabe7b.jpg",
@@ -37,10 +37,10 @@
     "static/media/icon-close.svg": "/30-Days-of-code/static/media/icon-close.c6580312401807bc9f98867a80e2bc37.svg",
     "static/media/icon-hamburger.svg": "/30-Days-of-code/static/media/icon-hamburger.68867946847c3249542e85c3745a1e06.svg",
     "main.454b14f7.css.map": "/30-Days-of-code/static/css/main.454b14f7.css.map",
-    "main.e96c0b64.js.map": "/30-Days-of-code/static/js/main.e96c0b64.js.map"
+    "main.6a4495b7.js.map": "/30-Days-of-code/static/js/main.6a4495b7.js.map"
   },
   "entrypoints": [
     "static/css/main.454b14f7.css",
-    "static/js/main.e96c0b64.js"
+    "static/js/main.6a4495b7.js"
   ]
 }
