@@ -244,7 +244,7 @@ function Main() {
         />
         <Card
           display={img31}
-          goto="https://roaring-tanuki-ce29cd.netlify.app/"
+          goto="https://effortless-sunshine-6b3478.netlify.app/"
           title="Bootcamp-Testimonial-slider"
           cnt="project31"
         />
