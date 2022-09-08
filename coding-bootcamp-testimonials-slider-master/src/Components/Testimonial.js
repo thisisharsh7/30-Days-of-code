@@ -1,7 +1,4 @@
 import React from "react";
-import NextCard from "./images/icon-next.svg";
-import PrevCard from "./images/icon-prev.svg";
-
 
 const Testimonial = (props) => {
   return (
@@ -16,11 +13,35 @@ const Testimonial = (props) => {
             </p>
           </div>
           <div className="grpBtn">
-          <img src={props.profile} className="userIcon" alt="between-user"/>
-          <p className="btnChange"><span onClick={props.prevShow}><img src={PrevCard} alt="left"></img></span><span  onClick={props.nextShow} ><img src={NextCard} alt="right"></img></span></p>
+            <img src={props.profile} className="userIcon" alt="between-user" />
+            <p className="btnChange">
+              <span onClick={props.prevShow}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18">
+                  <path
+                    fill="none"
+                    stroke={props.setColor1}
+                    strokeWidth="3"
+                    d="M11 1L3 9l8 8"
+                  />
+                </svg>
+              </span>
+              <span onClick={props.nextShow}>
+                <svg
+                  xmlns={"http://www.w3.org/2000/svg"}
+                  width="13"
+                  height="18"
+                >
+                  <path
+                    fill="none"
+                    stroke={props.setColor2}
+                    strokeWidth="3"
+                    d="M2 1l8 8-8 8"
+                  />
+                </svg>
+              </span>
+            </p>
           </div>
         </div>
-        
       </div>
     </>
   );

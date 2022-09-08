@@ -8,28 +8,49 @@ let detail = [
 ];
 let user = ["Tanya Sinclair", "John Tarkpor"];
 let job = ["UX Engineer", "Junior Front-end Developer"];
-let allProfile = [Profile1 , Profile2];
+let allProfile = [Profile1, Profile2];
 
 const Main = () => {
-  const [cnt , setCnt] = useState(0)
-const CardPrev = () => {
-  if(cnt!==0){
-    setCnt(cnt-1);
-  }else{
-    alert("Previous do not exist.")
-  }
-}
-const CardNext = () => {
-  if(cnt!==1){
-    setCnt(cnt+1);
-  }else{
-    alert("Next do not exist.")
-  }
-}
+  const [cnt, setCnt] = useState(0);
+  const [getColor, getColorOn] = useState({
+    color1: "hsla(240, 18%, 77%)",
+    color2: "hsl(240, 38%, 20%)",
+  });
+  const CardPrev = () => {
+    if (cnt !== 0) {
+      setCnt(cnt - 1);
+      getColorOn(() => {
+        return {
+          color1: "hsla(240, 18%, 77%)",
+          color2: "hsl(240, 38%, 20%)",
+        };
+      });
+    }
+  };
+  const CardNext = () => {
+    if (cnt !== 1) {
+      setCnt(cnt + 1);
+      getColorOn(() => {
+        return {
+          color1: "hsl(240, 38%, 20%)",
+          color2: "hsla(240, 18%, 77%)",
+        };
+      });
+    }
+  };
   return (
     <>
       <main>
-        <Testimonial para={detail[cnt]} name={user[cnt]} work={job[cnt]} profile={allProfile[cnt]} prevShow={CardPrev} nextShow={CardNext} />
+        <Testimonial
+          para={detail[cnt]}
+          name={user[cnt]}
+          work={job[cnt]}
+          profile={allProfile[cnt]}
+          prevShow={CardPrev}
+          nextShow={CardNext}
+          setColor1={getColor.color1}
+          setColor2={getColor.color2}
+        />
       </main>
     </>
   );
