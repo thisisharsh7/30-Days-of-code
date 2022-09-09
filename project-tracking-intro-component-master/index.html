@@ -10,36 +10,45 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link rel="stylesheet" type="text/css" href="index.css" />
     <title>Frontend Mentor | Project tracking intro component</title>
   </head>
   <body>
     <header>
       <nav>
         <img src="./images/logo.svg" alt="logo" />
-        <ul>
+        <ul className="nav-display">
           <li>Product</li>
           <li>Features</li>
           <li>Pricing</li>
           <li>Login</li>
         </ul>
+        <img
+          src="./images/icon-hamburger.svg"
+          alt="hamburger"
+          class="hamIcon"
+        />
+        <img src="./images/icon-close.svg" alt="close" class="closeIcon" />
       </nav>
     </header>
     <main>
       <section>
         <div>
-          <p>
-            <span>New</span>
+          <p class="top">
+            <span class="new">New</span>
             <span>Monograph Dashboard</span>
           </p>
           <h1>Powerful insights into your team</h1>
-          <p>Project planning and time tracking for agile teams</p>
+          <p class="bottom">
+            Project planning and time tracking for agile teams
+          </p>
         </div>
-        <p>
+        <p class="btn-para">
           <span><button>Schedule a demo</button></span
-          ><span>to see a live preview</span>
+          ><span class="live-preview">to see a preview</span>
         </p>
       </section>
+      <img src="images/illustration-devices.svg" alt="illustration" />
     </main>
 
     <footer>
