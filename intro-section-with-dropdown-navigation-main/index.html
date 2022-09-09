@@ -19,13 +19,52 @@
         <img src="images/logo.svg" alt="logo" id="logo" />
         <div class="nav-items">
           <ul class="detail-list">
-            <li class="features more-list">
-              <span>Features</span
-              ><span><img src="images/icon-arrow-down.svg" alt="arrow" /></span>
+            <li class="parent-list">
+              <p class="features more-list">
+                <span>Features</span>
+                <img
+                  src="images/icon-arrow-down.svg"
+                  alt="arrow"
+                  class="down"
+                /><img src="images/icon-arrow-up.svg" alt="up" class="up" />
+              </p>
+              <ul class="sub-list">
+                <li>
+                  <img src="images/icon-todo.svg" alt="to-do" /><span
+                    >Todo List</span
+                  >
+                </li>
+                <li>
+                  <img src="images/icon-calendar.svg" alt="calendar" /><span
+                    >Calendar</span
+                  >
+                </li>
+                <li>
+                  <img src="images/icon-reminders.svg" alt="reminder" /><span
+                    >Reminder</span
+                  >
+                </li>
+                <li>
+                  <img src="images/icon-planning.svg" alt="planning" /><span
+                    >Planning</span
+                  >
+                </li>
+              </ul>
             </li>
-            <li class="company more-list">
-              <span>Company</span
-              ><span><img src="images/icon-arrow-down.svg" alt="arrow" /></span>
+            <li class="parent-list">
+              <p class="company more-list">
+                <span>Company</span
+                ><img
+                  src="images/icon-arrow-down.svg"
+                  alt="arrow"
+                  class="down"
+                /><img src="images/icon-arrow-up.svg" alt="up" class="up" />
+              </p>
+              <ul class="sub-list">
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
             </li>
             <li>Careers</li>
             <li>About</li>
@@ -35,6 +74,8 @@
             <li class="register">Register</li>
           </ul>
         </div>
+        <img src="images/icon-menu.svg" alt="menu" class="hamMenu hamAndCross"/>
+        <img src="images/icon-close-menu.svg" alt="close"  class="crossMenu hamAndCross"/>
       </nav>
     </header>
     <main>
@@ -54,7 +95,7 @@
       </section>
       <picture>
         <source
-          media="(max-width:500px)"
+          media="(max-width:763px)"
           srcset="./images/image-hero-mobile.png"
         />
         <img src="./images/image-hero-desktop.png" alt="hero" />
@@ -72,5 +113,6 @@
         >.
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>

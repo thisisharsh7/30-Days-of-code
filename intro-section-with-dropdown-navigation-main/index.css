@@ -12,14 +12,19 @@
 }
 body {
   max-width: 1440px;
+  background-color: var(--Almost-White);
   margin: 0 auto;
   font-family: "Epilogue", sans-serif;
+}
+.crossMenu , .hamMenu{
+    display: none;
+    cursor: pointer;
 }
 p {
   font-size: 18px;
 }
 header {
-  padding: 2em 2vw;
+  padding: 1.3em 2vw;
 }
 #logo {
   padding-top: 0.3em;
@@ -49,6 +54,50 @@ nav {
   align-items: center;
   gap: 8px;
 }
+.parent-list {
+  position: relative;
+}
+
+.sub-list {
+  position: absolute;
+  color: var(--Medium-Gray);
+  font-family: "Epilogue", sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+  top: 2.5em;
+
+  flex-direction: column;
+  gap: 1em;
+  align-items: flex-start;
+  justify-items: flex-start;
+  padding: 1.8em;
+  border-radius: 0.7em;
+  width: max-content;
+  box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  animation-name: zoom;
+  animation-duration: 500ms;
+  display: none;
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+}
+.sub-display {
+  display: flex;
+}
+
+.sub-list li {
+  display: flex;
+  gap: 1em;
+}
+.company ~ .sub-list {
+  left: 0;
+}
+.features ~ .sub-list {
+  right: 0;
+}
 .register-list {
   display: flex;
   align-items: center;
@@ -59,9 +108,14 @@ nav {
   border-radius: 1.05em;
   border: 2px solid hsla(0, 0%, 45%, 0.766);
 }
-ul li:hover {
+.register-list li:hover {
   color: var(--Almost-Black);
+}
+ul li:hover {
   cursor: pointer;
+}
+.detail-list .parent-list:nth-child(2) ~ li:hover {
+  color: black;
 }
 .register:hover {
   border-color: var(--Almost-Black);
@@ -72,14 +126,14 @@ main {
   display: flex;
   max-height: calc(900px - 46.4px);
   padding-right: calc(0.2em + 7vw);
-  padding-top: calc(2.5em + 4vw);
+  padding-top: 2em;
   justify-content: space-between;
 }
 section {
   display: flex;
   flex-direction: column;
   padding-left: 9vw;
-  padding-top: 9vw;
+  padding-top: 9.5em;
   padding-right: 6vw;
   justify-content: space-between;
 }
@@ -114,7 +168,7 @@ button {
 button:hover {
   cursor: pointer;
   animation-name: full;
-  animation-duration: 400ms;
+  animation-duration: 300ms;
   background-color: var(--Almost-White);
   color: var(--Almost-Black);
 }
@@ -125,13 +179,121 @@ button:hover {
   }
 }
 .client {
+  width: 100%;
+}
+.client img {
+  width: 100%;
+}
+.client {
   padding-top: 5em;
   display: grid;
-  grid-template-columns: repeat(4, minmax(50px, 1fr));
-  gap: 1em;
+  grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+  gap: 1.3em;
   justify-items: center;
+  align-items: center;
 }
 footer {
-  padding-top: 8em;
+  padding-top: 4em;
   text-align: center;
+}
+.down {
+  display: none;
+}
+.up {
+  display: none;
+}
+.showArrow {
+  animation-name: turn;
+  animation-duration: 500ms;
+  display: block;
+}
+.colorChange {
+  color: black;
+}
+@keyframes turn {
+  to {
+    transform: translateY(-5px);
+  }
+}
+.features {
+  font-size: 1em;
+}
+.company {
+  font-size: 1em;
+}
+
+@media only screen and (max-width: 763px) {
+  .nav-items {
+    position: absolute;
+    flex-direction: column;
+    bottom:0;
+    top:4em;
+    background-color: var(--Almost-White);
+    gap:0;
+    animation-name: moveleft;
+    animation-duration: 600ms;
+    padding: 2em;
+    display: none;
+  }
+  @keyframes moveleft {
+    from{
+        transform: translateX(5em);
+    }
+  }
+  .show-nav-items{
+    display: flex;
+  }
+  ul{
+    right: 0;
+    flex-direction: column;
+    background-color: var(--Almost-White);
+  }
+
+  body {
+    min-height: 100vh;
+  }
+  header {
+    padding-right: 0.8em;
+    padding-left: 0.8em;
+    position: relative;
+  }
+  nav{
+    justify-content:space-between;
+  }
+  .hamMenu{
+    display: block;
+  }
+  .hamToggle{
+    display: none;
+  }
+  .crossToggle{
+    display: block;
+  }
+  main {
+    flex-direction: column-reverse;
+    padding: 0;
+    max-height: none;
+    padding-top: 0.5em;
+  }
+  picture {
+    width: 100%;
+    height: 100%;
+  }
+  picture img {
+    width: 100%;
+  }
+  section {
+    padding: 2em 0.8em;
+    align-items: center;
+    text-align: center;
+  }
+  section h1 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .client {
+    padding-top: 4.5em;
+    text-align: center;
+    grid-template-columns: repeat(4, minmax(30px, 1fr));
+  }
 }
