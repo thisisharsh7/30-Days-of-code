@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution url](https://www.frontendmentor.io/solutions/projecttrackingintrocomponentbuildwithcss-XBodG0r_bQ)
-- Live Site URL: [Live site](https://jocular-flan-90f927.netlify.app/)
+- Live Site URL: [Live site](https://incandescent-kleicha-b0b89f.netlify.app/)
 
 ## My process
 
