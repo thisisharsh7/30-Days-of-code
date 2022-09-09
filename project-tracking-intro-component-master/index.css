@@ -25,6 +25,9 @@ body {
   position: relative;
   overflow-x: hidden;
 }
+main{
+  overflow: hidden;
+}
 main::after {
   content: " ";
   width: 50vw;
@@ -37,7 +40,7 @@ main::after {
   z-index: -1;
 }
 header {
-  padding: 2em 8vw;
+  padding: 2em 6vw;
 }
 nav {
   display: flex;
@@ -63,7 +66,7 @@ main {
   display: grid;
   grid-template-columns: minmax(100px, 0.8fr) 1.2fr;
   align-items: center;
-  padding-left: 8vw;
+  padding-left: 6vw;
 }
 main img {
   width: 130%;
@@ -118,7 +121,6 @@ h1 {
 }
 .new ~ span {
   letter-spacing: 0.2em;
-  min-width: max-content;
 }
 
 button {
@@ -131,7 +133,6 @@ button {
   font-size: 0.9em;
   border: 0px;
   color: var(--Light-Grayish-Blue);
-  width: max-content;
   cursor: pointer;
 }
 button:hover {
@@ -140,7 +141,7 @@ button:hover {
 .btn-para {
   width: 100%;
   display: flex;
-  gap: 1em;
+  gap: 0.8em;
   align-items: center;
 }
 li {
@@ -166,22 +167,18 @@ li:last-child:hover {
   font-family: var(--font-family-heading-C2A-nav);
   letter-spacing: 0.2em;
   font-size: 0.9em;
-  min-width: max-content;
 }
 .hamIcon,
 .crossIcon {
   cursor: pointer;
   display: none;
 }
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 720px) {
   footer {
     padding-top: 2em;
   }
   .hamIcon {
     display: block;
-  }
-  body {
-    overflow-x: hidden;
   }
   header {
     padding: 1.2em;
@@ -214,15 +211,15 @@ li:last-child:hover {
   main {
     display: flex;
     flex-direction: column-reverse;
-    padding: 1.2em;
     gap: 3em;
-  }
-  main img {
-    width: 150%;
-    object-position: 15vw;
+    padding: 0;
+    overflow: hidden;
   }
   section {
-    max-width: 100%;
+    padding:0em 1.5em;
+  }
+  main img{
+    object-position: calc(7vw + 1.5em);
   }
   section div {
     align-items: flex-start;
@@ -237,8 +234,7 @@ li:last-child:hover {
 
   .top,
   .btn-para {
-    gap: 4vw;
-    width: 100%;
+    gap: 1em;
     align-items: center;
     flex-wrap: wrap;
   }
@@ -265,5 +261,11 @@ li:last-child:hover {
     display: flex;
     animation-name: show;
     animation-duration: 300ms;
+  }
+}
+@media only screen and (max-width:180px){
+  *{
+    word-break:break-all;
+    padding:0;
   }
 }
