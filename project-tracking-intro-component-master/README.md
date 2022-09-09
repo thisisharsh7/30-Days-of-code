@@ -1,6 +1,6 @@
 # Frontend Mentor - Project tracking intro component solution
 
-This is a solution to the [Project tracking intro component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/project-tracking-intro-component-5d289097500fcb331a67d80e). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Project tracking intro component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/project-tracking-intro-component-5d289097500fcb331a67d80e). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -27,11 +27,10 @@ Users should be able to:
 
 ![](./screenshot33.jpg)
 
-
 ### Links
 
-- Solution URL: [Solution url]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution url](https://www.frontendmentor.io/solutions/projecttrackingintrocomponentbuildwithcss-XBodG0r_bQ)
+- Live Site URL: [Live site](https://jocular-flan-90f927.netlify.app/)
 
 ## My process
 
@@ -45,8 +44,7 @@ Users should be able to:
 
 ### What I learned
 
-On process--
-
+I learned some CSS animations and Object position property.
 
 ## Author
 
