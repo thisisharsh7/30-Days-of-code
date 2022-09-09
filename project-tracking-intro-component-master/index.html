@@ -17,7 +17,7 @@
     <header>
       <nav>
         <img src="./images/logo.svg" alt="logo" />
-        <ul className="nav-display">
+        <ul>
           <li>Product</li>
           <li>Features</li>
           <li>Pricing</li>
@@ -26,9 +26,9 @@
         <img
           src="./images/icon-hamburger.svg"
           alt="hamburger"
-          class="hamIcon"
+          class="hamIcon" onclick="btnClicked()"
         />
-        <img src="./images/icon-close.svg" alt="close" class="closeIcon" />
+        <img src="./images/icon-close.svg" alt="close" class="crossIcon" onclick="btnClicked()" />
       </nav>
     </header>
     <main>
@@ -62,5 +62,6 @@
         >.
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
