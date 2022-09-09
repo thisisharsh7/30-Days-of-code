@@ -32,6 +32,7 @@ import img29 from "./images/screenshot29.jpg";
 import img30 from "./images/screenshot30.jpg";
 import img31 from "./images/screenshot31.jpg";
 import img32 from "./images/screenshot32.jpg";
+import img33 from "./images/screenshot33.jpg";
 
 function Main() {
   return (
@@ -254,6 +255,12 @@ function Main() {
           goto="https://fluffy-paletas-994604.netlify.app/"
           title="Pricing-Component-Toggle"
           cnt="project32"
+        />
+        <Card
+          display={img33}
+          goto="https://jocular-flan-90f927.netlify.app/"
+          title="Project-Tracking-Page"
+          cnt="project33"
         />
       </div>
     </>
