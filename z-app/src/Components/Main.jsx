@@ -258,7 +258,7 @@ function Main() {
         />
         <Card
           display={img33}
-          goto="https://jocular-flan-90f927.netlify.app/"
+          goto="https://incandescent-kleicha-b0b89f.netlify.app/"
           title="Project-Tracking-Page"
           cnt="project33"
         />
