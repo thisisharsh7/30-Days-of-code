@@ -66,7 +66,7 @@ nav {
   font-family: "Epilogue", sans-serif;
   font-weight: normal;
   font-size: 1em;
-  top: 2.5em;
+  top: 2em;
 
   flex-direction: column;
   gap: 1em;
@@ -131,22 +131,23 @@ main {
   justify-content: space-between;
 }
 section {
+  align-self: flex-end;
   display: flex;
   flex-direction: column;
   padding-left: 9vw;
-  padding-top: 6.5vw;
-  padding-right: 6.9vw;
-  gap:2em;
+  padding-top: 6.8vw;
+  padding-right: 5vw;
+  gap:calc(2em + 1.5vw);
   justify-content: flex-end;
   max-width: 50%;
   height: fit-content;
 }
 picture {
-  width: 56%;
+  width: 50%;
 }
 picture img {
   height: 100%;
-  width: 80%;
+  width: 100%;
 }
 section h1 {
   font-size: calc(4em + 1.1vw);
@@ -184,15 +185,14 @@ button:hover {
   width: 100%;
 }
 .client img {
-  width: 80%;
+  max-width: 4.5em;
 }
 .client {
   padding-top: 3vw;
   display: grid;
-
-  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   gap: 1.3em;
-  justify-items: center;
+  justify-items: flex-start;
   align-items: center;
 }
 footer {
@@ -343,18 +343,28 @@ footer {
     width: 100%;
   }
   section {
-    padding: 4em 0.8em;
-    align-items: center;
+    padding:3em 0em;
     text-align: center;
+    align-items: flex-start;
     max-width: 100%;
+    width: 100%;
+    align-items: center;
     
   }
+  section p{
+    padding:0em 0.5em;
+  }
   section h1 {
-    font-size: 2em;
+    font-size: 2.1em;
     font-weight: bold;
   }
   .client {
     padding-top: 2.5em;
+    justify-items: center;
     text-align: center;
+    justify-content: space-evenly;
+    padding-right: 1em;
+    padding-left: 1em;
+    max-width: 90%;
   }
 }

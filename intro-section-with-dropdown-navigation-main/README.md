@@ -25,13 +25,13 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
+![](./screenshot34.jpg)
 
 
 ### Links
 
-- Solution URL: [Solution url]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution url](https://www.frontendmentor.io/solutions/introsectionwithdropdownnavigationbuildwithcssandjs-zqtZzVn3VO)
+- Live Site URL: [Live site](https://storied-mochi-bce03a.netlify.app/)
 
 ## My process
 
@@ -41,10 +41,11 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+- Grid
 
 ### What I learned
 
-in process--
+I learned some CSS properties and how to overlay images.
 
 ## Author
 
