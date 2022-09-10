@@ -1,7 +1,7 @@
 const btn = document.querySelector(".toggle-inner");
 const rate = document.getElementById("charge");
 const sliding = document.querySelector(".slider-surface");
-const slideBtn = document.querySelector(".slider-inner");
+const slide = document.querySelector(".slider-inner");
 
 const mval = 16.00;
 const yval = mval*12 - (mval*12*25)/100;
@@ -16,13 +16,8 @@ btn.addEventListener("click",(event)=>{
         rate.innerText="$" + Number(yval).toFixed(2);
     }
 })
-sliding.addEventListener("mouseover",e=>{
-    
+sliding.addEventListener("click",e=>{
+    console.log(e);
+    e.target.parentElement.style.left=80;
 })
 
-slideBtn.addEventListener("mouseover",(event)=>{
-    console.log(event);
-    console.log(event.clientX);
-    event.target.style.translateX= 50;
-
-})
