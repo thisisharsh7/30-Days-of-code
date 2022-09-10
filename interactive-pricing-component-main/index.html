@@ -1,37 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive pricing component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-</head>
-<body>
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+      </div>
+    </header>
+    <main>
+      <div class="card-body">
+        <div class="card-up">
+          <div class="card-slider">
+            <p>Pageviews</p>
+            <div class="slider-surface">
+              <div class="slider-inner"></div>
+            </div>
+            <p><span>$ </span><span>/month</span></p>
+          </div>
+          <div class="card-toggle">
+            <p>Monthly Billing</p>
+            <div class="toggle-surface">
+              <div class="toggle-inner"></div>
+            </div>
+            <p><span>Yearly Billing</span><span>25% discount</span></p>
+          </div>
+        </div>
+        <div class="card-down">
+          <ul>
+            <li>Unlimited websites</li>
+            <li>100% data ownership</li>
+            <li>Email reports</li>
+          </ul>
+          <button>Start my trial</button>
+        </div>
+      </div>
+    </main>
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
-
-  Pageviews
-  $ /month
-
-  Monthly Billing
-  Yearly Billing 25% discount
-
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="https://www.frontendmentor.io/profile/thisisharsh7"
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/thisisharsh7"
           >Harsh Kumar</a
         >.
-  </div>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
