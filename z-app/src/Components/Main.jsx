@@ -33,6 +33,7 @@ import img30 from "./images/screenshot30.jpg";
 import img31 from "./images/screenshot31.jpg";
 import img32 from "./images/screenshot32.jpg";
 import img33 from "./images/screenshot33.jpg";
+import img34 from "./images/screenshot34.jpg";
 
 function Main() {
   return (
@@ -216,51 +217,57 @@ function Main() {
         <Card
           display={img26}
           goto="https://dashing-bublanina-3b9333.netlify.app/"
-          title="Sunnyside-agency-Landing-Page"
+          title="Sunnyside agency Landing Page"
           cnt="project26"
         />
         <Card
           display={img27}
           goto="https://flourishing-concha-46ceef.netlify.app/"
-          title="Loopstudios-Landing-Page"
+          title="Loopstudios Landing Page"
           cnt="project27"
         />
 
         <Card
           display={img28}
           goto="https://heroic-druid-42014b.netlify.app/"
-          title="Insure-Landing-Page"
+          title="Insure Landing Page"
           cnt="project28"
         />
         <Card
           display={img29}
           goto="https://neon-zuccutto-cc63a7.netlify.app/?"
-          title="Fylo-Dark-Theme-Landing-Page"
+          title="Fylo Dark Theme Landing Page"
           cnt="project29"
         />
         <Card
           display={img30}
           goto="https://subtle-zabaione-49b6c3.netlify.app/"
-          title="Blogr-Landing-Page"
+          title="Blogr Landing Page"
           cnt="project30"
         />
         <Card
           display={img31}
           goto="https://effortless-sunshine-6b3478.netlify.app/"
-          title="Bootcamp-Testimonial-slider"
+          title="Bootcamp Testimonial slider"
           cnt="project31"
         />
         <Card
           display={img32}
           goto="https://fluffy-paletas-994604.netlify.app/"
-          title="Pricing-Component-Toggle"
+          title="Pricing Component Toggle"
           cnt="project32"
         />
         <Card
           display={img33}
           goto="https://incandescent-kleicha-b0b89f.netlify.app/"
-          title="Project-Tracking-Page"
+          title="Project Tracking Page"
           cnt="project33"
+        />
+        <Card
+          display={img34}
+          goto="https://storied-mochi-bce03a.netlify.app/"
+          title="Intro Section Dropdown Menu"
+          cnt="project34"
         />
       </div>
     </>
