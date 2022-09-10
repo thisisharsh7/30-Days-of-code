@@ -134,20 +134,22 @@ section {
   display: flex;
   flex-direction: column;
   padding-left: 9vw;
-  padding-top: 10vw;
+  padding-top: 6.5vw;
   padding-right: 6.9vw;
   gap:2em;
   justify-content: flex-end;
+  max-width: 50%;
+  height: fit-content;
 }
 picture {
   width: 56%;
 }
 picture img {
   height: 100%;
-  max-width: 100%;
+  width: 80%;
 }
 section h1 {
-  font-size: calc(4em + 1.5vw);
+  font-size: calc(4em + 1.1vw);
 }
 section p {
   max-width: 45ch;
@@ -182,10 +184,10 @@ button:hover {
   width: 100%;
 }
 .client img {
-  width: 100%;
+  width: 80%;
 }
 .client {
-  padding-top: 8vw;
+  padding-top: 3vw;
   display: grid;
 
   grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
@@ -344,6 +346,8 @@ footer {
     padding: 4em 0.8em;
     align-items: center;
     text-align: center;
+    max-width: 100%;
+    
   }
   section h1 {
     font-size: 2em;
