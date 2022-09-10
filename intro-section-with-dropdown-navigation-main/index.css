@@ -15,6 +15,8 @@ body {
   background-color: var(--Almost-White);
   margin: 0 auto;
   font-family: "Epilogue", sans-serif;
+  min-height: 100vh;
+  overflow-y: scroll;
 }
 .crossMenu , .hamMenu{
     display: none;
@@ -124,7 +126,6 @@ ul li:hover {
 main {
   max-width: 100%;
   display: flex;
-  max-height: calc(900px - 46.4px);
   padding-right: calc(0.2em + 7vw);
   padding-top: 2em;
   justify-content: space-between;
@@ -133,9 +134,10 @@ section {
   display: flex;
   flex-direction: column;
   padding-left: 9vw;
-  padding-top: 9.5em;
-  padding-right: 6vw;
-  justify-content: space-between;
+  padding-top: 10vw;
+  padding-right: 6.9vw;
+  gap:2em;
+  justify-content: flex-end;
 }
 picture {
   width: 56%;
@@ -145,11 +147,9 @@ picture img {
   max-width: 100%;
 }
 section h1 {
-  font-size: calc(3.5em + 2vw);
+  font-size: calc(4em + 1.5vw);
 }
 section p {
-  padding-top: 1.8em;
-  padding-bottom: 2em;
   max-width: 45ch;
   color: var(--Medium-Gray);
   line-height: 1.5em;
@@ -185,9 +185,10 @@ button:hover {
   width: 100%;
 }
 .client {
-  padding-top: 5em;
+  padding-top: 8vw;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+
+  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
   gap: 1.3em;
   justify-items: center;
   align-items: center;
@@ -223,51 +224,108 @@ footer {
 }
 
 @media only screen and (max-width: 763px) {
+  .sub-list{
+    left:0;
+    position: relative;
+    top:0.3em;
+    padding:2vh 5vw;
+    box-shadow: none;
+    animation-name: moveDown;
+  }
+  @keyframes moveDown {
+    from{
+      transform: translateY(-10px);
+    }
+  }
   .nav-items {
+    z-index: 4;
     position: absolute;
     flex-direction: column;
-    bottom:0;
-    top:4em;
-    background-color: var(--Almost-White);
+    justify-content: flex-start;
+    background-color:var(--Almost-White);
     gap:0;
+    top:0;
+    right:0;
     animation-name: moveleft;
-    animation-duration: 600ms;
-    padding: 2em;
+    animation-duration: 400ms;
     display: none;
+    max-width: 55vw;
+    gap:1.5em;
+    min-height: 100%;
+    padding: 7vw;
+    padding-top: 4.5em;
+    font-size: 1em;
+    
+  }
+  .register{
+    width: 70%;
+    text-align: center;
+  }
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.228);
+    z-index: 1;  
   }
   @keyframes moveleft {
     from{
-        transform: translateX(5em);
+        transform: translateX(100px);
     }
   }
   .show-nav-items{
     display: flex;
   }
   ul{
-    right: 0;
     flex-direction: column;
     background-color: var(--Almost-White);
+    font-weight: normal;
   }
-
+  .detail-list{
+    width: 100%;
+    align-items: flex-start;
+    
+  }
+  .register-list{
+    width: 100%;
+    align-items: center;
+  }
   body {
     min-height: 100vh;
   }
   header {
     padding-right: 0.8em;
     padding-left: 0.8em;
-    position: relative;
   }
   nav{
     justify-content:space-between;
   }
   .hamMenu{
+    animation-name: zoomX;
+    animation-duration: 200ms;
     display: block;
   }
   .hamToggle{
     display: none;
   }
+  .mainAnimate{
+    animation-name: movebody;
+    animation-duration: 400ms;
+  }
+  @keyframes movebody {
+    from{
+      transform: translateX(-50px);
+    }
+  }
   .crossToggle{
+    animation-name: zoomX;
+    animation-duration: 200ms;
     display: block;
+    z-index: 5;
+  }
+  @keyframes zoomX {
+    from{
+      transform: scale(0);
+    }
   }
   main {
     flex-direction: column-reverse;
@@ -283,7 +341,7 @@ footer {
     width: 100%;
   }
   section {
-    padding: 2em 0.8em;
+    padding: 4em 0.8em;
     align-items: center;
     text-align: center;
   }
@@ -292,8 +350,7 @@ footer {
     font-weight: bold;
   }
   .client {
-    padding-top: 4.5em;
+    padding-top: 2.5em;
     text-align: center;
-    grid-template-columns: repeat(4, minmax(30px, 1fr));
   }
 }
