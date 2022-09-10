@@ -10,39 +10,39 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link rel="stylesheet" type="text/css" href="index.css" />
     <title>Frontend Mentor | Interactive pricing component</title>
   </head>
   <body>
     <header>
-      <div>
         <h1>Simple, traffic-based pricing</h1>
         <p>Sign-up for our 30-day trial. No credit card required.</p>
-      </div>
     </header>
     <main>
       <div class="card-body">
         <div class="card-up">
           <div class="card-slider">
-            <p>Pageviews</p>
+            <p><span>100k</span><span>Pageviews</span></p>
             <div class="slider-surface">
-              <div class="slider-inner"></div>
+              <div class="slider-inner">
+                <img src="images/icon-slider.svg" alt="slider" />
+              </div>
             </div>
-            <p><span>$ </span><span>/month</span></p>
+            <p><span>$16.00</span><span>/month</span></p>
           </div>
           <div class="card-toggle">
             <p>Monthly Billing</p>
             <div class="toggle-surface">
               <div class="toggle-inner"></div>
             </div>
-            <p><span>Yearly Billing</span><span>25% discount</span></p>
+            <p class="year-discount"><span>Yearly Billing</span><span class="discount">25% discount</span></p>
           </div>
         </div>
         <div class="card-down">
           <ul>
-            <li>Unlimited websites</li>
-            <li>100% data ownership</li>
-            <li>Email reports</li>
+            <li><span><img src="images/icon-check.svg" alt="tick" > </span><span>Unlimited website</span></li>
+            <li><span><img src="images/icon-check.svg" alt="tick" > </span><span>100% data ownership</span></li>
+            <li><span><img src="images/icon-check.svg" alt="tick" > </span><span>Email report</span></li>
           </ul>
           <button>Start my trial</button>
         </div>

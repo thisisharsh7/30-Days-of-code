@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+:root{
+    --Soft-Cyan-Full-Slider-Bar: hsl(174, 77%, 80%);
+    --Strong-Cyan-Slider-Backround: hsl(174, 86%, 45%);
+    --Light-Grayish-Red-Discount-Background: hsl(14, 92%, 95%);
+    --Light-Red-Discount-Text: hsl(15, 100%, 70%);
+    --Pale-Blue-CTA-Text: hsl(226, 100%, 87%);
+    --White-Pricing-Component-Background: hsl (0, 0%, 100%);
+    --Very-Pale-Blue-Main-Background: hsla(228, 100%, 99%, 0.941);
+    --Light-Grayish-Blue-Empty-Slider-Bar: hsl(224, 65%, 95%);
+    --Light-Grayish-Blue-Toggle-Background: hsl(223, 50%, 87%);
+    --Grayish-Blue-Text: hsl(225, 20%, 60%);
+    --Dark-Desaturated-Blue-Text-CTA-Background: hsl(227, 35%, 25%);
+}
+body{
+    max-width: 1440px;
+    margin:0 auto;
+    background-image: url("./images/bg-pattern.svg");
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: 100%;
+    background-position: top;
+    background-color:var(--Very-Pale-Blue-Main-Background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    gap:0.8em;
+    text-align: center;
+    font-size: 15px;
+    padding:6em 7vw 5em 7vw;
+    align-items: center;
+    background-image: url("images/pattern-circles.svg");
+    background-position:center;
+    background-repeat: no-repeat;
+}
+header h1{
+    font-size: calc(1.3em + 0.8vw);
+    font-weight: bold;
+    color:hsl(240, 2%, 17%)
+}
+header p{
+    font-size: 1em;
+    color:var(--Grayish-Blue-Text);
+}
+main{
+    
+    background-color: white;
+    box-shadow: 0px 3px 23px 7px rgba(0, 0, 0, 0.12);
+    min-width: 50%;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    gap:5em;
+}
+.card-up{
+    padding:3em 2.5em 0em 2.5em;
+    display: flex;
+    flex-direction: column;
+    gap:1.5em;
+}
+.card-toggle{
+    display: flex;
+    gap:1em;
+    font-size: 0.9em;
+    color:rgba(128, 128, 128, 0.839);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.toggle-surface{
+    width: 3.4em;
+    height: 1.4em;
+    padding:0.2em;
+    border-radius: 2em;
+    position: relative;
+    background-color: var(--Light-Grayish-Blue-Toggle-Background);
+}
+.toggle-inner{
+    position: absolute;
+    width: 1.4em;
+    height:1.4em;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.toggle-right{
+    transition: translateX(100%) 1s;
+    right:0.2em;
+}
+.toggle-left{ 
+    transition: translateX(-100%) 1s;
+    left:0.2em;
+}
+.year-discount{
+    display: flex;
+    gap:0.7em;
+    align-items: center;
+}
+.discount{
+    color: var(--Light-Red-Discount-Text);
+    background-color: var(--Light-Grayish-Red-Discount-Background);
+    font-size: 0.75em;
+    padding:0.4em 0.9em;
+    border-radius: 2em;
+}
+.card-down:after{
+    content:"";
+    position: absolute;
+    height: 0.1px;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.442);
+    top:-2.5em;
+    left:0;
+
+}
+.card-down{
+    padding:0em 2.5em 1.5em 2.5em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:1.5em;
+    flex-wrap: wrap;
+}
+button{
+    padding:0.9em 3.5em;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    background-color: var(--Dark-Desaturated-Blue-Text-CTA-Background);
+    color:var(--Pale-Blue-CTA-Text);
+    border:none;
+    border-radius: 9em;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+    color: var(--Grayish-Blue-Text);
+    font-size: 1.1em;
+}
+footer{
+    text-align: center;
+    padding-top: 5em;
+}
+@media only screen and (max-width:480px){
+    header p{
+        max-width: 22ch;
+    }
+    main{
+        margin:0 6vw;
+    }
+    .card-down{
+        justify-content: center;
+        gap:2em;
+    }
+    li{
+        font-size: 1em;
+        display: flex;
+    }
+    button{
+        
+        padding:0;
+        padding:3vw 12vw;
+    }
+}
