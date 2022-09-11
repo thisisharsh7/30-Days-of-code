@@ -1,42 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-</head>
-<body>
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.svg" alt="logo" />
+    </header>
+    <main>
+      <div>
+        <p>Bill</p>
+        <div class="bill">
+          <input type="number" alt="bill" />
+        </div>
+        <p>Select Tip %</p>
+        <div>
+          <input value="5%" placeholder="5%" />
+          <input value="10%" placeholder="10%" />
+          <input value="15%" placeholder="15%" />
+          <input value="25%" placeholder="25%" />
+          <input value="50%" placeholder="50%" />
+          <input placeholder="Custom" type="number" />
+        </div>
+        <label for="people">Number of People</label>
+        <div>
+          <input type="number" />
+        </div>
+      </div>
+      <div>
+        <div>
+          <p><span>Tip Amount</span><span>/ person</span></p>
+          <p></p>
+        </div>
+        <div>
+          <p><span>Total</span><span>/ person</span></p>
+          <p></p>
+        </div>
+        <div>
+          <button>Reset</button>
+        </div>
+      </div>
+    </main>
 
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <footer>
-  <p class="attribution">
-    Challenge by
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
-    <a href="https://www.frontendmentor.io/profile/thisisharsh7">Harsh Kumar</a>.
-  </p>
-  </footer>
-</body>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/thisisharsh7"
+          >Harsh Kumar</a
+        >.
+      </p>
+    </footer>
+  </body>
 </html>
