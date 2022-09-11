@@ -44,21 +44,23 @@ main {
   background-color: var(--White);
   display: flex;
   max-width: 100%;
-  padding: var(--fs-400) 1em;
+  padding: var(--fs-400) 2em;
   gap: 2rem;
   border-radius: 0.8rem;
+  box-shadow: 0px 0px 20px 3px rgba(26, 26, 26, 0.206);
 }
 form {
   display: flex;
   flex-direction: column;
-  gap: var(--fs-500);
+  gap: var(--fs-400);
   max-width: 25em;
 }
 .label-input {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  font-size: 20px;
+  gap: 0.25rem;
+  font-size: 18px;
+  font-weight: normal;
   color: var(--Very-dark-cyan);
 }
 
