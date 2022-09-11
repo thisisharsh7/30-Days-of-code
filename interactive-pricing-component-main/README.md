@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution url](https://www.frontendmentor.io/solutions/interactivepricingcomponentbuildwithjs-LLQOy_Gwf7)
-- Live Site URL: [Live Link](https://graceful-axolotl-efa2fd.netlify.app/)
+- Live Site URL: [Live Link](https://tourmaline-narwhal-a28b67.netlify.app/)
 
 ## My process
 
@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-I learned about differen Js event listener and a css pointer event.
+I learned about differen Js event listener and a css pointer event. I also learned a new input in Html i.e range input.
 
 
 ## Author
