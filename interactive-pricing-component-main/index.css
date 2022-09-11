@@ -95,7 +95,7 @@ main {
   height: 0.5em;
   border-radius: 2em;
   left:0;
-  width: 40px;
+  width: 65px;
   pointer-events: none;
 } 
 
@@ -107,7 +107,7 @@ main {
   background-color: var(--Strong-Cyan-Slider-Backround);
   box-shadow: -1px 10px 15px 5px hsla(174, 86%, 45%, 0.507);
   pointer-events: none;
-  left:40px;
+  left:65px;
 }
 img{
   pointer-events: none;
@@ -226,6 +226,12 @@ footer {
   padding-top: 5em;
 }
 @media only screen and (max-width: 480px) {
+  body{
+    background-image: url("images/bg-pattern.svg");
+    background-position:top;
+    background-size: 180%;
+
+  }
   header p {
     max-width: 22ch;
   }
