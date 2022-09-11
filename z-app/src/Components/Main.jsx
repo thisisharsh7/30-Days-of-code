@@ -34,6 +34,7 @@ import img31 from "./images/screenshot31.jpg";
 import img32 from "./images/screenshot32.jpg";
 import img33 from "./images/screenshot33.jpg";
 import img34 from "./images/screenshot34.jpg";
+import img35 from "./images/screenshot35.jpg";
 
 function Main() {
   return (
@@ -268,6 +269,12 @@ function Main() {
           goto="https://storied-mochi-bce03a.netlify.app/"
           title="Intro Section Dropdown Menu"
           cnt="project34"
+        />
+        <Card
+          display={img35}
+          goto="https://graceful-axolotl-efa2fd.netlify.app/"
+          title="Interactive Rating Component"
+          cnt="project35"
         />
       </div>
     </>
