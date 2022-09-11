@@ -35,6 +35,7 @@ import img32 from "./images/screenshot32.jpg";
 import img33 from "./images/screenshot33.jpg";
 import img34 from "./images/screenshot34.jpg";
 import img35 from "./images/screenshot35.jpg";
+import img36 from "./images/screenshot36.jpg";
 
 function Main() {
   return (
@@ -275,6 +276,12 @@ function Main() {
           goto="https://tourmaline-narwhal-a28b67.netlify.app/"
           title="Interactive Rating Component"
           cnt="project35"
+        />
+        <Card
+          display={img36}
+          goto="https://elaborate-eclair-c844ac.netlify.app/"
+          title="Tip Calculator"
+          cnt="project36"
         />
       </div>
     </>
