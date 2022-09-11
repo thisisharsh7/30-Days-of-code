@@ -25,13 +25,13 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
+![](./screenshot36.jpg)
 
 
 ### Links
 
-- Solution URL: [Solution Url]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution Url](https://www.frontendmentor.io/solutions/tipcalculatorbuildusingjs-NCgBW7iVuR)
+- Live Site URL: [Live site](https://elaborate-eclair-c844ac.netlify.app/)
 
 ## My process
 
