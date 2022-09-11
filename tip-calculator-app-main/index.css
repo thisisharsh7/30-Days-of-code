@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
 *{
     margin:0;
     padding:0;
@@ -26,7 +27,9 @@ body{
     display: grid;
     margin:0 auto;
     place-items: stretch;
+    font-family: 'Space Mono', monospace;
 }
+
 main{
     display: flex;
     flex-direction: column;
@@ -59,9 +62,7 @@ form{
     font-size: 20px;
     color:var(--Very-dark-cyan);
 }
-::placeholder{
-    color:var(--Grayish-cyan);
-}
+
 .area{
     display: flex;
     align-items: center;
@@ -72,28 +73,7 @@ form{
 }.area img{
    padding: 0.5em 1em;
 }
-.area input{
-    width: 100%;
-    border: none;
-    text-align: right;
-    background-color: var(--Very-light-grayish-cyan);
 
-}
-.area input , input{
-    padding: 0.5rem 0.8rem;
-    
-    font-weight: bold;
-}
-input{
-    text-align: center;
-    font-size: 1em;
-    font-size: 24px;
-    border-radius: 0.3rem;
-}
-input:focus{
-    outline:none;
-    
-}
 .area:hover{
     border-color:red;
 }
@@ -102,25 +82,10 @@ input:focus{
     grid-template-columns:repeat(3,minmax(2em , 1fr));
     gap:1rem;
 }
-.tip-select-area input{
-    background-color: var(--Very-dark-cyan);
-    color:var(--White);
-    border:none;
-    cursor:pointer;
+.tip-select-area input:hover{
+    background-color: var(--Strong-cyan);
 }
-.tip-select-area input::placeholder{
-    color:var(--White);
-}
-.tip-select-area input:last-child::placeholder{
-    color:var(--Dark-grayish-cyan);
-}
-.tip-select-area input:last-child{
-    cursor: auto;
-    background-color:var(--Very-light-grayish-cyan);
-    border:2px solid hsla(180, 1%, 57%, 0.238);
-    color:black;
-    font-weight: normal;
-}
+
 .card-output{
     border-radius: 0.8rem;
     background-color: var(--Very-dark-cyan);
@@ -138,12 +103,12 @@ input:focus{
     padding:1.8rem 1.5rem;
 }
 .card-reset{
-    padding:0rem 1.5rem 1.8rem 1.5rem;
+    padding:2rem 1.5rem 1.8rem 1.5rem;
 }
 .output-area{
     display: flex;
     justify-content: space-between;
-    gap:1.5em;
+    gap: 1rem;
 }
 .output-text{
     display: flex;
@@ -155,32 +120,89 @@ input:focus{
 .charge {
     display: flex;
     gap:0.2em;
-    align-items: center;
-    font-size: 30px;
+    align-items: flex-start;
     color:var(--Strong-cyan);
-    font-weight: bold;
+    font-size: 35px;
 }
-#tip-one , #tip-total{
-    font-size: 45px;
-    
-}
+
 .output-text span:last-child{
     font-size: 18px;
     color:var(--Dark-grayish-cyan);
-}
-input[type="reset"]{
-    border:none;
-    width: 100%;
-    background-color: hsl(183, 59%, 27%);
-    color:var(--Very-dark-cyan);
-    text-transform: uppercase;
 }
 
 .attribution{
     padding-top:2rem;
     text-align: center;
 }
-
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input{
+  text-align: center;
+    font-size: 1em;
+    font-size: 24px;
+    border-radius: 0.3rem;
+    font-family: 'Space Mono', monospace;
+  cursor:pointer;
+  border:none;
+  font-weight:bold;
+  padding: 0.4rem 0.6rem;
+   background-color: var(--Very-light-grayish-cyan);
+   color:var(--Very-dark-cyan);
+}
+::placeholder{
+  color:var(--Grayish-cyan);
+    font-family: 'Space Mono', monospace;
+}
+.area input{
+    width: 100%;
+    text-align: right;
+   
+}
+input:focus{
+    outline:none;
+}
+.tip-select-area input{
+    background-color: var(--Very-dark-cyan);
+}
+.tip-select-area input::placeholder{
+    color:var(--White);
+    
+}
+.tip-select-area input:last-child::placeholder{
+    color:var(--Dark-grayish-cyan);
+}
+.tip-select-area input:last-child{
+    cursor: auto;
+    border:2px solid hsla(180, 1%, 57%, 0.238);
+    background-color: hsl(189, 41%, 97%);
+    font-weight: normal;
+}
+input[type="reset"]{
+    width: 100%;
+    background-color: hsl(183, 59%, 27%);
+    color:hsla(183, 100%, 15%, 0.611);
+    text-transform: uppercase;
+}
+input[type="reset"]:hover{ 
+    color:hsl(183, 100%, 15%);
+    background-color: var(--Strong-cyan);
+}
+.tip-bg input{
+    background-color: var(--Strong-cyan);
+}
+.tip-bg input::placeholder{
+    color:hsl(183, 100%, 15%);
+}
+.tip-show{
+    color:hsl(172, 67%, 45%);
+    font-size: 34px;
+    word-break: break-all;
+}
 @media only screen and (max-width:555px){
     :root{
         --fs-200: 0.82rem;
@@ -193,6 +215,10 @@ input[type="reset"]{
     }
     .tip-select-area{
         grid-template-columns: repeat(2,minmax(2em,1fr));
+    }
+    .tip-select-area input{
+        
+        font-size: 18px;
     }
     .card-output{
         width: 100%;

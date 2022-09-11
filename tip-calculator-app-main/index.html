@@ -25,25 +25,25 @@
           <label for="bill">Bill</label>
           <div id="bill-area" class="area">
             <img src="images/icon-dollar.svg" alt="dollar" />
-            <input type="text" alt="bill" id="bill" placeholder="0"/>
+            <input type="number" alt="bill" id="bill" placeholder="0"/>
           </div>
           </div>
           <div class="label-input">
           <label for="tip">Select Tip %</label>
           <div class="tip-select-area">
-            <input  placeholder="5%" readonly />
-            <input placeholder="10%" readonly />
-            <input placeholder="15%" readonly />
-            <input placeholder="25%" readonly />
-            <input placeholder="50%" readonly />
-            <input placeholder="Custom" type="text" />
+            <input class="tip-input" id="5" placeholder="5%" readonly />
+            <input class="tip-input" id="10" placeholder="10%" readonly />
+            <input class="tip-input" id="15" placeholder="15%" readonly />
+            <input class="tip-input" id="25" placeholder="25%" readonly />
+            <input class="tip-input" id="50" placeholder="50%" readonly />
+            <input class="tip-input" type="number" placeholder="Custom" />
           </div>
           </div>
           <div class="label-input">
           <label for="people">Number of People</label>
           <div id="people-area" class="area">
             <img src="images/icon-person.svg" alt="person" />
-            <input type="text" id="people" placeholder="0" />
+            <input type="number" id="people" placeholder="0" />
           </div>
           </div>
         </form>
@@ -53,11 +53,11 @@
             <p class="output-text">
               <span>Tip Amount</span><span>/ person</span>
             </p>
-            <p class="charge"><span>$</span><span id="tip-one">0.00</span></p>
+            <p class="charge"><span>$</span><span class="tip-show">0.00</span></p>
           </div>
           <div class="output-area">
             <p class="output-text"><span>Total</span><span>/ person</span></p>
-            <p class="charge"><span>$</span><span id="tip-total">0.00</span></p>
+            <p class="charge"><span>$</span><span class="tip-show">0.00</span></p>
           </div>
           </div>
           <div class="card-reset">
@@ -75,5 +75,6 @@
         >.
       </p>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>
