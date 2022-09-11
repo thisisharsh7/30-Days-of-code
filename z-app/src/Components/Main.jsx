@@ -272,7 +272,7 @@ function Main() {
         />
         <Card
           display={img35}
-          goto="https://graceful-axolotl-efa2fd.netlify.app/"
+          goto="https://tourmaline-narwhal-a28b67.netlify.app/"
           title="Interactive Rating Component"
           cnt="project35"
         />
