@@ -45,7 +45,7 @@ Users should be able to:
 
 ### What I learned
 
-In process--
+I learned how to handle Js event listeners.
 
 
 ## Author
