@@ -1,29 +1,34 @@
 const btn = document.querySelector(".toggle-inner");
-const slide = document.querySelector(".slider-inner");
-const sliding = document.getElementById("slider-outer");
-const slidSurface = document.querySelector(".slider-surface");
 const views = document.getElementById("views");
 const charge = document.getElementById("charge");
-let x = 16.0;
-let y = 144.0;
-sliding.addEventListener("click", (e) => {
-  slidSurface.style.width = `${e.offsetX}px`;
-  slide.style.left = `${e.offsetX > 40 ? e.offsetX - 25 : e.offsetX - 20}px`;
-  x = e.offsetX / 4;
-  y = (x * 12 * 75) / 100;
-  views.innerText = `${e.offsetX}k`;
+
+
+
+let x=18;
+let y=(x*12*75)/100;
+let cnt =100;
+const rangeInputs = document.querySelector('input[type="range"]')
+
+function handleInputChange(e) {
+  let target = e.target
+  if (e.target.type !== 'range') {
+    target = document.getElementById('range')
+  } 
+  const min = target.min
+  const max = target.max
+  const val = target.value
+  target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
+  cnt = val;
+  views.innerText=`${val}k`;
+  x = (cnt*(18/100)).toFixed(2);
+  y=((x*12*75)/100).toFixed(2);
   if (charge.nextElementSibling.innerText == "/year") {
-    charge.innerText = `$${y.toFixed(2)}`;
+    charge.innerText = `$${y}`;
   } else {
-    charge.innerText = `$${x.toFixed(2)}`;
+    charge.innerText = `$${x}`;
   }
-});
-
-window.addEventListener("resize", () => {
-  slidSurface.style.width = "40px";
-  slide.style.left = "40px";
-});
-
+}
+rangeInputs.addEventListener("input",handleInputChange);
 btn.addEventListener("click", (event) => {
   const el = event.target.classList;
   el.toggle("toggle-right");
