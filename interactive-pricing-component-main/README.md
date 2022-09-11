@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-On process--
+I learned about differen Js event listener and a css pointer event.
 
 
 ## Author

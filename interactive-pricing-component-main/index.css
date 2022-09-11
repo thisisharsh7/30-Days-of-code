@@ -78,8 +78,7 @@ main {
   grid-row-gap: 2.3em;
 }
 
-#slider-outer{
-
+#slider-outer {
   grid-column: span 2;
   position: relative;
   height: 0.5em;
@@ -94,10 +93,10 @@ main {
   position: absolute;
   height: 0.5em;
   border-radius: 2em;
-  left:0;
+  left: 0;
   width: 65px;
   pointer-events: none;
-} 
+}
 
 .slider-inner {
   position: absolute;
@@ -107,9 +106,9 @@ main {
   background-color: var(--Strong-Cyan-Slider-Backround);
   box-shadow: -1px 10px 15px 5px hsla(174, 86%, 45%, 0.507);
   pointer-events: none;
-  left:65px;
+  left: 65px;
 }
-img{
+img {
   pointer-events: none;
 }
 .total-view {
@@ -226,11 +225,10 @@ footer {
   padding-top: 5em;
 }
 @media only screen and (max-width: 480px) {
-  body{
+  body {
     background-image: url("images/bg-pattern.svg");
-    background-position:top;
+    background-position: top;
     background-size: 180%;
-
   }
   header p {
     max-width: 22ch;
@@ -255,14 +253,14 @@ footer {
     flex-direction: column;
     gap: 3em;
   }
-  #slider-outer{
+  #slider-outer {
     width: 90%;
   }
-  .card-up{
-    padding:0;
-    padding:2em 2vw 0 2vw;
+  .card-up {
+    padding: 0;
+    padding: 2em 2vw 0 2vw;
   }
-  .card-down{
+  .card-down {
     padding: 0;
     padding: 0em 2vw 2em 2vw;
   }
