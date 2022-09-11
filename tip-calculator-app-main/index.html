@@ -20,39 +20,47 @@
         <img src="images/logo.svg" alt="logo" id="logo" />
       </div>
       <div class="card">
-        <form class="card-input">
+        <form>
+          <div class="label-input">
           <label for="bill">Bill</label>
-          <div id="bill-area">
+          <div id="bill-area" class="area">
             <img src="images/icon-dollar.svg" alt="dollar" />
-            <input type="text" alt="bill" id="bill" />
+            <input type="text" alt="bill" id="bill" placeholder="0"/>
           </div>
+          </div>
+          <div class="label-input">
           <label for="tip">Select Tip %</label>
-          <div id="tip-area">
-            <input value="5" placeholder="5%" readonly />
-            <input value="10" placeholder="10%" readonly />
-            <input value="15" placeholder="15%" readonly />
-            <input value="25" placeholder="25%" readonly />
-            <input value="50" placeholder="50%" readonly />
+          <div class="tip-select-area">
+            <input  placeholder="5%" readonly />
+            <input placeholder="10%" readonly />
+            <input placeholder="15%" readonly />
+            <input placeholder="25%" readonly />
+            <input placeholder="50%" readonly />
             <input placeholder="Custom" type="text" />
           </div>
+          </div>
+          <div class="label-input">
           <label for="people">Number of People</label>
-          <div id="people-area">
+          <div id="people-area" class="area">
             <img src="images/icon-person.svg" alt="person" />
-            <input type="text" id="people" />
+            <input type="text" id="people" placeholder="0" />
+          </div>
           </div>
         </form>
         <div class="card-output">
+          <div class="card-result">
           <div class="output-area">
             <p class="output-text">
               <span>Tip Amount</span><span>/ person</span>
             </p>
-            <p><span>$</span><span id="tip-one">0.00</span></p>
+            <p class="charge"><span>$</span><span id="tip-one">0.00</span></p>
           </div>
           <div class="output-area">
             <p class="output-text"><span>Total</span><span>/ person</span></p>
-            <p><span>$</span><span id="tip-total">0.00</span></p>
+            <p class="charge"><span>$</span><span id="tip-total">0.00</span></p>
           </div>
-          <div>
+          </div>
+          <div class="card-reset">
             <input type="reset" />
           </div>
         </div>

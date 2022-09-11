@@ -2,7 +2,25 @@
     margin:0;
     padding:0;
 }
+
+:root {
+    --fs-100: 0.75rem;
+    --fs-200: 0.93rem;
+    --fs-300: 1rem;
+    --fs-400: 1.75rem;
+    --fs-500: 2.5rem;
+    --lh: calc(var(--fs-100)*1.5);
+    --Strong-cyan: hsl(172, 67%, 45%);
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --Grayish-cyan: hsl(184, 14%, 56%);
+    --Light-grayish-cyan: hsl(185, 41%, 84%);
+    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+
+}
 body{
+    background-color: var(--Light-grayish-cyan);
     max-width: 1440px;
     min-height: 100vh;
     display: grid;
@@ -10,5 +28,173 @@ body{
     place-items: stretch;
 }
 main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:3rem;  
+    padding:0em 1em; 
+}
+.title-wrapper{
+    padding:3rem 1rem 1rem 1rem;
+}
+.card{
+    background-color:var(--White);
+    display: flex;
+    max-width: 100%;
+    padding: var(--fs-400) 1em;
+    gap:2rem;
+    border-radius: 0.8rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap:var(--fs-500);
+    max-width: 25em;
+}
+.label-input{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    font-size: 20px;
+    color:var(--Very-dark-cyan);
+}
+::placeholder{
+    color:var(--Grayish-cyan);
+}
+.area{
+    display: flex;
+    align-items: center;
+    border:2px solid hsla(180, 1%, 57%, 0.238);
+    justify-content: flex-end;
+    background-color: var(--Very-light-grayish-cyan);
+    border-radius: 0.3rem;
+}.area img{
+   padding: 0.5em 1em;
+}
+.area input{
+    width: 100%;
+    border: none;
+    text-align: right;
+    background-color: var(--Very-light-grayish-cyan);
+
+}
+.area input , input{
+    padding: 0.5rem 0.8rem;
     
+    font-weight: bold;
+}
+input{
+    text-align: center;
+    font-size: 1em;
+    font-size: 24px;
+    border-radius: 0.3rem;
+}
+input:focus{
+    outline:none;
+    
+}
+.area:hover{
+    border-color:red;
+}
+.tip-select-area{
+    display: grid;
+    grid-template-columns:repeat(3,minmax(2em , 1fr));
+    gap:1rem;
+}
+.tip-select-area input{
+    background-color: var(--Very-dark-cyan);
+    color:var(--White);
+    border:none;
+    cursor:pointer;
+}
+.tip-select-area input::placeholder{
+    color:var(--White);
+}
+.tip-select-area input:last-child::placeholder{
+    color:var(--Dark-grayish-cyan);
+}
+.tip-select-area input:last-child{
+    cursor: auto;
+    background-color:var(--Very-light-grayish-cyan);
+    border:2px solid hsla(180, 1%, 57%, 0.238);
+    color:black;
+    font-weight: normal;
+}
+.card-output{
+    border-radius: 0.8rem;
+    background-color: var(--Very-dark-cyan);
+    display: flex;
+    gap:var(--fs-500);
+    flex-direction: column;
+    width: 22em;
+    gap:1rem;
+    justify-content: space-between;
+}
+.card-result{
+    display: flex;
+    flex-direction: column;
+    gap:2.3em;
+    padding:1.8rem 1.5rem;
+}
+.card-reset{
+    padding:0rem 1.5rem 1.8rem 1.5rem;
+}
+.output-area{
+    display: flex;
+    justify-content: space-between;
+    gap:1.5em;
+}
+.output-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color:var(--White);
+    width: max-content;
+}
+.charge {
+    display: flex;
+    gap:0.2em;
+    align-items: center;
+    font-size: 30px;
+    color:var(--Strong-cyan);
+    font-weight: bold;
+}
+#tip-one , #tip-total{
+    font-size: 45px;
+    
+}
+.output-text span:last-child{
+    font-size: 18px;
+    color:var(--Dark-grayish-cyan);
+}
+input[type="reset"]{
+    border:none;
+    width: 100%;
+    background-color: hsl(183, 59%, 27%);
+    color:var(--Very-dark-cyan);
+    text-transform: uppercase;
+}
+
+.attribution{
+    padding-top:2rem;
+    text-align: center;
+}
+
+@media only screen and (max-width:555px){
+    :root{
+        --fs-200: 0.82rem;
+        --fs-300: 0.87rem;
+        --fs-400: 1.25rem;
+        --fs-500: 2rem;
+    }
+    .card{
+        flex-direction: column;
+    }
+    .tip-select-area{
+        grid-template-columns: repeat(2,minmax(2em,1fr));
+    }
+    .card-output{
+        width: 100%;
+    }
 }
