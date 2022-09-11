@@ -1,67 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Frontend Mentor | Tip calculator app</title>
-  </head>
-  <body>
-    <header>
-      <img src="images/logo.svg" alt="logo" />
-    </header>
-    <main>
-      <div>
-        <p>Bill</p>
-        <div class="bill">
-          <input type="number" alt="bill" />
-        </div>
-        <p>Select Tip %</p>
-        <div>
-          <input value="5%" placeholder="5%" />
-          <input value="10%" placeholder="10%" />
-          <input value="15%" placeholder="15%" />
-          <input value="25%" placeholder="25%" />
-          <input value="50%" placeholder="50%" />
-          <input placeholder="Custom" type="number" />
-        </div>
-        <label for="people">Number of People</label>
-        <div>
-          <input type="number" />
-        </div>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.svg" alt="logo" id="logo" />
+  </header>
+  <main>
+    <div class="card-input">
+      <label for="bill">Bill</label>
+      <div id="bill-area">
+        <input type="text" alt="bill" id="bill" />
+      </div>
+      <label for="tip">Select Tip %</label>
+      <div id="tip-area">
+        <input value="5" placeholder="5%" readonly/>
+        <input value="10" placeholder="10%" readonly/>
+        <input value="15" placeholder="15%" readonly/>
+        <input value="25" placeholder="25%" readonly/>
+        <input value="50" placeholder="50%" readonly/>
+        <input placeholder="Custom" type="text" />
+      </div>
+      <label for="people">Number of People</label>
+      <div id="people-area">
+        <input type="text" id="people" />
+      </div>
+    </div>
+    <div class="card-output">
+      <div class="output-area">
+        <p class="output-text">
+          <span>Tip Amount</span><span>/ person</span>
+        </p>
+        <p><span>$</span><span id="tip-one">0.00</span></p>
+      </div>
+      <div class="output-area">
+        <p class="output-text"><span>Total</span><span>/ person</span></p>
+        <p><span>$</span><span id="tip-total">0.00</span></p>
       </div>
       <div>
-        <div>
-          <p><span>Tip Amount</span><span>/ person</span></p>
-          <p></p>
-        </div>
-        <div>
-          <p><span>Total</span><span>/ person</span></p>
-          <p></p>
-        </div>
-        <div>
-          <button>Reset</button>
-        </div>
+        <input type="reset">
       </div>
-    </main>
+    </div>
+  </main>
 
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by
-        <a href="https://www.frontendmentor.io/profile/thisisharsh7"
-          >Harsh Kumar</a
-        >.
-      </p>
-    </footer>
-  </body>
+  <footer>
+    <p class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+      <a href="https://www.frontendmentor.io/profile/thisisharsh7">Harsh Kumar</a>.
+    </p>
+  </footer>
+</body>
+
 </html>
