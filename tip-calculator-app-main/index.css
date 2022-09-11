@@ -1,0 +1,14 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    max-width: 1440px;
+    min-height: 100vh;
+    display: grid;
+    margin:0 auto;
+    place-items: stretch;
+}
+main{
+    
+}

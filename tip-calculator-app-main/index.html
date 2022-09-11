@@ -1,65 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-
-  <title>Frontend Mentor | Tip calculator app</title>
-</head>
-
-<body>
-  <header>
-    <img src="images/logo.svg" alt="logo" id="logo" />
-  </header>
-  <main>
-    <form class="card-input">
-      <label for="bill">Bill</label>
-      <div id="bill-area">
-        <img src="images/icon-dollar.svg" alt="dollar">
-        <input type="text" alt="bill" id="bill" />
+  <body>
+    <main>
+      <div class="title-wrapper">
+        <img src="images/logo.svg" alt="logo" id="logo" />
       </div>
-      <label for="tip">Select Tip %</label>
-      <div id="tip-area">
-        <input value="5" placeholder="5%" readonly/>
-        <input value="10" placeholder="10%" readonly/>
-        <input value="15" placeholder="15%" readonly/>
-        <input value="25" placeholder="25%" readonly/>
-        <input value="50" placeholder="50%" readonly/>
-        <input placeholder="Custom" type="text" />
+      <div class="card">
+        <form class="card-input">
+          <label for="bill">Bill</label>
+          <div id="bill-area">
+            <img src="images/icon-dollar.svg" alt="dollar" />
+            <input type="text" alt="bill" id="bill" />
+          </div>
+          <label for="tip">Select Tip %</label>
+          <div id="tip-area">
+            <input value="5" placeholder="5%" readonly />
+            <input value="10" placeholder="10%" readonly />
+            <input value="15" placeholder="15%" readonly />
+            <input value="25" placeholder="25%" readonly />
+            <input value="50" placeholder="50%" readonly />
+            <input placeholder="Custom" type="text" />
+          </div>
+          <label for="people">Number of People</label>
+          <div id="people-area">
+            <img src="images/icon-person.svg" alt="person" />
+            <input type="text" id="people" />
+          </div>
+        </form>
+        <div class="card-output">
+          <div class="output-area">
+            <p class="output-text">
+              <span>Tip Amount</span><span>/ person</span>
+            </p>
+            <p><span>$</span><span id="tip-one">0.00</span></p>
+          </div>
+          <div class="output-area">
+            <p class="output-text"><span>Total</span><span>/ person</span></p>
+            <p><span>$</span><span id="tip-total">0.00</span></p>
+          </div>
+          <div>
+            <input type="reset" />
+          </div>
+        </div>
       </div>
-      <label for="people">Number of People</label>
-      <div id="people-area">
-        <img src="images/icon-person.svg" alt="person">
-        <input type="text" id="people" />
-      </div>
-    </form>
-    <div class="card-output">
-      <div class="output-area">
-        <p class="output-text">
-          <span>Tip Amount</span><span>/ person</span>
-        </p>
-        <p><span>$</span><span id="tip-one">0.00</span></p>
-      </div>
-      <div class="output-area">
-        <p class="output-text"><span>Total</span><span>/ person</span></p>
-        <p><span>$</span><span id="tip-total">0.00</span></p>
-      </div>
-      <div>
-        <input type="reset">
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <p class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
-      <a href="https://www.frontendmentor.io/profile/thisisharsh7">Harsh Kumar</a>.
-    </p>
-  </footer>
-</body>
-
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/thisisharsh7"
+          >Harsh Kumar</a
+        >.
+      </p>
+    </main>
+  </body>
 </html>
