@@ -25,13 +25,13 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
+![](./screenshot35.jpg)
 
 
 ### Links
 
-- Solution URL: [Solution url]()
-- Live Site URL: [Live Link]()
+- Solution URL: [Solution url](https://www.frontendmentor.io/solutions/interactivepricingcomponentbuildwithjs-LLQOy_Gwf7)
+- Live Site URL: [Live Link](https://graceful-axolotl-efa2fd.netlify.app/)
 
 ## My process
 
