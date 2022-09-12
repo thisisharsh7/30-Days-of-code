@@ -1,69 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
 * {
   padding: 0;
   margin: 0;
+}
+:root{
+    --Light-red-work: hsl(15, 100%, 70%);
+    --Soft-blue-play: hsl(195, 74%, 62%);
+    --Light-red-study: hsl(348, 100%, 68%);
+    --Lime-green-exercise: hsl(145, 58%, 55%);
+    --Violet-socia-: hsl(264, 64%, 52%);
+    --Soft-orange-self-care: hsl(43, 84%, 65%);
 }
 body{
     min-height: 100vh;
     max-width: 100vw;
     display: grid;
     place-items: stretch;
+    background-color: hsl(226, 43%, 10%);
+    color:hsl(235, 45%, 61%);
+    font-family: 'Rubik', sans-serif;
 }
 .hero-card{
-    min-width: 220px;
-    background-color: purple;
+    width: 100%;
+    background-color:  hsl(235, 46%, 20%);
     border-radius: 0.7rem;
 }
 .hero-profile {
-  background-color: pink;
+  background-color: hsl(246, 80%, 60%);
   display: grid;
-  grid-template-columns: minmax(100px,min-content) 1fr;
-  padding:1.5rem;
+  grid-template-columns: minmax(60px,min-content) 1fr;
+  padding:1.5rem 2rem;
   border-radius: 0.7rem;
+    gap:1.5rem;
+    align-items: center;
+    padding-right: 1vw;
+    padding-left: 5vw;
 }
 .hero-profile img{
-    width: 80%;
+    width: 100%;
     border:5px solid white;
     border-radius: 50%;
 }
 .hero-profile div{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-color: orange;
+    justify-content: center;    
     align-items: flex-start;
-    gap:0.5rem;
+    gap:0.3rem;
+    
+}
+.hero-profile div h1{
+    font-size: min(2rem,7vw);
+    font-weight: 300;
+    color:white;
+}
+.hero-profile div p{
+    color:hsl(236, 100%, 87%);  
+    font-size: 15px;
 }
 .hero-stats {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:1rem 1.5rem;
+  padding:1rem 1.8rem;
+  font-size: 17.5px;
+}
+.hero-stats p:hover{
+    cursor: pointer;
+    color:white;
 }
 .card-body {
   background-position: top -5px right 20px;
   background-repeat: no-repeat;
-  padding-top: 2.5rem;
+  padding-top: 2.4rem;
   border-radius: 0.7rem;
-  min-width: 220px;
+  color:hsl(236, 100%, 87%);
+  width: 100%;
 }
 .card {
-  background-color: blue;
+  background-color: hsl(235, 46%, 20%);
   display: grid;
   grid-template-columns: repeat(2, minmax(max-content, 1fr));
   gap: 0.5rem;
   align-items: center;
   border-radius: 0.7rem;
   padding: 1.2rem 1.5rem;
-  
+  cursor: pointer;
+}
+.card:active{
+    
+    background-color: hsl(237, 33%, 36%);
 }
 .card img,
 .card p {
   justify-self: end;
 }
 main{
-    padding:1.2rem;
+    padding:4rem 1.5rem;
     display: flex;
     flex-direction: column;
     gap:1.5rem;
     align-items: center;
+}
+.card-title{
+    font-size: 18px;
+    font-weight: 500;
+    color:white;
+}
+.duration{
+    font-weight: 300;
+    font-size: 32px;
+    color:white;
+}
+.prev{
+    font-size: 15px;
+    font-weight: 400;
+}
+.card img:hover{
+    z-index: 4;
+    filter:  brightness(0) invert(1);
 }
