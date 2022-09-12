@@ -13,9 +13,24 @@ const Hero = (props) => {
           </div>
         </div>
         <div className="hero-stats">
-          <p onClick={props.btnClick}>Daily</p>
-          <p onClick={props.btnClick}>Weekly</p>
-          <p onClick={props.btnClick}>Monthly</p>
+          <p
+            onClick={props.btnClick}
+            className={props.cuText == "Daily" ? "txt-clr" : ""}
+          >
+            Daily
+          </p>
+          <p
+            onClick={props.btnClick}
+            className={props.cuText == "Weekly" ? "txt-clr" : ""}
+          >
+            Weekly
+          </p>
+          <p
+            onClick={props.btnClick}
+            className={props.cuText == "Monthly" ? "txt-clr" : ""}
+          >
+            Monthly
+          </p>
         </div>
       </section>
     </>

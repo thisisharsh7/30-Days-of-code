@@ -4,14 +4,14 @@ import Hero from "./Hero";
 import data from "./data.json";
 
 const Main = () => {
-  const [getPeriod, setPeriod] = useState("weekly");
+  const [getPeriod, setPeriod] = useState("Weekly");
   function chngData(event) {
     setPeriod(event.target.innerText);
   }
   return (
     <>
       <main>
-        <Hero btnClick={chngData} />
+        <Hero btnClick={chngData} cuText={getPeriod} />
         {data &&
           data.map((sdata, index) => {
             const pic = require(`${sdata.bimg}`);
