@@ -1,16 +1,21 @@
 import React from "react";
 import dot from "./images/icon-ellipsis.svg";
-import play from "./images/icon-play.svg";
 
-const Card = () => {
+const Card = (props) => {
   return (
     <>
-      <section className="card-body" style={{backgroundImage:`url(${play})` , backgroundColor:"black"}}>
+      <section
+        className="card-body"
+        style={{
+          backgroundImage: `url(${props.bg})`,
+          backgroundColor: props.color,
+        }}
+      >
         <div className="card">
-          <h2 className="card-title">Work</h2>
+          <h2 className="card-title">{props.title}</h2>
           <img src={dot} alt="ellipsis" />
-          <h1 className="duration">32hrs</h1>
-          <p className="prev">Last Week - 36hrs</p>
+          <h1 className="duration">{props.current}hrs</h1>
+          <p className="prev">Last Week - {props.previous}hrs</p>
         </div>
       </section>
     </>

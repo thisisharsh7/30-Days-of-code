@@ -23,18 +23,16 @@ body{
 .hero-card{
     width: 100%;
     background-color:  hsl(235, 46%, 20%);
-    border-radius: 0.7rem;
+    border-radius: 14px;
 }
 .hero-profile {
   background-color: hsl(246, 80%, 60%);
   display: grid;
   grid-template-columns: minmax(60px,min-content) 1fr;
-  padding:1.5rem 2rem;
-  border-radius: 0.7rem;
-    gap:1.5rem;
+  padding:1.8rem 1rem 1.8rem 1.5rem;
+  border-radius: 14px;
+    gap:1.8rem;
     align-items: center;
-    padding-right: 1vw;
-    padding-left: 5vw;
 }
 .hero-profile img{
     width: 100%;
@@ -43,14 +41,13 @@ body{
 }
 .hero-profile div{
     display: flex;
-    flex-direction: column;
-    justify-content: center;    
-    align-items: flex-start;
+    flex-direction: column;  
     gap:0.3rem;
+    max-width: max-content;
     
 }
 .hero-profile div h1{
-    font-size: min(2rem,7vw);
+    font-size: 1.5rem;
     font-weight: 300;
     color:white;
 }
@@ -73,9 +70,11 @@ body{
   background-position: top -5px right 20px;
   background-repeat: no-repeat;
   padding-top: 2.4rem;
-  border-radius: 0.7rem;
   color:hsl(236, 100%, 87%);
   width: 100%;
+}
+.card , .card-body{
+    border-radius: 14px;
 }
 .card {
   background-color: hsl(235, 46%, 20%);
@@ -83,9 +82,10 @@ body{
   grid-template-columns: repeat(2, minmax(max-content, 1fr));
   gap: 0.5rem;
   align-items: center;
-  border-radius: 0.7rem;
   padding: 1.2rem 1.5rem;
   cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
 }
 .card:active{
     
@@ -96,7 +96,7 @@ body{
   justify-self: end;
 }
 main{
-    padding:4rem 1.5rem;
+    padding:7em 1.5rem;
     display: flex;
     flex-direction: column;
     gap:1.5rem;
