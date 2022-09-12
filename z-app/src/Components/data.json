@@ -251,5 +251,11 @@
     "title": "Tip Calculator",
     "goto": "https://elaborate-eclair-c844ac.netlify.app/",
     "cnt": "project"
+  },
+  {
+    "id": 37,
+    "title": "Time Tracking Dashboard",
+    "goto": "https://gentle-dodol-dc25c4.netlify.app/",
+    "cnt": "project"
   }
 ]
