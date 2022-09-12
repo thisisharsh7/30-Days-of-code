@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body{
+    min-height: 100vh;
+    max-width: 100vw;
+    display: grid;
+    place-items: stretch;
+}
+.hero-card{
+    min-width: 220px;
+    background-color: purple;
+    border-radius: 0.7rem;
+}
+.hero-profile {
+  background-color: pink;
+  display: grid;
+  grid-template-columns: minmax(100px,min-content) 1fr;
+  padding:1.5rem;
+  border-radius: 0.7rem;
+}
+.hero-profile img{
+    width: 80%;
+    border:5px solid white;
+    border-radius: 50%;
+}
+.hero-profile div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: orange;
+    align-items: flex-start;
+    gap:0.5rem;
+}
+.hero-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:1rem 1.5rem;
+}
+.card-body {
+  background-position: top -5px right 20px;
+  background-repeat: no-repeat;
+  padding-top: 2.5rem;
+  border-radius: 0.7rem;
+  min-width: 220px;
+}
+.card {
+  background-color: blue;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(max-content, 1fr));
+  gap: 0.5rem;
+  align-items: center;
+  border-radius: 0.7rem;
+  padding: 1.2rem 1.5rem;
+  
+}
+.card img,
+.card p {
+  justify-self: end;
+}
+main{
+    padding:1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+    align-items: center;
+}
