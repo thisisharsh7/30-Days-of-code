@@ -31,10 +31,6 @@ img {
   display: flex;
   gap:3vw;
 }
-.hamburgerIcon{
-  display: none;
-  width: 1.8em;
-}
 nav h1{
   font-size: 2em;
 }
@@ -47,6 +43,7 @@ nav h1{
   gap: 2rem;
   justify-items: center;
   align-items: center;
+  
 }
 .card {
   box-shadow: 5px 5px 15px -4px #000000;
@@ -68,6 +65,9 @@ img {
 .card {
   border-radius: 0.3em;
 }
+.gitRepo{
+  display: none;
+}
 @media only screen and (width<=1160px) {
   .card-body {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -87,24 +87,26 @@ img {
 @media only screen and (width<=590px){
   nav{
     position: relative; 
+    gap:1rem;
+    flex-wrap: wrap;
   }
   .nav-icon{
     display: none;
   }
-  .hamburgerIcon{
-    display: block;
+  .gitRepo a{
+    color:black;
   }
-  .menu-full{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    top:5em;
-    right:2vw;
-    padding:2em 1vw 5em 3vw;
-    border:3px dotted rgb(12, 12, 12);
-
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-    background-color:rgba(0, 0, 0, 0.517);
+  .gitRepo{
+    display: block;
+    background-color: white;
+    width: 6.5rem;
+    font-weight: bold;
+    box-shadow: 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px #020202, 5px 5px 15px 5px rgba(0,0,0,0);
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width:260px){
+  nav{
+    justify-content: center;
   }
 }
