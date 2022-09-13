@@ -6,15 +6,33 @@ import angL from "./images/icon-angle-left.svg";
 
 const Upper = () => {
   const [idx, setIdx] = useState(0);
-  const [notify , getNotify] = useState(false);
   let dPic = "";
   let mPic = "";
-  function slideLeft() {
-    getNotify(true);
-    (idx !== 0) ? setIdx(idx - 1) : setIdx(0);
+  function slideLeft(event) {
+    idx !== 0 ? setIdx(idx - 1) : setIdx(0);
+    if (idx !== 0) {
+      document.querySelector(".pic-btn").classList.add("animate");
+      setTimeout(
+        () => document.querySelector(".pic-btn").classList.remove("animate"),
+        400
+      );
+      event.target.parentElement.children[1].style.backgroundColor = "";
+    } else {
+      event.target.style.backgroundColor = "rgb(216, 87, 87)";
+    }
   }
-  function slideRight() {
-    (idx !== 2) ? setIdx(idx + 1) : setIdx(2);
+  function slideRight(event) {
+    idx !== 2 ? setIdx(idx + 1) : setIdx(2);
+    if (idx !== 2) {
+      document.querySelector(".pic-btn").classList.add("animate");
+      setTimeout(
+        () => document.querySelector(".pic-btn").classList.remove("animate"),
+        400
+      );
+      event.target.parentElement.children[0].style.backgroundColor = "";
+    } else {
+      event.target.style.backgroundColor = "rgb(216, 87, 87)";
+    }
   }
   try {
     dPic = require(`${data.dsimg[idx]}`);
@@ -24,7 +42,7 @@ const Upper = () => {
   return (
     <>
       <section>
-        <div className={(notify) ? "pic-btn animate" : "pic-btn"}>
+        <div className="pic-btn">
           <picture>
             <source media={"(max-width:376px)"} srcSet={mPic} />
             <img src={dPic} alt="one" className="hero-img" />

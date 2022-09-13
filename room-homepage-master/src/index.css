@@ -238,6 +238,10 @@ li:after{
    }
 }
 .animate{
-    transition: transform 300ms;
-    transform: translateX(20px);
+    animation: play 400ms;
+}
+@keyframes play {
+    from{
+        transform: scale(1.5);
+    }
 }
