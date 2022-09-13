@@ -25,13 +25,13 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
+![](./screenshot37.jpg)
 
 
 ### Links
 
-- Solution URL: [Solution URL]()
-- Live Site URL: [Live Site]()
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/timetrackingdashboardbuiltwithreact-xsIn0xA59F)
+- Live Site URL: [Live Site](https://gentle-dodol-dc25c4.netlify.app/)
 
 ## My process
 
@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-On process-- 
+In this I learned how to work with Json data and a lot more Js concepts.
 
 ## Author
 
