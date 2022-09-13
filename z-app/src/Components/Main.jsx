@@ -5,7 +5,7 @@ import data from "../Components/data.json";
 function Main() {
   return (
     <>
-      <div className="card-body">
+      <div className="card-body" >
       {
         data && data.map((sdata) =>{
           let pic = '';
