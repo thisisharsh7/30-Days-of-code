@@ -6,8 +6,8 @@ const Bottom = () => {
   return (
     <>
       <section>
-        <img src={Dark} alt="dark" />
-        <div>
+        <img src={Dark} alt="dark" className="about-depict"/>
+        <div className="about">
           <h2>About our furniture</h2>
           <p>
             Our multifunctional collection blends design and function to suit
@@ -18,7 +18,7 @@ const Bottom = () => {
             help you create your dream space.
           </p>
         </div>
-        <img src={Light} alt="light" />
+        <img src={Light} alt="light" className="about-depict"/>
       </section>
     </>
   );
