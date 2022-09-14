@@ -18,7 +18,7 @@
 body{
     min-height: 100vh;
     max-width: 1366px;
-    margin:0 au,;
+    margin:0 auto;
     display: grid;
     place-items: stretch;
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -29,4 +29,34 @@ footer{
 }
 footer a{
     color:white;
+}
+header{
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    
+}
+.logo-score{
+    border:2px solid var(--Header-Outline);
+    display: flex;
+    gap:calc(8vw + 2.5rem);
+    align-items: center;
+    padding:1rem;
+    border-radius: 0.5rem;
+}
+.score-text{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem ;
+    padding: 0.5rem 2.5rem;
+    border-radius: 0.5rem;
+}
+.text{
+    text-transform: uppercase;
+}
+#score{ 
+    font-size: 3.5rem;
+    
 }
