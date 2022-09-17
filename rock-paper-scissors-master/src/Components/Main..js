@@ -7,14 +7,14 @@ const Main = () => {
   return (
     <>
       <main>
-      <div id="paper-outer">
-        <img src={paper} alt="paper" className="bg-icons"/>
+      <div id="paper" className="outer">
+        <img src={paper} alt="paper" id="paper-bg"/>
         </div>
-        <div id="rock-outer">
-        <img src={rock} alt="rock" className="bg-icons" />
+        <div id="rock" className="outer">
+        <img src={rock} alt="rock" id="rock-bg" />
         </div>
-        <div id="scissors-outer">
-        <img src={scissors} alt="scissors" className="bg-icons"/>
+        <div id="scissors" className="outer">
+        <img src={scissors} alt="scissors" id="scissors-bg"/>
         </div>
       </main>
     </>
