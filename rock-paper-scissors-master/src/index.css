@@ -27,6 +27,7 @@ body{
     background-size: 100%;
 }
 header {
+    padding-top:2rem;
     display: flex;
     justify-content: center;
 }
@@ -35,6 +36,25 @@ header {
     border-radius: 0.5em;
     display: flex;
     gap:max(8vw,1.3rem);
+    padding:0.8rem;
+    gap:calc(3rem + 8vw);
+    align-items: center;
+}
+#logo{
+    max-width: 80%;
+}
+.score-text{
+    padding:0.5rem 1rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+#score{
+    font-size: max(4vw,2rem);
 }
 footer{
     padding-top: 3em;
