@@ -132,23 +132,24 @@ footer a{
 .outer{
     padding:max(1.80vw,0.75rem);
 }
-#paper-bg{
+.paper-bg{
     padding:max(2.3vw,0.8rem) max(2.6vw,1.1rem);
 }
-#rock-bg{
+.rock-bg{
     padding:max(2.6vw,1.1rem);
 }
-#scissors-bg{
+.scissors-bg{
     padding:max(2.4vw,0.9rem) max(2.6vw,1.1rem);
 }
-#paper{
+.paper{
     background: var(--Paper-Gradient);
 }
-#rock{
+.rock{
     background: var(--Rock-Gradient);
 
 }
-#scissors{
+.scissors{
+    grid-column: 1/-1;
     background: var(--Scissors-Gradient);
 }
 .outer{
@@ -230,13 +231,13 @@ footer a{
     .outer{
         padding:max(2.80vw,0.75rem);
     }
-    #paper-bg{
+    .paper-bg{
         padding:max(3.3vw,0.8rem) max(3.9vw,1.1rem);
     }
-    #rock-bg{
+    .rock-bg{
         padding:max(3.9vw,1.1rem);
     }
-    #scissors-bg{
+    .scissors-bg{
         padding:max(3.5vw,0.9rem) max(3.9vw,1.1rem);
     }
 }
