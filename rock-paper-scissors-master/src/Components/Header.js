@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./images/logo.svg";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <>
       <header>
@@ -9,7 +9,7 @@ const Header = () => {
           <img src={logo} alt="logo" id="logo"/>
           <p className="score-text">
             <span className="text">Score</span>
-            <span id="score">0</span>
+            <span id="score">{props.Pnt}</span>
           </p>
         </div>
       </header>
