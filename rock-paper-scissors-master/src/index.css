@@ -23,8 +23,6 @@ body{
     place-items: stretch;
     font-family: 'Barlow Semi Condensed', sans-serif;
     background: linear-gradient(hsl(214, 47%, 23%) , hsl(237, 49%, 15%));
-    background-repeat: no-repeat;
-    background-size: 100%;
 }
 header {
     padding-top:3rem;
@@ -172,10 +170,10 @@ footer a{
     grid-template-columns: repeat(2,1fr);
     grid-column-gap:max(1.5rem , 5vw);
 }
-#paper {
+.paper {
     justify-self:end;
 }
-#scissors{
+.scissors{
     grid-column: span 2;
     justify-self: center;
 }
@@ -197,7 +195,7 @@ footer a{
     flex-direction: column;
     gap:4.5rem;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 .com-result{
@@ -206,17 +204,18 @@ footer a{
 }
 .result{
     position: absolute;
-    left:0;
-    right:0;
-    top:0;
-    bottom: 0;
-    display: grid;
-    place-content: center;
     font-size: max(4.5vw,2rem);
     color:white;
-    grid-row-gap: 1rem;
-    justify-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    flex-direction: column;
 }
+
 .result button{
     padding:0.5rem 2rem;  
     border-radius: 0.2rem;
@@ -232,6 +231,18 @@ footer a{
 .ruleTog{  
     display: none;
 }
+.animate{
+    transition: transform 800ms;
+    transform: scale(0);
+}
+.chouse{
+    opacity: 0;
+}
+.house{
+    opacity: 1;
+    transition: opacity 1.5s ease-in;
+}
+
 @media only screen and (width<=1024px){
     .outer{
         padding:max(2.80vw,0.75rem);
@@ -282,5 +293,8 @@ footer a{
     }
     .rules img{
        width: 90%;
+    }
+    .showNo{
+        gap:calc(1.5rem + 8vw);
     }
 }
