@@ -27,37 +27,101 @@ body{
     background-size: 100%;
 }
 header {
-    padding-top:2rem;
+    padding-top:3rem;
     display: flex;
     justify-content: center;
 }
+main{
+
+    padding: 5rem 1rem 2rem 1rem;
+}
+.rule-body{
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom: 0;
+    display: grid;
+    place-content: center;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.477);
+}
+#close{
+    cursor: pointer;
+}
+.rules{
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    gap:3rem;
+    background-color: white;
+    padding: 1.3rem;
+    width: min-content;
+    border-radius: 0.5rem;
+}
+.rules p{
+    font-size: 1.9rem;
+    color:var(--Dark-Text);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+}
+
+#rbtn{
+    align-self: flex-end;
+    height: 2.5rem;
+    font-size: 1.1rem;
+    padding: 0rem 2.5rem;
+    right: 1rem;
+    border-color: white;
+    border-radius: 0.3rem;
+    background-color: transparent;
+    color:white;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
 .logo-score{
-    border:2px solid white;
+    border:2px solid var(--Header-Outline);
     border-radius: 0.5em;
     display: flex;
     gap:max(8vw,1.3rem);
     padding:0.8rem;
-    gap:calc(3rem + 8vw);
+    gap:calc(3rem + 30vw);
     align-items: center;
 }
 #logo{
-    max-width: 80%;
+    max-width: 70%;
+}
+.text{
+    color:var(--Score-Text);
 }
 .score-text{
-    padding:0.5rem 1rem;
+    padding:0.5rem 1.5rem;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 0.5rem;
+    color:var(--Dark-Text);
 }
 
 #score{
     font-size: max(4vw,2rem);
 }
 footer{
-    padding-top: 3em;
+    padding-top: 1rem;
     color:white;
     text-align: center;
 }
@@ -98,11 +162,11 @@ footer a{
     display: flex;
     justify-content: center;
     box-shadow: inset 2px 10px 1px -1px rgba(0,0,0,0.27);
-    background-color: white;
+    background-color: rgb(242, 243, 252);
+    cursor: pointer;
 
 }
-main{
-    padding-top: 5em;
+.choice-pannel{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-column-gap:max(1.5rem , 5vw);
@@ -113,6 +177,54 @@ main{
 #scissors{
     grid-column: span 2;
     justify-self: center;
+}
+
+.showNo{
+    padding: 5rem 0rem;
+    grid-column-gap:min(15rem,35vw);
+    position: relative;
+}
+.showNo .outer{
+   transform: scale(1.3);
+}
+.showNo{
+    display:none;
+}
+.result-text{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap:4.5rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-align: center;
+}
+.com-result{
+    align-items: center;
+    justify-self: flex-start;
+}
+.result{
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom: 0;
+    display: grid;
+    place-content: center;
+    font-size: max(4.5vw,2rem);
+    color:white;
+    grid-row-gap: 1rem;
+    justify-items: center;
+    display: none;
+}
+
+
+.user-result{
+    align-items: center;
+    justify-self: flex-end;
+}
+.ruleTog{  
+    display: none;
 }
 @media only screen and (width<=1024px){
     .outer{
@@ -126,5 +238,43 @@ main{
     }
     #scissors-bg{
         padding:max(3.5vw,0.9rem) max(3.9vw,1.1rem);
+    }
+}
+@media only screen and (width<=760px){
+    .logo-score{
+        grid-column-gap:calc(1rem + 15vw);
+        justify-content: space-between;
+    }
+    #logo{
+        max-width: 45%;
+    }
+    .score-text{
+        padding: 0.4rem 1rem;
+    }
+    #score{
+        font-size: 1.5rem;
+    }
+    .text{
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width:600px){
+    #rbtn{
+        margin-top: 6vh;
+        align-self: center;
+    }
+    .rule-body{
+        background-color: white;
+        position:absolute;
+    }
+    .rules{
+        width: 90vw;
+        display: flex;
+        height: 90vh;
+        justify-content: flex-start;
+        gap:4rem;
+    }
+    .rules img{
+       width: 90%;
     }
 }

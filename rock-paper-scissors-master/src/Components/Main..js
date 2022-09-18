@@ -1,22 +1,24 @@
 import React from "react";
-import paper from "./images/icon-paper.svg";
-import scissors from "./images/icon-scissors.svg";
-import rock from "./images/icon-rock.svg";
+import Choose from "./Choose";
+import Game from "./Game";
+import Rule from "./Rule";
+
 
 const Main = () => {
+  function RuleBlink(){
+    document.querySelector(".rule-body").classList.toggle("ruleTog");
+  }
+  function showNext(){
+    
+  }
   return (
     <>
       <main>
-      <div id="paper" className="outer">
-        <img src={paper} alt="paper" id="paper-bg"/>
-        </div>
-        <div id="rock" className="outer">
-        <img src={rock} alt="rock" id="rock-bg" />
-        </div>
-        <div id="scissors" className="outer">
-        <img src={scissors} alt="scissors" id="scissors-bg"/>
-        </div>
+        <Rule CloseIt={RuleBlink}/>
+        <Game TogRule={RuleBlink} NextStep={showNext}/>
+        <Choose />
       </main>
+
     </>
   );
 };
