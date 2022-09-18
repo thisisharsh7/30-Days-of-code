@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import paper from "./images/icon-paper.svg";
 import scissors from "./images/icon-scissors.svg";
 import rock from "./images/icon-rock.svg";
@@ -7,7 +7,10 @@ import Result  from "./Result";
 const Choose = (props) => {
     const isrc = [paper , rock , scissors];
     const str = ["paper" , "rock" , "scissors"];
-
+    const [findFinal , getFinal]=useState("Win");
+    if(props.setPNum === props.setNum){
+      getFinal("Loose");
+    }
   return (
     <>
       <div className="choice-pannel showNo">
@@ -23,7 +26,7 @@ const Choose = (props) => {
         <img src={isrc[props.setNum]} alt={str[props.setNum]} className={`${str[props.setNum]}-bg`} />
         </div>
         </div>
-        <Result /> 
+        <Result finalText={findFinal}/> 
       </div>
       
     </>

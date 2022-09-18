@@ -1,11 +1,14 @@
 import React from "react";
 
-const Result = () => {
+const Result = (props) => {
+    function ReStart(){
+        setTimeout(window.location.reload.bind(window.location), 1000);
+    }
   return (
     <>
       <div className="result">
-        <p className="lose-win">You Lose</p>
-        <button>Play Again</button>
+        <p className="lose-win">You {props.finalText}</p>
+        <button onClick={ReStart}>Play Again</button>
       </div>
     </>
   );

@@ -5,20 +5,27 @@ import Rule from "./Rule";
 
 
 const Main = () => {
-  const [getNum , setXNum] = useState(0);
-  const [getPNum , setPXNum] = useState(0);
+  const [getNum , setXNum] = useState(2);
+  const [getPNum , setPXNum] = useState(-1);
   function RuleBlink(){
     document.querySelector(".rule-body").classList.toggle("ruleTog");
+    document.querySelector(".result").classList.toggle("ruleTog");
   }
   function showNext(e){
     setPXNum(Number(e.target.id));
-    console.log(e.target.id);
-    console.log(typeof(Number(e.target.id)));
     document.querySelector(".game").style.display="none";
-    setXNum(Math.floor(Math.random()*2));
-    console.log(getNum);
+    setXNum(Math.floor(Math.random()*3));
     document.querySelector(".showNo").style.display="grid";
   }
+  function shNum(){
+    document.querySelector(".result").classList.toggle("ruleTog");
+  }
+
+  if(1){
+    console.log("yes");
+    setTimeout(shNum , 2000);
+  }
+
   return (
     <>
       <main>

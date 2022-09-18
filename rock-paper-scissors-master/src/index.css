@@ -216,7 +216,12 @@ footer a{
     color:white;
     grid-row-gap: 1rem;
     justify-items: center;
-    display: none;
+}
+.result button{
+    padding:0.5rem 2rem;  
+    border-radius: 0.2rem;
+    outline: none;
+    cursor: pointer;
 }
 
 
