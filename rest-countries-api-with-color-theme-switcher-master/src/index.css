@@ -1,10 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
 *{
   margin:0;
   padding: 0;
 }
+:root{
+  --Homepage-Items: 14px;
+  --Detail-Page: 16px; 
+  --Cwhite: white;
+  --bgdark: hsl(210, 23%, 17%);
+  --darkElement: hsl(209, 23%, 22%);
 
+}
 body{
   min-height: 100vh;
   max-width: 1440px;
   margin: 0 auto;
+  background-color: var(--bgdark);
+  font-family: 'Nunito Sans', sans-serif;
+}
+header{
+  background-color: var(--darkElement);
+  color:var(--Cwhite);
+  padding:1.2rem 3.5vw;
+  font-size: 1.5rem;
+  font-weight: 650;
+}
+header div{
+  display: flex;
+  justify-content: space-between;
+}
+header div p{
+  letter-spacing: 0.15rem;
+}
+header div button{
+  cursor: pointer;
+  background-color: var(--darkElement);
+  outline: none;
+  color:var(--Cwhite);
+  font-size: 0.9rem;
+  border: none;
+}
+main{
+  padding:4rem 3.5vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap:3.5rem;
+}
+.card img{
+  width: 100%;
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+}
+.card{
+  background-color: var(--darkElement);
+  color:var(--Cwhite);
+  border-radius: 0.4rem;
+}
+.card div{
+  padding-top: 1rem;
+  font-size:1rem;
+  font-weight: 600;
+  padding-left: 1.2rem;
+  padding-bottom: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  gap:0.5rem;
+  
+}
+.card div p:first-of-type{
+  padding-bottom: 0.9rem;
+  font-size: 1.5em;
+  font-weight: 800;
+}
+.card div p span:nth-of-type(2){
+  font-size: var(--Homepage-Items);
+  font-weight: 300;
 }
