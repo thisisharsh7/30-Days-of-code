@@ -27,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
+![](./screenshot39.jpg)
 
 ### Links
 
-- Solution URL: [Solution url]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution url](https://www.frontendmentor.io/solutions/rockpaperscissorsgamebuildusingreact-5XkXLYQkj9)
+- Live Site URL: [Live site](https://dazzling-blancmange-e6f10d.netlify.app/)
 
 ## My process
 
@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-In proces--
+I learned some more react hooks  and get to work with too many props on building this project.
 
 ## Author
 
