@@ -23,9 +23,12 @@ function shNum() {
   document.querySelector(".result").style.display = "flex";
 }
 const getSavedPoint = () => {
-  let SavedPoints = localStorage.getItem("points");
-  if (SavedPoints) {
+  let SavedPoints =localStorage.getItem("points") ;
+  console.log(SavedPoints);
+  if (SavedPoints !== null) {
     return JSON.parse(localStorage.getItem("points"));
+  }else{
+    return 0;
   }
 };
 const Main = () => {
