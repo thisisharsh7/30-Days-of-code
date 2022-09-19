@@ -54,9 +54,6 @@ const Main = () => {
     setXNum(ran);
     comeNext();
     e.preventDefault();
-    console.log(id);
-    console.log(",");
-    console.log(ran);
     if (id === ran || ran === id - 1 || (ran === 2 && id === 0)) {
       setTimeout(() => {
         cnt !== 0 ? getCnt(cnt - 1) : getCnt(0);
@@ -67,9 +64,6 @@ const Main = () => {
       }, 5000);
     }
   }
-  console.log(cnt);
-
-  console.log("harsh2");
   return (
     <>
       <Header Pnt={cnt} />
