@@ -3,9 +3,9 @@ import React from 'react';
 export default function Detail(){
     return(
         <>
-            <div>
+            <div className='det-body'>
                 <img src="" alt="" />
-                <div>
+                <div className='det-card'>
                     <p>Country</p>
                     <div>
                         <p><span>Native Name: </span><span>Jadu</span></p>

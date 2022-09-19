@@ -67,7 +67,7 @@ main{
   box-shadow: 0px 0px 12px 5px rgba(0,0,0,0.26);
   transition: background-color 0.5s linear , color 0.5s linear ;
 }
-.card div{
+.card div , .det-card div{
   padding: 1rem 0.8rem 1.7rem 1.2rem;
   font-size:1rem;
   font-weight: 600;
@@ -76,7 +76,7 @@ main{
   gap:0.5rem;
   
 }
-.card div p:first-of-type{
+.card div p:first-of-type , .det-card p:first-of-type{
   padding-bottom: 0.9rem;
   font-size: 1.5em;
   font-weight: 800;
@@ -84,6 +84,11 @@ main{
 .card div p span:nth-of-type(2){
   font-size: var(--Homepage-Items);
   font-weight: 300;
+}
+.det-body{
+  background-color: var(--darkElement);
+  color:var(--Cwhite);
+  transition: background-color 0.5s linear , color 0.5s linear ;
 }
 .PNbutton{
   padding-top: 5rem;
