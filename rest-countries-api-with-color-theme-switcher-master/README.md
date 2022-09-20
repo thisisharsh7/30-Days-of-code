@@ -28,12 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
+![](./screenshot40.jpg)
 
 ### Links
 
-- Solution URL: [Solution url]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution url](https://www.frontendmentor.io/solutions/restcountriesapibuildwithreact-tHu4m8zuxn)
+- Live Site URL: [Live site](https://spectacular-lolly-481d06.netlify.app/)
 
 ## My process
 
@@ -44,10 +44,11 @@ Users should be able to:
 - Flexbox
 - Grid
 - React
+- API
 
 ### What I learned
 
-In process--
+While building this project I learned how to work with API's in react .I also learned how to fetch data and render it to the page. I faced some difficulties on doing so but I managed to done it correctly. I felt awesome on completing the project.
 
 ## Author
 
