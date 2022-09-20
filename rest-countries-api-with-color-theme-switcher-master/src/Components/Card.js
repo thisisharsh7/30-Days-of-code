@@ -30,13 +30,13 @@ export default function Card() {
   }
 
   const CountryDetail = (e) => {
-    sdata(Country.find((scntry) => scntry.flags.svg === e.target.src));
+    sdata(sample.find((scntry) => scntry.flags.svg === e.target.src));
     document.querySelector(".outer-card").classList.toggle("beforeClick");
     document.querySelector(".detCard").classList.toggle("newCard");
   };
   const getMore = (e) => {
     sdata(
-      Country.find(
+      sample.find(
         (scntry) =>
           scntry?.cca2 === e.target.innerText ||
           scntry?.cca3 === e.target.innerText ||
