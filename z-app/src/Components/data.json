@@ -269,5 +269,11 @@
     "title": "Rock Paper Scissors",
     "goto": "https://dazzling-blancmange-e6f10d.netlify.app/",
     "cnt": "project"
+  },
+  {
+    "id": 40,
+    "title": "Where in the world?",
+    "goto": "https://spectacular-lolly-481d06.netlify.app/",
+    "cnt": "project"
   }
 ]
