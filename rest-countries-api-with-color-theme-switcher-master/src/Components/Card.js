@@ -30,11 +30,10 @@ export default function Card() {
 
   const CountryDetail = (e) => {
     sdata(Country.find((scntry) => scntry.flags.svg === e.target.src));
-    console.log(e.target.src);
-    document.querySelector(".outer-card").classList.toggle("beforeClick");
+      document.querySelector(".outer-card").classList.toggle("beforeClick");
     document.querySelector(".detCard").classList.toggle("newCard");
+    
   };
-  console.log(data?.flags?.svg);
   return (
     <>
       <div className="outer-card">
@@ -49,9 +48,7 @@ export default function Card() {
                 />
                 <div>
                   <p>
-                    {element.altSpellings[2]
-                      ? element.altSpellings[2]
-                      : element.altSpellings[0]}
+                    {element.name.common}
                   </p>
                   <p>
                     <span>Population: </span>
@@ -80,33 +77,59 @@ export default function Card() {
         </p>
       </div>
       <div className="detCard">
-      <button type="button" onClick={()=>{
-        document.querySelector(".detCard").classList.toggle("newCard");
-        document.querySelector(".outer-card").classList.toggle("beforeClick");
-      }}>Go Back</button>
-      <div className="card">
-                <img
-                  src={data?.flags?.svg}
-                  alt="flag"
-                />
-                <div>
-                  <p>
-                    {data?.altSpellings}
+        <button
+          type="button" className="tgbtn"
+          onClick={() => {
+            document.querySelector(".detCard").classList.toggle("newCard");
+            document
+              .querySelector(".outer-card")
+              .classList.toggle("beforeClick");
+          }}
+        >
+          Go Back
+        </button>
+        <div className="scountry-detail card">
+          <img src={data?.flags?.svg} alt="flag" />
+          <div>
+            <p>{data?.name?.common}</p>
+            <p>
+                    <span>Native Name: </span>
+                    <span>{(data.name?.nativeName?.eng?.official) ? (data.name?.nativeName?.eng?.official) : (data?.name?.official)}</span>
                   </p>
-                  <p>
-                    <span>Population: </span>
-                    <span>{data?.population}</span>
-                  </p>
-                  <p>
-                    <span>Region: </span>
-                    <span>{data?.region}</span>
-                  </p>
-                  <p>
-                    <span>Capital: </span>
-                    <span>{data?.capital}</span>
-                  </p>
-                </div>
-              </div>
+            <p>
+              <span>Population: </span>
+              <span>{data?.population}</span>
+            </p>
+            <p>
+              <span>Region: </span>
+              <span>{data?.region}</span>
+            </p>
+            <p>
+              <span>Sub Region: </span>
+              <span>{data?.subregion}</span>
+            </p>
+            <p>
+              <span>Capital: </span>
+              <span>{data?.capital}</span>
+            </p>
+            <p>
+              <span>Top Level Domain: </span>
+              <span>{data?.tld}</span>
+            </p>
+            <p>
+              <span>Currencies: </span>
+              <span>{(data.currencies) ? (Object.values(data.currencies)[0]?.name) : "No Data"}</span>
+            </p>
+            <p>
+              <span>Languages: </span>
+              <span>{(data.languages) ? (Object.values(data.languages).map(slang=>{ return `${slang}, `})) : ""}</span>
+            </p>
+            <p>
+              <span>Border Countries: </span>
+              <span>{(data.borders) ? (data.borders.map(sborder => {return `${sborder} ,`})) : ""}</span>
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );

@@ -128,7 +128,20 @@ main{
   display: none;
 }
 .newCard{
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap:3rem;
+}
+
+.detCard button{
+  align-self: flex-start;
+}
+.scountry-detail{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+}
+.scountry-detail img{
+  width: 100%;
 }
 
 @media only screen and (width<=465px) {
