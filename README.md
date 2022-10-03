@@ -2,7 +2,9 @@
 
 Repo for all the Front_End Projects🧑‍💻
 
-**All projects Link**
+**Here are links to each project**
+<br/>
+<br/>
 <br/>
 [QR Code Card](https://elegant-babka-9c3709.netlify.app/) <br/>
 [Product Preview Card](https://sunny-crisp-7a9a2e.netlify.app/) <br/>
