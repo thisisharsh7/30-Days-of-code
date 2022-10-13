@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution url](https://www.frontendmentor.io/solutions/restcountriesapibuildwithreact-tHu4m8zuxn)
-- Live Site URL: [Live site](https://spectacular-lolly-481d06.netlify.app/)
+- Live Site URL: [Live site](https://yes-country.netlify.app/)
 
 ## My process
 
