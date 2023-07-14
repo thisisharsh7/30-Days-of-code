@@ -1,4 +1,3 @@
-
 [
   {
     "id": 1,
@@ -40,7 +39,45 @@
     "title": "Profile Card Preview",
     "goto": "https://lucky-monstera-e9cc20.netlify.app/",
     "cnt": "project"
+  }
+  ,
+
+  {
+    "id": 13,
+    "title": "Fylo Data Storage Preview",
+    "goto": "https://astonishing-capybara-4b9445.netlify.app/",
+    "cnt": "project"
   },
+
+  {
+    "id": 21,
+    "title": "Ping single page",
+    "goto": "https://starlit-churros-5eb4ae.netlify.app/",
+    "cnt": "project"
+  },
+
+  {
+    "id": 22,
+    "title": "Artice preview",
+    "goto": "https://kaleidoscopic-genie-5b3b1b.netlify.app/",
+    "cnt": "project"
+  },
+
+  {
+    "id": 24,
+    "title": "Interactive Rating Page",
+    "goto": "https://friendly-cat-327182.netlify.app/",
+    "cnt": "project"
+  }
+  ,
+
+  {
+    "id": 38,
+    "title": "Room Hompage Master",
+    "goto": "https://frabjous-nasturtium-a7881a.netlify.app/",
+    "cnt": "project"
+  }
+  ,
 
   {
     "id": 7,
@@ -82,14 +119,8 @@
     "title": "Testimonial Grid Preview",
     "goto": "https://jolly-kitten-112311.netlify.app/",
     "cnt": "project"
-  },
-
-  {
-    "id": 13,
-    "title": "Fylo Data Storage Preview",
-    "goto": "https://astonishing-capybara-4b9445.netlify.app/",
-    "cnt": "project"
-  },
+  }
+  ,
 
   {
     "id": 14,
@@ -103,105 +134,19 @@
     "title": "Clipboard Landing Page",
     "goto": "https://nimble-panda-389dda.netlify.app/",
     "cnt": "project"
-  },
-
+  }
+  ,
   {
-    "id": 16,
-    "title": "Landing page fylo",
-    "goto": "https://lucent-elf-3bf33f.netlify.app/",
+    "id": 39,
+    "title": "Rock Paper Scissors",
+    "goto": "https://dazzling-blancmange-e6f10d.netlify.app/",
     "cnt": "project"
   },
-
-  {
-    "id": 17,
-    "title": "Huddle Landing page",
-    "goto": "https://super-yeot-edaf05.netlify.app/",
-    "cnt": "project"
-  },
-
-  {
-    "id": 18,
-    "title": "Chat App Illustration",
-    "goto": "https://lucky-salamander-e86340.netlify.app/",
-    "cnt": "project"
-  },
-
-  {
-    "id": 19,
-    "title": "FAQ Accordian Card",
-    "goto": "https://celebrated-clafoutis-5d42d2.netlify.app/",
-    "cnt": "project"
-  },
-
-  {
-    "id": 20,
-    "title": "Form Validation",
-    "goto": "https://warm-panda-c8abe5.netlify.app/",
-    "cnt": "project"
-  },
-
-  {
-    "id": 21,
-    "title": "Ping single page",
-    "goto": "https://starlit-churros-5eb4ae.netlify.app/",
-    "cnt": "project"
-  },
-
-  {
-    "id": 22,
-    "title": "Artice preview",
-    "goto": "https://kaleidoscopic-genie-5b3b1b.netlify.app/",
-    "cnt": "project"
-  },
-
-  {
-    "id": 23,
-    "title": "Apparel coming soon page",
-    "goto": "https://fascinating-monstera-52135a.netlify.app/",
-    "cnt": "project"
-  },
-
-  {
-    "id": 24,
-    "title": "Interactive Rating Page",
-    "goto": "https://friendly-cat-327182.netlify.app/",
-    "cnt": "project"
-  },
-
-  {
-    "id": 25,
-    "title": "Interactive card details",
-    "goto": "https://relaxed-gaufre-fc429b.netlify.app/",
-    "cnt": "project"
-  },
-
-  {
-    "id": 26,
-    "title": "Sunnyside agency Landing Page",
-    "goto": "https://dashing-bublanina-3b9333.netlify.app/",
-    "cnt": "project"
-  },
-
-  {
-    "id": 27,
-    "title": "Loopstudios Landing Page",
-    "goto": "https://flourishing-concha-46ceef.netlify.app/",
-    "cnt": "project"
-  },
-  
-
-  {
-    "id": 28,
-    "title": "Insure Landing Page",
-    "goto": "https://heroic-druid-42014b.netlify.app/",
-    "cnt": "project"
-  },
-
   {
     "id": 29,
     "title": "Fylo Dark Theme Landing Page",
     "goto": "https://neon-zuccutto-cc63a7.netlify.app/?",
-    "cnt":"project"
+    "cnt": "project"
   },
 
   {
@@ -245,6 +190,73 @@
     "goto": "https://tourmaline-narwhal-a28b67.netlify.app/",
     "cnt": "project"
   },
+  {
+    "id": 19,
+    "title": "FAQ Accordian Card",
+    "goto": "https://celebrated-clafoutis-5d42d2.netlify.app/",
+    "cnt": "project"
+  },
+
+  {
+    "id": 16,
+    "title": "Landing page fylo",
+    "goto": "https://lucent-elf-3bf33f.netlify.app/",
+    "cnt": "project"
+  },
+
+  {
+    "id": 17,
+    "title": "Huddle Landing page",
+    "goto": "https://super-yeot-edaf05.netlify.app/",
+    "cnt": "project"
+  },
+  {
+    "id": 23,
+    "title": "Apparel coming soon page",
+    "goto": "https://fascinating-monstera-52135a.netlify.app/",
+    "cnt": "project"
+  },
+  {
+    "id": 25,
+    "title": "Interactive card details",
+    "goto": "https://relaxed-gaufre-fc429b.netlify.app/",
+    "cnt": "project"
+  },
+
+  {
+    "id": 26,
+    "title": "Sunnyside agency Landing Page",
+    "goto": "https://dashing-bublanina-3b9333.netlify.app/",
+    "cnt": "project"
+  },
+
+  {
+    "id": 27,
+    "title": "Loopstudios Landing Page",
+    "goto": "https://flourishing-concha-46ceef.netlify.app/",
+    "cnt": "project"
+  },
+
+  {
+    "id": 28,
+    "title": "Insure Landing Page",
+    "goto": "https://heroic-druid-42014b.netlify.app/",
+    "cnt": "project"
+  },
+
+  {
+    "id": 18,
+    "title": "Chat App Illustration",
+    "goto": "https://lucky-salamander-e86340.netlify.app/",
+    "cnt": "project"
+  },
+
+  {
+    "id": 20,
+    "title": "Form Validation",
+    "goto": "https://warm-panda-c8abe5.netlify.app/",
+    "cnt": "project"
+  },
 
   {
     "id": 36,
@@ -256,18 +268,6 @@
     "id": 37,
     "title": "Time Tracking Dashboard",
     "goto": "https://gentle-dodol-dc25c4.netlify.app/",
-    "cnt": "project"
-  },
-  {
-    "id": 38,
-    "title": "Room Hompage Master",
-    "goto": "https://frabjous-nasturtium-a7881a.netlify.app/",
-    "cnt": "project"
-  },
-  {
-    "id": 39,
-    "title": "Rock Paper Scissors",
-    "goto": "https://dazzling-blancmange-e6f10d.netlify.app/",
     "cnt": "project"
   },
   {

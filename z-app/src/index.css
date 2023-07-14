@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@400;600&display=swap");
+
 :root {
-  --text-color: white;
+  --text-color: black;
 }
 * {
   margin: 0;
@@ -8,17 +10,20 @@
 body {
   color: var(--text-color);
   text-align: center;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Ysabeau SC", sans-serif;
+  background-image: linear-gradient(to right, white, black);
+  font-size: 14px;
 }
-header , footer{
-  background-color: black;
-  
+h1 {
+  text-decoration: underline;
+  font-size: 2em;
+  font-weight: 600;
 }
 .black {
   margin: 0 auto;
   max-width: 1600px;
 }
-nav{
+nav {
   display: flex;
   padding: 1em;
   justify-content: space-between;
@@ -27,27 +32,19 @@ nav{
 img {
   width: 100%;
 }
-.nav-icon{
-  display: flex;
-  gap:3vw;
-}
-nav h1{
-  font-size: 2em;
-}
 .card-body {
   max-width: 1600px;
   margin: 0 auto;
   padding: 1.5rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 2rem;
   justify-items: center;
   align-items: center;
-  
 }
 .card {
   box-shadow: 5px 5px 15px -4px #000000;
-  background-color: black;
+  background-color: white;
   transition: transform;
 }
 .card:hover {
@@ -65,48 +62,21 @@ img {
 .card {
   border-radius: 0.3em;
 }
-.gitRepo{
+.gitRepo {
   display: none;
-}
-@media only screen and (width<=1160px) {
-  .card-body {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  }
 }
 @media only screen and (width<=900px) {
   .card-body {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
 }
 @media only screen and (width<=425px) {
   .card-body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
-}
-@media only screen and (width<=590px){
-  nav{
-    position: relative; 
-    gap:1rem;
-    flex-wrap: wrap;
-  }
-  .nav-icon{
-    display: none;
-  }
-  .gitRepo a{
-    color:black;
-  }
-  .gitRepo{
-    display: block;
-    background-color: white;
-    width: 6.5rem;
-    font-weight: bold;
-    box-shadow: 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px #020202, 5px 5px 15px 5px rgba(0,0,0,0);
-    cursor: pointer;
-  }
-}
-@media only screen and (max-width:260px){
-  nav{
+  nav {
     justify-content: center;
   }
 }

@@ -6,23 +6,24 @@ function Main() {
   return (
     <>
       <div className="card-body" >
-      {
-        data && data.map((sdata) =>{
+        {
+          
+          data && data.reverse().map((sdata) =>{
           let pic = '';
-          try {
-            pic = require(`./images/screenshot${sdata.id}.jpg`);
+        try {
+          pic = require(`./images/screenshot${sdata.id}.jpg`);
           }catch(err){
-            pic = require(`./images/noImage.webp`);
+          pic = require(`./images/noImage.webp`);
           }
-          return(
-            <Card
+        return(
+        <Card
           display={pic}
           goto={sdata.goto}
           title={sdata.title}
           cnt={sdata.cnt + sdata.id.toString()}
           key={sdata.id}
         />
-          )
+        )
           
         })
       }
