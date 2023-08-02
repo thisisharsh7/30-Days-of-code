@@ -39,9 +39,7 @@
     "title": "Profile Card Preview",
     "goto": "https://lucky-monstera-e9cc20.netlify.app/",
     "cnt": "project"
-  }
-  ,
-
+  },
   {
     "id": 13,
     "title": "Fylo Data Storage Preview",
@@ -68,17 +66,13 @@
     "title": "Interactive Rating Page",
     "goto": "https://friendly-cat-327182.netlify.app/",
     "cnt": "project"
-  }
-  ,
-
+  },
   {
     "id": 38,
     "title": "Room Hompage Master",
     "goto": "https://frabjous-nasturtium-a7881a.netlify.app/",
     "cnt": "project"
-  }
-  ,
-
+  },
   {
     "id": 7,
     "title": "Huddle Landing Page",
@@ -119,9 +113,7 @@
     "title": "Testimonial Grid Preview",
     "goto": "https://jolly-kitten-112311.netlify.app/",
     "cnt": "project"
-  }
-  ,
-
+  },
   {
     "id": 14,
     "title": "Huddle Full Landing Page",
@@ -134,8 +126,7 @@
     "title": "Clipboard Landing Page",
     "goto": "https://nimble-panda-389dda.netlify.app/",
     "cnt": "project"
-  }
-  ,
+  },
   {
     "id": 39,
     "title": "Rock Paper Scissors",
@@ -243,7 +234,12 @@
     "goto": "https://heroic-druid-42014b.netlify.app/",
     "cnt": "project"
   },
-
+  {
+    "id": 41,
+    "title": "Single Store",
+    "goto": "https://single-store.netlify.app/",
+    "cnt": "project"
+  },
   {
     "id": 18,
     "title": "Chat App Illustration",

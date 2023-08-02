@@ -1,0 +1,602 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  max-width: 1366px;
+  min-width: 320px;
+  margin-inline: auto;
+  min-height: 100vh;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 10px;
+}
+header {
+  font-weight: normal;
+  font-size: 12px;
+  padding-bottom: 68px;
+}
+header p {
+  background-color: #0077b6;
+  color: white;
+  padding: 8px;
+  text-align: center;
+}
+header nav {
+  padding: 26px 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+nav .input-search {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #0077b6;
+  padding: 3px 8px 3px 0px;
+  color: #0077b6;
+  font-size: 1.6em;
+}
+.input-search input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: black;
+  font-size: 0.65em;
+}
+.input-search input::placeholder {
+  color: black;
+}
+nav .logo {
+  border: 1px solid #0077b6;
+  width: 205px;
+  height: 48px;
+}
+nav .list-login {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  line-height: 13px;
+  font-size: 1em;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  font-size: 1.45em;
+  gap: 14px;
+}
+.list-login li {
+  padding: 1px;
+  cursor: pointer;
+}
+nav ul .list-line {
+  border: 1px solid #0077b6;
+  padding: 0;
+  cursor: default;
+  align-self: normal;
+}
+.fash-list li {
+  cursor: pointer;
+}
+.fash-list {
+  display: flex;
+  align-items: center;
+  padding: 4px 140px;
+  justify-content: space-evenly;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  gap: 20px;
+  background-color: white;
+  flex-wrap: wrap;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding-inline: 140px;
+  padding-bottom: 80px;
+}
+main .hero {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 30px;
+}
+main h1 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 25px;
+}
+.hero h2 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.hero-img {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(130px, 800px));
+  grid-template-rows: max-content;
+  column-gap: 8px;
+  row-gap: 7px;
+}
+.hero-img img {
+  width: 100%;
+}
+
+.hero .details {
+  padding-inline: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.detail1,
+.detail2,
+.detail3,
+.detail4,
+.detail5,
+.detail6 {
+  padding-top: 20px;
+  border-top: 0.5px solid #cccccc;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+.detail1 {
+  padding-top: 0;
+  border: 0;
+  gap: 31px;
+}
+.detail1 .fash-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  padding-bottom: 6px;
+}
+.fash-detail .price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.price span:first-of-type {
+  font-size: 30px;
+  font-weight: bold;
+}
+.fash-detail .sku {
+  color: #404040;
+  margin-top: 8px;
+}
+.fash-detail .sizes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.sizes p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sizes p span:last-of-type {
+  font-size: 12px;
+}
+.sizes div:first-of-type {
+  display: flex;
+  gap: 10px;
+}
+.sizes div:first-of-type button {
+  flex-grow: 1;
+  background-color: transparent;
+  border: 0.5px solid black;
+  cursor: pointer;
+  height: 34px;
+}
+.sizes div:first-of-type button:nth-of-type(2) {
+  border: 1.6px solid #0077b6;
+}
+.sizes div:first-of-type button:first-of-type,
+.sizes div:first-of-type button:last-of-type {
+  opacity: 0.3;
+}
+
+.fash-detail .add {
+  background-color: #0077b6;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 15px 8px;
+  cursor: pointer;
+}
+.detail1 .offers {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.offers ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.offers ul li {
+  border: 0.5px solid #a7a7a7;
+  padding: 8.7px;
+  display: flex;
+  gap: 8px;
+  font-size: 13.5px;
+}
+.offers ul li .icon {
+  font-size: 20px;
+}
+.detail2 {
+  gap: 29px;
+}
+.detail2 div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.detail2 div span {
+  background-color: #0077b6;
+  font-size: 15px;
+  display: flex;
+}
+.detail2 div span button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding-inline: 14px;
+}
+.detail2 div span input {
+  background-color: white;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border: 0.5px solid black;
+  border-right: 0;
+  flex-grow: 1;
+}
+.detail2 div p {
+  font-size: 12px;
+  max-width: 50ch;
+}
+.detail2 ul {
+  display: flex;
+  gap: 35px;
+}
+.detail2 li {
+  min-width: 86px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: normal;
+}
+.detail2 li .box {
+  background-color: #f5f4f4;
+  width: 33px;
+  height: 33px;
+}
+.detail2 li p {
+  flex-grow: 1;
+  font-size: 12px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.detail2 li a {
+  font-size: 10px;
+  color: #0077b6;
+  word-break: keep-all;
+  text-decoration: none;
+}
+.detail6,
+.detail3 div:first-of-type {
+  font-size: 12px;
+}
+.detail3 {
+  gap: 20px;
+}
+.detail3 div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.detail3 div:last-of-type span {
+  font-size: 15px;
+  display: flex;
+  gap: 68px;
+}
+.detail3 div:last-of-type span ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.detail4,
+.detail5,
+.detail6 {
+  gap: 7px;
+  padding-bottom: 5px;
+}
+.customer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-bottom: 15px;
+}
+.customer .heading {
+  align-items: center;
+  display: flex;
+}
+.customer .line {
+  border: 1px solid #0077b6;
+  flex-grow: 1;
+}
+.customer h1 {
+  text-align: center;
+  padding-inline: 15px;
+}
+.customer .dress-scroll {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+.dress-scroll .left-icon,
+.dress-scroll .right-icon {
+  font-size: 30px;
+  cursor: pointer;
+}
+.customer .dresses {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(160px, 235px));
+  grid-auto-flow: column;
+  gap: 21px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.dresses::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.dresses .nDress,
+.nDress .nDetail {
+  display: flex;
+  flex-direction: column;
+}
+.dresses .nDress img {
+  width: 100%;
+  gap: 26px;
+}
+.nDress .nDetail {
+  font-size: 14px;
+  padding: 15px;
+  gap: 5px;
+}
+.nDetail h3 {
+  font-weight: medium;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.nDetail p {
+  font-size: 0.99em;
+  padding-bottom: 7px;
+}
+.nDress .mDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.mDetail .mPrize {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.285em;
+  font-weight: bold;
+  align-items: center;
+  padding-block: 10px;
+  border-bottom: 1px solid #40404049;
+}
+.mPrize .icon {
+  font-size: 1.2em;
+}
+.mSize {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 0.93em;
+}
+.mSize button {
+  background-color: transparent;
+  border: none;
+}
+.mSize div,
+.mSize button:nth-of-type(2),
+.mSize button:nth-of-type(3) {
+  opacity: 0.4;
+}
+footer {
+  background-color: #242424;
+  font-size: 14px;
+  color: white;
+}
+.footer-container {
+  padding: 45px 50px 34px 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.footer-upper {
+  display: flex;
+  gap: 120px;
+  align-items: center;
+}
+.footer-upper .logg {
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
+  max-width: 48ch;
+}
+.logg div {
+  width: 205px;
+  height: 58px;
+  background-color: #404040;
+}
+.side-footer {
+  display: flex;
+  gap: 140px;
+}
+.help,
+.about,
+.contact,
+.help ul,
+.about ul,
+.contact ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.help,
+.about,
+.contact {
+  gap: 33px;
+}
+.help ul,
+.about ul,
+.contact ul {
+  gap: 13px;
+}
+.help li,
+.about li {
+  white-space: nowrap;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+}
+.help p,
+.about p,
+.contact p {
+  font-size: 18px;
+  color: #00b4d8;
+  white-space: nowrap;
+}
+.contact ul li:nth-of-type(3) {
+  color: #00b4d8;
+  font-size: 16px;
+}
+.contact ul li:last-of-type {
+  display: flex;
+  font-weight: 700;
+  width: 100%;
+}
+.contact ul li:last-of-type input {
+  flex-grow: 1;
+  color: white;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #707070;
+  border-right: 0;
+  font-size: 11px;
+  padding-inline: 11px;
+  letter-spacing: 0.7px;
+}
+.contact ul li:last-of-type input::placeholder {
+  color: white;
+}
+.contact ul li:last-of-type button {
+  border: 1px solid #707070;
+  border-left-color: transparent;
+  padding: 12px 22px;
+  font-size: 12px;
+  background-color: transparent;
+  cursor: pointer;
+  color: #00b4d8;
+}
+.contact ul li:last-of-type button:hover {
+  border: 1px solid #00b4d8;
+}
+.footer-down {
+  padding: 25px 5px 0px 5px;
+  border-top: 1px solid #404040;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 16px;
+}
+.footer-down p {
+  color: #00b4d8;
+}
+.footer-down div {
+  display: flex;
+  gap: 12px;
+  font-size: 22px;
+}
+.footer-down .icon {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1150px) {
+  header nav {
+    overflow: hidden;
+  }
+  header nav,
+  .fash-list,
+  main {
+    padding-inline: 50px;
+  }
+  .detail2 ul {
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  .footer-upper {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .side-footer {
+    flex-direction: column;
+  }
+  main h1 {
+    font-size: 20px;
+  }
+  .price span:first-of-type {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .nDress .nDetail {
+    font-size: 11px;
+  }
+  main h1 {
+    font-size: 16px;
+  }
+  .customer h1 {
+    padding-inline: 5px;
+  }
+  .hero h2 {
+    font-size: 16px;
+  }
+  .price span:first-of-type {
+    font-size: 19px;
+  }
+  .hero .details {
+    padding-inline: 0px;
+  }
+  header nav,
+  .fash-list,
+  main,
+  .footer-container {
+    padding-inline: 24px;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .footer-upper,
+  header nav {
+    flex-direction: column;
+  }
+}
