@@ -46,6 +46,7 @@ Repo for all the Front_End Projects🧑‍💻
 [Room Hompage Master](https://frabjous-nasturtium-a7881a.netlify.app/) <br/>
 [Rock Paper Scissors](https://dazzling-blancmange-e6f10d.netlify.app/) <br/>
 [Where in the world?](https://yes-country.netlify.app/)
+[Single Store](https://single-store.netlify.app/)
 
 
 
