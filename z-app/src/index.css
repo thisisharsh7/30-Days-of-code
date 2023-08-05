@@ -13,6 +13,7 @@ body {
   font-family: "Ysabeau SC", sans-serif;
   background-image: linear-gradient(to right, white, black);
   font-size: 14px;
+  min-width: 270px;
 }
 h1 {
   text-decoration: underline;
@@ -64,11 +65,6 @@ img {
 }
 .gitRepo {
   display: none;
-}
-@media only screen and (width<=900px) {
-  .card-body {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  }
 }
 @media only screen and (width<=425px) {
   .card-body {
