@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/30-Days-of-code/static/css/main.3d4aab9f.css",
-    "main.js": "/30-Days-of-code/static/js/main.5a2e6be8.js",
+    "main.css": "/30-Days-of-code/static/css/main.947b19a6.css",
+    "main.js": "/30-Days-of-code/static/js/main.77366021.js",
     "static/media/screenshot41.jpg": "/30-Days-of-code/static/media/screenshot41.e494e2a3ce5ae08c166f.jpg",
     "static/media/screenshot12.jpg": "/30-Days-of-code/static/media/screenshot12.a69596be7acef904ad9a.jpg",
     "static/media/screenshot38.jpg": "/30-Days-of-code/static/media/screenshot38.85ef38b87b59cea6f605.jpg",
@@ -45,11 +45,11 @@
     "static/media/screenshot14.jpg": "/30-Days-of-code/static/media/screenshot14.330ca0578adef90a8897.jpg",
     "static/media/noImage.webp": "/30-Days-of-code/static/media/noImage.691540713ce0208a2eca.webp",
     "index.html": "/30-Days-of-code/index.html",
-    "main.3d4aab9f.css.map": "/30-Days-of-code/static/css/main.3d4aab9f.css.map",
-    "main.5a2e6be8.js.map": "/30-Days-of-code/static/js/main.5a2e6be8.js.map"
+    "main.947b19a6.css.map": "/30-Days-of-code/static/css/main.947b19a6.css.map",
+    "main.77366021.js.map": "/30-Days-of-code/static/js/main.77366021.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d4aab9f.css",
-    "static/js/main.5a2e6be8.js"
+    "static/css/main.947b19a6.css",
+    "static/js/main.77366021.js"
   ]
 }
